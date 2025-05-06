@@ -9,6 +9,7 @@ import Footer2 from '~/components/widgets/Footer2';
 
 import { Inter as CustomFont } from 'next/font/google';
 import '~/assets/styles/base.css';
+import Script from 'next/script';
 
 const customFont = CustomFont({ subsets: ['latin'], variable: '--font-custom' });
 
@@ -41,6 +42,13 @@ export default function RootLayout({ children }: LayoutProps) {
         <meta name="twitter:title" content={SITE.title} />
         <meta name="twitter:description" content={SITE.description} />
         <meta name="twitter:image" content="/images/MaineRez1.png" />
+        <meta name="google-adsense-account" content={process.env.NEXT_PUBLIC_GOOGLE_ADSENSE_ID} />
+        <Script
+          async
+          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${process.env.NEXT_PUBLIC_GOOGLE_ADSENSE_ID}`}
+          strategy="lazyOnload"
+          crossOrigin="anonymous"
+        />
       </head>
       <body className="tracking-tight antialiased text-dark-500 dark:text-primary-50 dark:bg-dark-500">
         <Providers>
