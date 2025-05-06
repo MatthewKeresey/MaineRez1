@@ -77,7 +77,7 @@ const Header = () => {
               isToggleMenuOpen ? handleToggleMenuOnClick() : setIsDropdownOpen(updatedIsDropdownOpen as boolean[])
             }
           >
-            <Logo />
+            <Logo image={headerData.logo} />
           </Link>
           <div className="flex items-center md:hidden">
             <ToggleMenu handleToggleMenuOnClick={handleToggleMenuOnClick} isToggleMenuOpen={isToggleMenuOpen} />

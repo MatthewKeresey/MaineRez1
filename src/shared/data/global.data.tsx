@@ -78,6 +78,10 @@ export const headerData: HeaderProps = {
   showToggleTheme: true,
   showRssFeed: false,
   position: 'right',
+  logo: {
+    src: '/images/your-logo.png', // Replace with your logo path
+    alt: 'Your Logo', // Replace with your logo alt text
+  },
 };
 
 // Footer data

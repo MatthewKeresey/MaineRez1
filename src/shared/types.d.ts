@@ -352,11 +352,22 @@ type FooterProps = {
 };
 
 type HeaderProps = {
-  links?: Array<MenuLink>;
+  links?: Array<{
+    label: string;
+    href?: string;
+    icon?: Icon;
+    links?: Array<{
+      label: string;
+      href: string;
+    }>;
+  }>;
   actions?: Array<CallToActionType>;
-  // actions?: Array<ActionLink>;
   isSticky?: boolean;
   showToggleTheme?: boolean;
   showRssFeed?: boolean;
-  position?: 'center' | 'right' | 'left';
+  position?: 'right' | 'left' | 'center';
+  logo?: {
+    src: string;
+    alt: string;
+  };
 };
