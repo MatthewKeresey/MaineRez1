@@ -29,7 +29,7 @@ export const headerData: HeaderProps = {
       icon: IconChevronDown,
       links: [
         {
-          label: 'Beaches',
+          label: 'Beaches & Parks',
           href: '/beaches',
         },
         {

@@ -41,35 +41,29 @@ import gasImg from '~/assets/images/gas.jpg';
 export const heroHome: HeroProps = {
   title: (
     <>
-      Free template for <span className="hidden md:inline">starts a website using</span> <span>Next.js</span> +{' '}
-      <span className="sm:whitespace-nowrap">Tailwind CSS</span>
+      Welcome to <span className="hidden md:inline">Portland, Maine —</span> Where Coastal Charm Meets Culinary Excellence
     </>
   ),
   subtitle: (
     <>
       <span className="hidden md:inline">
-        <span className="font-semibold underline decoration-primary-600 decoration-wavy decoration-1 underline-offset-2">
-          TailNext
-        </span>{' '}
-        is a production ready template to start your new website using <em>Next.js</em> + <em>Tailwind CSS</em>.
+        Nestled along the rocky shores of Casco Bay, Portland offers a perfect blend of small-town charm and big-city culture. From world-class seafood to stunning coastal views, discover why Portland is one of America's most beloved coastal destinations.
       </span>{' '}
-      It has been designed following Best Practices, SEO, Accessibility, Dark Mode, great Page Speed, image
-      optimization.
+      Experience the best of Maine's vibrant city — where every corner offers a story, every meal is memorable, and every visit leaves you dreaming of the next.
     </>
   ),
   callToAction: {
-    text: 'Get template',
-    href: 'https://github.com/onwidget/tailnext',
-    icon: IconDownload,
-    targetBlank: true,
+    text: 'Explore Portland',
+    href: '/attractions',
+    icon: IconMapPin,
   },
   callToAction2: {
-    text: 'Learn more',
-    href: '/',
+    text: 'Book Now',
+    href: '/book',
   },
   image: {
     src: heroImg,
-    alt: 'Hero TailNext',
+    alt: 'Portland, Maine Harbor',
   },
 };
 
@@ -109,72 +103,72 @@ export const featuresHome: FeaturesProps = {
   header: {
     title: (
       <>
-        What you get with <span className="whitespace-nowrap">TailNext</span>
+        Discover <span className="whitespace-nowrap">Portland, Maine</span>
       </>
     ),
     subtitle:
-      "Elevating Your Digital Presence: Discover the Synergies Unleashed in Our Platform's Core Strengths, from Seamless Integration to Open Collaboration.",
-    tagline: 'Features',
+      "Experience the perfect blend of coastal charm and urban sophistication. From historic lighthouses to award-winning restaurants, Portland offers unforgettable experiences for every visitor.",
+    tagline: 'Why Visit Portland',
   },
   items: [
     {
-      title: 'Next.Js + Tailwind CSS Integration',
+      title: 'Historic Waterfront',
       description:
-        'A seamless integration between two great frameworks that offer high productivity, performance and versatility.',
+        'Explore the working waterfront of the Old Port, where lobster boats and fishing vessels share the harbor with luxury yachts. The historic cobblestone streets are lined with unique shops and restaurants.',
       icon: IconBrandTailwind,
       callToAction: {
-        text: 'Discover now',
-        href: '/',
+        text: 'Explore the Harbor',
+        href: '/waterfront',
       },
     },
     {
-      title: 'Ready-to-use Components',
+      title: 'Culinary Excellence',
       description:
-        'Widgets made with Tailwind CSS ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...',
+        'Portland is a food lover\'s paradise, boasting more restaurants per capita than any other city in America. From fresh seafood to innovative farm-to-table cuisine, every meal is a celebration of local flavors.',
       icon: IconComponents,
       callToAction: {
-        text: 'Discover now',
-        href: '/',
+        text: 'View Restaurants',
+        href: '/dining',
       },
     },
     {
-      title: 'Best Practices',
+      title: 'Arts & Culture',
       description:
-        'By prioritizing maintainability and scalability through coding standards and design principles, your website stays robust and efficient.',
+        'Immerse yourself in Portland\'s vibrant arts scene, from the Portland Museum of Art to local galleries and theaters. The city\'s creative spirit is evident in every neighborhood.',
       icon: IconListCheck,
       callToAction: {
-        text: 'Discover now',
-        href: '/',
+        text: 'Discover Arts',
+        href: '/arts',
       },
     },
     {
-      title: 'Excellent Page Speed',
+      title: 'Outdoor Adventures',
       description:
-        'Having a good page speed impacts organic search ranking, improves user experience (UI/UX) and increase conversion rates.',
+        'Whether you prefer kayaking in Casco Bay, hiking the Eastern Promenade, or exploring the nearby islands, Portland offers endless opportunities for outdoor recreation.',
       icon: IconRocket,
       callToAction: {
-        text: 'Discover now',
-        href: '/',
+        text: 'Plan Activities',
+        href: '/outdoors',
       },
     },
     {
-      title: 'Search Engine Optimization (SEO)',
+      title: 'Craft Beer Scene',
       description:
-        "Boost online visibility with our SEO-friendly website. Effective strategies and practices enhance your website's search engine ranking, making it easier for users to find your content.",
+        'Home to over 20 breweries, Portland is a craft beer destination. Sample unique brews at local favorites like Allagash, Bissell Brothers, and Rising Tide.',
       icon: IconArrowsRightLeft,
       callToAction: {
-        text: 'Discover now',
-        href: '/',
+        text: 'Tour Breweries',
+        href: '/breweries',
       },
     },
     {
-      title: 'Open to new ideas and contributions',
+      title: 'Shopping & Entertainment',
       description:
-        'We welcome new ideas and contributions to our platform. Whether you have feature suggestions, want to contribute code, or share insights, our platform is open for collaboration.',
+        'From boutique shops in the Old Port to the Maine Mall, Portland offers diverse shopping experiences. Enjoy live music, theater, and entertainment throughout the city.',
       icon: IconBulb,
       callToAction: {
-        text: 'Discover now',
-        href: '/',
+        text: 'Shop Local',
+        href: '/shopping',
       },
     },
   ],
@@ -185,32 +179,32 @@ export const contentHomeOne: ContentProps = {
   id: 'contentOne-on-home-one',
   hasBackground: true,
   header: {
-    title: 'Aliquip definiebas ad est',
-    subtitle: 'Quando cetero his ne, eum admodum sapientem ut',
-    tagline: 'Content',
+    title: 'A Food Lover\'s Paradise',
+    subtitle: 'Discover Portland\'s renowned culinary scene',
+    tagline: 'Dining',
   },
   content:
-    'Ne dicta praesent ocurreret has, diam theophrastus at pro. Eos etiam regione ut, persius eripuit quo id. Sit te euismod tacimates.',
+    'Portland has earned its reputation as one of America's top food cities. From fresh seafood to craft breweries, every meal is an adventure waiting to be discovered.',
   items: [
     {
-      title: 'Per ei quaeque sensibus',
+      title: 'World-Class Seafood',
       description:
-        'Ex usu illum iudico molestie. Pro ne agam facete mediocritatem, ridens labore facete mea ei. Pro id apeirian dignissim.',
+        'Experience the freshest lobster rolls at Eventide Oyster Co., where delicate lobster meat meets a warm, buttery bun. Don\'t miss the famous clam chowder and fresh oysters.',
     },
     {
-      title: 'Cu imperdiet posidonium sed',
+      title: 'Craft Breweries',
       description:
-        'Amet utinam aliquando ut mea, malis admodum ocurreret nec et, elit tibique cu nec. Nec ex maluisset inciderint, ex quis.',
+        'Portland is a beer lover\'s paradise with over 20 breweries. Visit Bissell Brothers, Allagash Brewing Company, and Austin Street Brewery for unique craft beers.',
     },
     {
-      title: 'Nulla omittam sadipscing mel ne',
+      title: 'Farm-to-Table Dining',
       description:
-        'At sed possim oporteat probatus, justo graece ne nec, minim commodo legimus ut vix. Ut eos iudico quando soleat, nam modus.',
+        'Enjoy locally sourced ingredients at Fore Street, where wood-fired cuisine features the best of Maine\'s seasonal produce and meats.',
     },
   ],
   image: {
     src: cameraFrontImg,
-    alt: 'Colorful Image',
+    alt: 'Portland Dining Scene',
   },
   isReversed: false,
   isAfterContent: false,
@@ -221,30 +215,30 @@ export const contentHomeTwo: ContentProps = {
   id: 'contentOne-on-home-two',
   hasBackground: true,
   content:
-    'Per odio fabellas consulatu cu. Utroque detracto mel ea, quo te latine theophrastus. Ea his tale nib dissentias, mei exerci tamquam euripidis cu.',
+    'Beyond its culinary scene, Portland offers endless opportunities for exploration and adventure. From historic landmarks to outdoor activities, there\'s something for everyone.',
   items: [
     {
-      title: 'Per ei quaeque sensibus',
+      title: 'Historic Old Port',
     },
     {
-      title: 'Cu imperdiet posidonium sed',
+      title: 'Eastern Promenade',
     },
     {
-      title: 'Nulla omittam sadipscing mel ne',
+      title: 'Casco Bay Islands',
     },
     {
-      title: 'Per ei quaeque sensibus',
+      title: 'Portland Museum of Art',
     },
     {
-      title: 'Cu imperdiet posidonium sed',
+      title: 'Victoria Mansion',
     },
     {
-      title: 'Nulla omittam sadipscing mel ne',
+      title: 'Willard Beach',
     },
   ],
   image: {
     src: cameraBackImg,
-    alt: 'Colorful Image',
+    alt: 'Portland Attractions',
   },
   isReversed: true,
   isAfterContent: true,
@@ -293,68 +287,68 @@ export const testimonialsHome: TestimonialsProps = {
   id: 'testimonials-on-home',
   hasBackground: true,
   header: {
-    title: 'What our customers say about us',
+    title: 'What visitors say about Portland',
     subtitle:
-      'Etiam sed odio et dolor auctor gravida. Curabitur tincidunt elit non risus pharetra sodales. Etiam sit amet mattis massa.',
+      'From first-time visitors to longtime residents, everyone has a story to share about their Portland experience. Here\'s what people are saying about our beautiful city.',
   },
   testimonials: [
     {
-      name: 'Tayla Kirsten',
-      job: 'Marketing Manager',
-      testimonial: `I'm impressed by the speed and performance of these templates. My website now loads in the blink of an eye, significantly enhancing my visitors' experience. Thanks to TailNext, my online business is thriving.`,
+      name: 'Sarah Mitchell',
+      job: 'Travel Blogger',
+      testimonial: `Portland exceeded all my expectations! The food scene is incredible, and the waterfront views are breathtaking. I can't wait to come back and explore more of this charming city.`,
       image: {
         src: 'https://images.unsplash.com/photo-1619734086067-24bf8889ea7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
-        alt: 'Tayla Kirsten',
+        alt: 'Sarah Mitchell',
       },
       href: '/',
     },
     {
-      name: 'Silver Jordan',
-      job: 'Senior Marketer',
-      testimonial: `I had never found it so easy to customize a website. TailNext's templates are incredibly flexible, and with Tailwind CSS, I've managed to give my website the look and feel I always wanted. Highly recommended!`,
+      name: 'Michael Chen',
+      job: 'Food Critic',
+      testimonial: `The culinary scene here is world-class. From the lobster rolls at Eventide to the innovative dishes at Fore Street, every meal was a revelation. Portland truly deserves its reputation as a foodie destination.`,
       image: {
         src: 'https://images.unsplash.com/photo-1565049786474-1dea82a8b995?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
-        alt: 'Silver Jordan',
+        alt: 'Michael Chen',
       },
       href: '/',
     },
     {
-      name: 'Kelsey Arden',
-      job: 'Co-Founder & CEO',
-      testimonial: `As a beginner in web development, I really needed clear guidance. Tailnext made it possible. I was able to install and customize my website seamlessly, and I'm thrilled with the results!`,
+      name: 'Emma Thompson',
+      job: 'Local Artist',
+      testimonial: `The creative energy in Portland is inspiring. Between the galleries, street art, and local craftspeople, there's always something new to discover. It's a city that celebrates creativity in all forms.`,
       image: {
         src: 'https://images.unsplash.com/photo-1659057106920-da022cfbc0cd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
-        alt: 'Kelsey Arden',
+        alt: 'Emma Thompson',
       },
       href: '/',
     },
     {
-      name: 'Sarah Johnson',
-      job: 'Business Owner',
-      testimonial: `They've not only saved me a ton of time but have also made my websites look incredibly professional. The level of detail and thought that went into designing these templates is truly impressive.`,
+      name: 'David Wilson',
+      job: 'Outdoor Enthusiast',
+      testimonial: `The outdoor opportunities here are endless. I spent my days kayaking in the harbor and hiking the Eastern Promenade, then enjoyed amazing seafood dinners. Portland offers the perfect mix of adventure and relaxation.`,
       image: {
         src: 'https://images.unsplash.com/photo-1572417884940-c24659be6068?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
-        alt: 'Sarah Johnson',
+        alt: 'David Wilson',
       },
       href: '/',
     },
     {
-      name: 'Keith Young',
-      job: 'Freelance Developer',
-      testimonial: `The clean code and integration with Next.js make my projects a breeze. Plus, the responsive design ensures that my clients' websites look amazing on any device. These templates have become my secret weapon for success!`,
+      name: 'Lisa Rodriguez',
+      job: 'Beer Enthusiast',
+      testimonial: `As a craft beer lover, Portland is paradise. The variety and quality of local breweries is impressive, and the beer community is welcoming. Don't miss the brewery tours and tasting rooms!`,
       image: {
         src: 'https://images.unsplash.com/photo-1694287877106-ee22f764aef1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
-        alt: 'Keith Young',
+        alt: 'Lisa Rodriguez',
       },
       href: '/',
     },
     {
-      name: 'Lisa Gordon',
-      job: 'Project Manager',
-      testimonial: `Their templates are not only stunning but also user-friendly. The support I received from their community has been exceptional. I'm proud to say that I've built my dream website with TailNext.`,
+      name: 'James Anderson',
+      job: 'History Buff',
+      testimonial: `The historic architecture and maritime heritage make Portland fascinating to explore. The Old Port's cobblestone streets and working waterfront tell stories of the city's rich past.`,
       image: {
         src: 'https://images.unsplash.com/photo-1665984867752-6370ab5ae35e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
-        alt: 'Lisa Gordon',
+        alt: 'James Anderson',
       },
       href: '/',
     },
@@ -368,33 +362,33 @@ export const faqs2Home: FAQsProps = {
   header: {
     title: 'Frequently Asked Questions',
     subtitle:
-      'Duis turpis dui, fringilla mattis sem nec, fringilla euismod neque. Morbi tincidunt lacus nec tortor scelerisque pulvinar.',
+      'Planning your visit to Portland? Here are answers to some common questions about our city, from the best time to visit to local transportation options.',
     tagline: 'FAQS',
   },
   items: [
     {
-      title: 'What do I need to start?',
-      description: `Nunc mollis tempor quam, non fringilla elit sagittis in. Nullam vitae consectetur mi, a elementum arcu. Sed laoreet, ipsum et vehicula dignissim, leo orci pretium sem, ac condimentum tellus est quis ligula.`,
+      title: 'When is the best time to visit Portland?',
+      description: `Portland is beautiful year-round, but summer (June-August) offers the best weather for outdoor activities. Fall brings stunning foliage, while winter offers cozy indoor experiences and fewer crowds. Spring is perfect for whale watching and early-season lobster.`,
     },
     {
-      title: 'How to install the NextJS + Tailwind CSS template?',
-      description: `Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer eleifend vestibulum nisl in iaculis. Mauris dictum ac purus vestibulum auctor. Praesent imperdiet lectus et massa faucibus, quis viverra massa rhoncus.`,
+      title: 'How do I get around Portland?',
+      description: `Portland is very walkable, especially in the Old Port and Arts District. The city also offers public transportation, taxis, and rideshare services. For exploring the islands, ferries run regularly from the waterfront.`,
     },
     {
-      title: "What's something that you completely don't understand?",
-      description: `Mauris vitae eros a dui varius luctus. Suspendisse rutrum, sapien nec blandit bibendum, justo sapien sollicitudin erat, id aliquam sapien purus quis leo. Aliquam vulputate vestibulum consectetur.`,
+      title: 'What are the must-try foods in Portland?',
+      description: `Don't miss the lobster rolls, fresh oysters, and clam chowder. Portland is also known for its craft breweries, artisanal coffee shops, and farm-to-table restaurants. The food scene is diverse and innovative.`,
     },
     {
-      title: "What's an example of when you changed your mind?",
-      description: `Nunc dapibus lacinia ipsum ut elementum. Integer in pretium sapien. Ut pretium nisl mauris, ut rutrum justo condimentum id. Etiam aliquet, arcu at iaculis laoreet, est arcu egestas sapien, eget sollicitudin odio orci et nunc.`,
+      title: 'Are there good shopping options?',
+      description: `Yes! The Old Port features unique boutiques and local crafts, while the Arts District offers galleries and specialty shops. The Maine Mall provides traditional retail options, and local markets showcase Maine-made products.`,
     },
     {
-      title: 'What is something that you would really like to try again?',
-      description: `Duis in maximus mauris, id eleifend mauris. Nam a fringilla arcu. Curabitur convallis, tellus non aliquet rhoncus, lacus massa auctor eros, in interdum lectus augue sed augue. Fusce tempor ex id faucibus efficitur.`,
+      title: 'What outdoor activities are available?',
+      description: `Enjoy kayaking in Casco Bay, hiking the Eastern Promenade, exploring nearby islands, or relaxing at local beaches. The city also offers bike rentals and walking tours for exploring different neighborhoods.`,
     },
     {
-      title: 'If you could only ask one question to each person you meet, what would that question be?',
-      description: `Nullam imperdiet sapien tincidunt erat dapibus faucibus. Vestibulum a sem nec lorem imperdiet scelerisque non sed lacus. Ut pulvinar id diam vitae auctor. Nam tempus, neque et elementum consectetur, ex ipsum pulvinar risus, vel sodales ligula tortor eu eros.`,
+      title: 'Is Portland family-friendly?',
+      description: `Absolutely! Families can enjoy the Children's Museum, local parks, boat tours, and many restaurants welcome children. The city offers a perfect mix of educational and fun activities for all ages.`,
     },
   ],
 };
