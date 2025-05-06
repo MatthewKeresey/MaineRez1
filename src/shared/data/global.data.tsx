@@ -10,14 +10,14 @@ import { AnnouncementProps, FooterProps, HeaderProps } from '../types';
 
 // Announcement data
 export const announcementData: AnnouncementProps = {
-  title: 'NEW',
+  title: 'WELCOME',
   callToAction: {
-    text: 'This template is made with Next.js 14 using the new App Router »',
-    href: 'https://nextjs.org/blog/next-14',
+    text: 'Discover Portland, Maine — Where Coastal Charm Meets Culinary Excellence »',
+    href: '/about',
   },
   callToAction2: {
-    text: 'Follow @onWidget on Twitter',
-    href: 'https://twitter.com/intent/user?screen_name=onwidget',
+    text: 'Follow us on Instagram',
+    href: 'https://instagram.com',
   },
 };
 
@@ -25,53 +25,49 @@ export const announcementData: AnnouncementProps = {
 export const headerData: HeaderProps = {
   links: [
     {
-      label: 'Pages',
+      label: 'Explore',
       icon: IconChevronDown,
       links: [
         {
-          label: 'Services',
-          href: '/services',
+          label: 'Beaches',
+          href: '/beaches',
         },
         {
-          label: 'Pricing',
-          href: '/pricing',
+          label: 'Restaurants',
+          href: '/restaurants',
         },
         {
-          label: 'About us',
+          label: 'Attractions',
+          href: '/attractions',
+        },
+        {
+          label: 'Events',
+          href: '/events',
+        },
+        {
+          label: 'About Portland',
           href: '/about',
         },
         {
-          label: 'Contact us',
+          label: 'Contact',
           href: '/contact',
-        },
-        {
-          label: 'FAQs',
-          href: '/faqs',
-        },
-        {
-          label: 'Terms & Conditions',
-          href: '/terms',
-        },
-        {
-          label: 'Privacy Policy',
-          href: '/privacy',
         },
       ],
     },
     {
-      label: 'Blog',
-      href: '/blog',
+      label: 'Dining',
+      href: '/dining',
     },
     {
-      label: 'Contact',
-      href: '/contact',
+      label: 'Book Now',
+      href: '/book',
     },
   ],
   actions: [
     {
-      text: 'Download',
-      href: 'https://github.com/onwidget/tailnext',
-      targetBlank: true,
+      text: 'Reserve',
+      href: '/reserve',
+      targetBlank: false,
     },
   ],
   isSticky: true,
@@ -79,14 +75,14 @@ export const headerData: HeaderProps = {
   showRssFeed: false,
   position: 'right',
   logo: {
-    src: '/images/MaineRez1.png', // Updated to match exact filename case
+    src: '/images/MaineRez1.png',
     alt: 'MaineRez Logo',
   },
 };
 
 // Footer data
 export const footerData: FooterProps = {
-  title: 'TailNext',
+  title: 'MaineRez',
   links: [
     {
       label: 'Terms & Conditions',
@@ -99,82 +95,82 @@ export const footerData: FooterProps = {
   ],
   columns: [
     {
-      title: 'Product',
+      title: 'Explore Portland',
       links: [
         {
-          label: 'Features',
-          href: '/',
+          label: 'Beaches & Parks',
+          href: '/beaches',
         },
         {
-          label: 'Security',
-          href: '/',
+          label: 'Restaurants',
+          href: '/restaurants',
         },
         {
-          label: 'Team',
-          href: '/',
+          label: 'Local Attractions',
+          href: '/attractions',
         },
         {
-          label: 'Enterprise',
-          href: '/',
+          label: 'Events Calendar',
+          href: '/events',
         },
         {
-          label: 'Customer stories',
-          href: '/',
+          label: 'Shopping',
+          href: '/shopping',
         },
         {
-          label: 'Pricing',
-          href: '/pricing',
-        },
-        {
-          label: 'Resources',
-          href: '/',
+          label: 'Nightlife',
+          href: '/nightlife',
         },
       ],
     },
     {
-      title: 'Platform',
+      title: 'Dining Guide',
       links: [
         {
-          label: 'Developer API',
-          href: '/',
+          label: 'Seafood',
+          href: '/dining/seafood',
         },
         {
-          label: 'Partners',
-          href: '/',
+          label: 'Breweries',
+          href: '/dining/breweries',
+        },
+        {
+          label: 'Coffee Shops',
+          href: '/dining/coffee',
+        },
+        {
+          label: 'Fine Dining',
+          href: '/dining/fine-dining',
         },
       ],
     },
     {
-      title: 'Support',
+      title: 'Local Info',
       links: [
         {
-          label: 'Docs',
-          href: '/',
+          label: 'Weather',
+          href: '/weather',
         },
         {
-          label: 'Community Forum',
-          href: '/',
+          label: 'Transportation',
+          href: '/transportation',
         },
         {
-          label: 'Professional Services',
-          href: '/',
+          label: 'Parking',
+          href: '/parking',
         },
         {
-          label: 'Skills',
-          href: '/',
-        },
-        {
-          label: 'Status',
-          href: '/',
+          label: 'Maps',
+          href: '/maps',
         },
       ],
     },
     {
-      title: 'Company',
+      title: 'About Us',
       links: [
         {
-          label: 'About',
-          href: '/',
+          label: 'Our Story',
+          href: '/about',
         },
         {
           label: 'Blog',
@@ -182,23 +178,11 @@ export const footerData: FooterProps = {
         },
         {
           label: 'Careers',
-          href: '/',
+          href: '/careers',
         },
         {
-          label: 'Press',
-          href: '/',
-        },
-        {
-          label: 'Inclusion',
-          href: '/',
-        },
-        {
-          label: 'Social Impact',
-          href: '/',
-        },
-        {
-          label: 'Shop',
-          href: '/',
+          label: 'Contact',
+          href: '/contact',
         },
       ],
     },
@@ -208,21 +192,19 @@ export const footerData: FooterProps = {
     { label: 'Instagram', icon: IconBrandInstagram, href: '#' },
     { label: 'Facebook', icon: IconBrandFacebook, href: '#' },
     { label: 'RSS', icon: IconRss, href: '#' },
-    { label: 'Github', icon: IconBrandGithub, href: 'https://github.com/onwidget/tailnext' },
   ],
   footNote: (
     <div className="mr-4 rtl:mr-0 rtl:ml-4 text-sm">
       <span className="float-left rtl:float-right mr-1.5 rtl:mr-0 rtl:ml-1.5 h-5 w-5 rounded-sm bg-[url(https://onwidget.com/favicon/favicon-32x32.png)] bg-cover md:-mt-0.5 md:h-6 md:w-6"></span>
       <span>
-        Made by{' '}
+        Discover Portland, Maine — where coastal charm meets culinary excellence. 
         <a
           className="font-semibold text-slate-900 dark:text-gray-200 hover:text-blue-600 hover:underline dark:hover:text-blue-600"
-          href="https://onwidget.com/"
+          href="/about"
         >
           {' '}
-          onWidget
-        </a>{' '}
-        · All rights reserved.
+          Learn More
+        </a>
       </span>
     </div>
   ),
@@ -242,16 +224,16 @@ export const footerData2: FooterProps = {
   ],
   columns: [
     {
-      title: 'Address',
-      texts: ['51 Phasellus Avenue Maecenas', 'Aliquam, AQ 52098'],
+      title: 'Visit Us',
+      texts: ['123 Old Port Way', 'Portland, ME 04101'],
     },
     {
-      title: 'Phone',
-      texts: ['Reception: +105 123 4567', 'Office: +107 235 7890'],
+      title: 'Contact',
+      texts: ['Phone: (207) 555-0123', 'Email: info@mainerez.com'],
     },
     {
-      title: 'Email',
-      texts: ['Office: info@example.com', 'Site: https://example.com'],
+      title: 'Hours',
+      texts: ['Open Daily: 9AM - 5PM', '24/7 Online Booking'],
     },
   ],
   socials: [
@@ -259,21 +241,19 @@ export const footerData2: FooterProps = {
     { label: 'Instagram', icon: IconBrandInstagram, href: '#' },
     { label: 'Facebook', icon: IconBrandFacebook, href: '#' },
     { label: 'RSS', icon: IconRss, href: '#' },
-    { label: 'Github', icon: IconBrandGithub, href: 'https://github.com/onwidget/tailnext' },
   ],
   footNote: (
     <div className="mr-4 rtl:mr-0 rtl:ml-4 text-sm">
       <span className="float-left rtl:float-right mr-1.5 rtl:mr-0 rtl:ml-1.5 h-5 w-5 rounded-sm bg-[url(https://onwidget.com/favicon/favicon-32x32.png)] bg-cover md:-mt-0.5 md:h-6 md:w-6"></span>
       <span>
-        Made by{' '}
+        Experience the best of Portland, Maine — from our famous seafood to stunning coastal views.
         <a
           className="font-semibold text-slate-900 dark:text-gray-200 hover:text-blue-600 hover:underline dark:hover:text-blue-600"
-          href="https://onwidget.com/"
+          href="/about"
         >
           {' '}
-          onWidget
-        </a>{' '}
-        · All rights reserved.
+          Start Exploring
+        </a>
       </span>
     </div>
   ),
