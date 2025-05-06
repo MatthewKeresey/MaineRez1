@@ -7,32 +7,32 @@ const beachesFeatures = [
   {
     title: 'Old Orchard Beach',
     description: "A classic Maine beach with a lively pier, amusements, and soft sand.",
-    img: '/images/MaineRez1.png',
+    img: '/images/beaches/old-orchard-beach.jpg',
   },
   {
     title: 'Willard Beach',
     description: "A local favorite for families, with gentle waves and scenic views.",
-    img: '/images/MaineRez1.png',
+    img: '/images/beaches/willard-beach.jpg',
   },
   {
     title: 'Crescent Beach',
     description: "Enjoy a mile of sandy shoreline and picnic areas just south of Portland.",
-    img: '/images/MaineRez1.png',
+    img: '/images/beaches/crescent-beach.jpg',
   },
   {
     title: 'Scarborough Beach',
     description: "Known for its surf and wide open spaces, perfect for sunbathing.",
-    img: '/images/MaineRez1.png',
+    img: '/images/beaches/scarborough-beach.jpg',
   },
   {
     title: 'Ferry Beach',
     description: "A peaceful spot for swimming, walking, and birdwatching.",
-    img: '/images/MaineRez1.png',
+    img: '/images/beaches/ferry-beach.jpg',
   },
   {
     title: 'Higgins Beach',
     description: "Famous for its surfing and picturesque setting, great for all ages.",
-    img: '/images/MaineRez1.png',
+    img: '/images/beaches/higgins-beach.jpg',
   },
 ];
 

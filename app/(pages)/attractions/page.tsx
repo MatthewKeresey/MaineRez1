@@ -7,32 +7,32 @@ const attractionsFeatures = [
   {
     title: 'Portland Head Light',
     description: "Maine's most iconic lighthouse, offering stunning ocean views and history.",
-    img: '/images/MaineRez1.png',
+    img: '/images/attractions/portland-head-light.jpg',
   },
   {
     title: 'Old Port District',
     description: "Cobblestone streets, unique shops, and vibrant nightlife in Portland's historic heart.",
-    img: '/images/MaineRez1.png',
+    img: '/images/attractions/old-port.jpg',
   },
   {
     title: 'Eastern Promenade',
     description: "A scenic park with walking trails, picnic spots, and panoramic bay views.",
-    img: '/images/MaineRez1.png',
+    img: '/images/attractions/eastern-prom.jpg',
   },
   {
     title: 'Casco Bay Islands',
     description: "Take a ferry to explore charming islands, beaches, and local communities.",
-    img: '/images/MaineRez1.png',
+    img: '/images/attractions/casco-bay.jpg',
   },
   {
     title: 'Portland Museum of Art',
     description: "Home to an impressive collection of American, European, and contemporary art.",
-    img: '/images/MaineRez1.png',
+    img: '/images/attractions/pma.jpg',
   },
   {
     title: 'Victoria Mansion',
     description: "A beautifully preserved 19th-century home with ornate interiors and guided tours.",
-    img: '/images/MaineRez1.png',
+    img: '/images/attractions/victoria-mansion.jpg',
   },
 ];
 

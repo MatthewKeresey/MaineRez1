@@ -7,32 +7,32 @@ const restaurantsFeatures = [
   {
     title: 'Eventide Oyster Co.',
     description: "Famous for its fresh oysters and creative seafood dishes in a lively setting.",
-    img: '/images/MaineRez1.png',
+    img: '/images/restaurants/eventide.jpg',
   },
   {
     title: 'Fore Street',
     description: "Award-winning wood-fired cuisine with a focus on local ingredients.",
-    img: '/images/MaineRez1.png',
+    img: '/images/restaurants/fore-street.jpg',
   },
   {
     title: 'Central Provisions',
     description: "A small plates restaurant known for inventive flavors and a vibrant atmosphere.",
-    img: '/images/MaineRez1.png',
+    img: '/images/restaurants/central-provisions.jpg',
   },
   {
     title: 'Duckfat',
     description: "Beloved for its hand-cut fries, paninis, and house sodas.",
-    img: '/images/MaineRez1.png',
+    img: '/images/restaurants/duckfat.jpg',
   },
   {
     title: 'The Honey Paw',
     description: "A creative noodle bar offering Asian-inspired dishes with a Maine twist.",
-    img: '/images/MaineRez1.png',
+    img: '/images/restaurants/honey-paw.jpg',
   },
   {
     title: 'Boda',
     description: "Thai street food and tapas in a cozy, welcoming space.",
-    img: '/images/MaineRez1.png',
+    img: '/images/restaurants/boda.jpg',
   },
 ];
 
