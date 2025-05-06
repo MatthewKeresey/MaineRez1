@@ -16,12 +16,12 @@ declare global {
   }
 }
 
-const AdSense: React.FC<AdSenseProps> = ({ 
+const AdSense = ({ 
   adSlot, 
   adFormat = 'auto',
   style = {},
   className = ''
-}) => {
+}: AdSenseProps) => {
   const pathname = usePathname();
 
   useEffect(() => {
