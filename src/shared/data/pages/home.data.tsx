@@ -602,30 +602,30 @@ export const contactHome: ContactProps = {
   hasBackground: true,
   header: {
     title: 'Get in Touch',
-    subtitle: 'In hac habitasse platea dictumst',
+    subtitle: 'Want to be featured on our website or need more information?',
     tagline: 'Contact',
   },
   content:
-    'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis nec ipsum orci. Ut scelerisque sagittis ante, ac tincidunt sem venenatis ut.',
+    'Whether you\'re a local business looking to be featured, a visitor seeking more information, or a resident with questions about Portland, we\'d love to hear from you. Send us an email and we\'ll get back to you as soon as possible.',
   items: [
     {
-      title: 'Our Address',
-      description: ['1230 Maecenas Street Donec Road', 'New York, EEUU'],
-      icon: IconMapPin,
+      title: 'Email Us',
+      description: ['For business features and inquiries', 'Portland@mainerez.com'],
+      icon: IconMail,
     },
     {
       title: 'Contact',
-      description: ['Mobile: +1 (123) 456-7890', 'Mail: tailnext@gmail.com'],
+      description: ['For general information', 'Portland@mainerez.com'],
       icon: IconPhoneCall,
     },
     {
       title: 'Working hours',
-      description: ['Monday - Friday: 08:00 - 17:00', 'Saturday & Sunday: 08:00 - 12:00'],
+      description: ['Monday - Friday: 09:00 - 17:00', 'Saturday & Sunday: 10:00 - 15:00'],
       icon: IconClock,
     },
   ],
   form: {
-    title: 'Ready to Get Started?',
+    title: 'Send Us a Message',
     inputs: [
       {
         type: 'text',
@@ -644,7 +644,7 @@ export const contactHome: ContactProps = {
       cols: 30,
       rows: 5,
       name: 'textarea',
-      placeholder: 'Write your message...',
+      placeholder: 'Tell us about your business or inquiry...',
     },
     btn: {
       title: 'Send Message',
