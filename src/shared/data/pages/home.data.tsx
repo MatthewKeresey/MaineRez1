@@ -74,24 +74,24 @@ export const socialProofHome: SocialProofProps = {
   hasBackground: false,
   images: [
     {
-      link: 'https://nextjs.org/',
-      src: nextJsLogo,
-      alt: 'NextJs Logo',
+      link: '/attractions',
+      src: '/images/portland-lighthouse.jpg',
+      alt: 'Portland Head Light',
     },
     {
-      link: 'https://react.dev/',
-      src: reactLogo,
-      alt: 'React Logo',
+      link: '/dining',
+      src: '/images/portland-food.jpg',
+      alt: 'Portland Food Scene',
     },
     {
-      link: 'https://tailwindcss.com/',
-      src: tailwindCssLogo,
-      alt: 'Tailwind CSS Logo',
+      link: '/arts',
+      src: '/images/portland-arts.jpg',
+      alt: 'Portland Arts District',
     },
     {
-      link: 'https://www.typescriptlang.org/',
-      src: typescriptLogo,
-      alt: 'Typescript Logo',
+      link: '/outdoors',
+      src: '/images/portland-outdoors.jpg',
+      alt: 'Portland Outdoor Activities',
     },
   ],
 };
@@ -255,29 +255,27 @@ export const stepsHome: StepsProps = {
     alt: 'Steps image',
   },
   header: {
-    title: 'Sed ac magna sit amet risus tristique interdum.',
+    title: 'Plan Your Perfect Portland Visit',
   },
   items: [
     {
-      title: 'Step 1',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mirisus tempus nulla, sed porttitor est nibh at nulla. Praesent placerat enim ut ex tincidunt vehicula. Fusce sit amet dui tellus.',
+      title: 'Choose Your Adventure',
+      description: 'Select from top attractions, dining, and outdoor activities to build your ideal Portland itinerary.',
       icon: IconArrowDown,
     },
     {
-      title: 'Step 2',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mirisus tempus nulla, sed porttitor est nibh at nulla.',
+      title: 'Book & Reserve',
+      description: 'Reserve tables at renowned restaurants, book tours, and secure your stay with local partners.',
       icon: IconArrowDown,
     },
     {
-      title: 'Step 3',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mirisus tempus nulla, sed porttitor est nibh at nulla.',
+      title: 'Experience Portland',
+      description: 'Enjoy your visit with curated recommendations and insider tips from MaineRez.',
       icon: IconArrowDown,
     },
     {
-      title: 'Ready!',
+      title: 'Share Your Story',
+      description: 'Tag @MaineRez on social media to be featured and inspire future visitors!',
     },
   ],
 };
@@ -398,85 +396,56 @@ export const pricingHome: PricingProps = {
   id: 'pricing-on-home',
   hasBackground: true,
   header: {
-    title: 'Prices for each plan',
-    subtitle:
-      'Proin eget vestibulum sem, vel ultrices ligula. Vestibulum in eleifend lectus, non mollis odio. Donec nibh ipsum, suscipit non pulvinar quis, lobortis ac lorem.',
-    // tagline: 'Pricing',
+    title: 'Plan Your Portland Experience',
+    subtitle: "Explore free and premium experiences, from self-guided tours to exclusive local packages. There's something for every traveler!",
   },
   prices: [
     {
-      title: 'basic',
-      price: 29,
-      period: 'per month',
+      title: 'Self-Guided',
+      price: 0,
+      period: 'always free',
       items: [
-        {
-          description: 'Etiam in libero, et volutpat',
-        },
-        {
-          description: 'Aenean ac nunc dolor tristique',
-        },
-        {
-          description: 'Cras scelerisque accumsan lib',
-        },
-        {
-          description: 'In hac habitasse',
-        },
+        { description: 'Access to Portland guides & maps' },
+        { description: 'Local event calendar' },
+        { description: 'Dining & attractions directory' },
       ],
       callToAction: {
-        targetBlank: true,
-        text: 'Free 7-day trial',
-        href: '/',
+        targetBlank: false,
+        text: 'Start Exploring',
+        href: '/attractions',
       },
       hasRibbon: false,
     },
     {
-      title: 'standard',
-      price: 69,
-      period: 'per month',
+      title: 'Insider Access',
+      price: 29,
+      period: 'per year',
       items: [
-        {
-          description: 'Proin vel laoreet',
-        },
-        {
-          description: 'Ut efficitur egestas',
-        },
-        {
-          description: 'Pellentesque ut nibh',
-        },
-        {
-          description: 'Donec fringilla sem',
-        },
+        { description: 'Exclusive discounts at local businesses' },
+        { description: 'Priority event booking' },
+        { description: 'Seasonal guides & tips' },
       ],
       callToAction: {
-        targetBlank: true,
-        text: 'Free 15-day trial',
-        href: '/',
+        targetBlank: false,
+        text: 'Become an Insider',
+        href: '/insider',
       },
       hasRibbon: true,
       ribbonTitle: 'Popular',
     },
     {
-      title: 'premium',
-      price: 199,
-      period: 'per month',
+      title: 'Business Feature',
+      price: 99,
+      period: 'per year',
       items: [
-        {
-          description: 'Curabitur suscipit risus',
-        },
-        {
-          description: 'Aliquam blandit malesuada',
-        },
-        {
-          description: 'Suspendisse sit amet',
-        },
-        {
-          description: 'Suspendisse auctor dui',
-        },
+        { description: 'Get your business featured on MaineRez' },
+        { description: 'Custom listing & promotion' },
+        { description: 'Direct contact for inquiries' },
       ],
       callToAction: {
-        targetBlank: true,
-        text: 'Free 30-day trial',
-        href: '/',
+        targetBlank: false,
+        text: 'Feature My Business',
+        href: '/contact',
       },
       hasRibbon: false,
     },

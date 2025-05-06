@@ -1,10 +1,10 @@
 module.exports.SITE = {
-  name: 'TailNext',
+  name: 'MaineRez',
 
-  origin: 'https://tailnext.vercel.app',
+  origin: 'https://maine-rez1.vercel.app',
   basePathname: '/',
   trailingSlash: false,
 
-  title: 'TailNext — Your website with Next.js + Tailwind CSS',
-  description: 'TailNext is a free and ready to start template to make your website using Next.js and Tailwind CSS.',
+  title: 'MaineRez — Discover Portland, Maine',
+  description: 'Experience the vibrant culture, stunning coastal views, and world-class dining that make Portland, Maine a must-visit destination.',
 };

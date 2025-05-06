@@ -10,14 +10,14 @@ import { AnnouncementProps, FooterProps, HeaderProps } from '../types';
 
 // Announcement data
 export const announcementData: AnnouncementProps = {
-  title: 'WELCOME',
+  title: 'Welcome to MaineRez',
   callToAction: {
-    text: 'Discover Portland, Maine — Where Coastal Charm Meets Culinary Excellence »',
-    href: '/about',
+    text: 'Explore Portland',
+    href: '/attractions',
   },
   callToAction2: {
-    text: 'Follow us on Instagram',
-    href: 'https://instagram.com',
+    text: 'Contact Us',
+    href: '/contact',
   },
 };
 
@@ -219,7 +219,7 @@ export const footerData2: FooterProps = {
     },
     {
       title: 'Contact',
-      texts: ['Phone: (207) 555-0123', 'Email: info@mainerez.com'],
+      texts: ['Phone: (207) 555-0123', 'Email: Portland@mainerez.com'],
     },
     {
       title: 'Hours',
@@ -234,7 +234,7 @@ export const footerData2: FooterProps = {
   ],
   footNote: (
     <div className="mr-4 rtl:mr-0 rtl:ml-4 text-sm">
-      <span className="float-left rtl:float-right mr-1.5 rtl:mr-0 rtl:ml-1.5 h-5 w-5 rounded-sm bg-[url(https://onwidget.com/favicon/favicon-32x32.png)] bg-cover md:-mt-0.5 md:h-6 md:w-6"></span>
+      <span className="float-left rtl:float-right mr-1.5 rtl:mr-0 rtl:ml-1.5 h-5 w-5 rounded-sm bg-[url(/images/MaineRez1.png)] bg-cover md:-mt-0.5 md:h-6 md:w-6"></span>
       <span>
         Experience the best of Portland, Maine — from our famous seafood to stunning coastal views.
         <a

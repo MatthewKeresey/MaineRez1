@@ -6,8 +6,8 @@ addons.setConfig({
     base: 'light',
 
     // Logo
-    brandTitle: 'TailNext',
-    brandUrl: 'https://github.com/onwidget/tailnext',
+    brandTitle: 'MaineRez',
+    brandUrl: 'https://maine-rez1.vercel.app',
     brandTarget: '_blank',
   }),
 });
