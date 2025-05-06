@@ -4,17 +4,17 @@
 
 @layer base {
   :root {
-    --color-background: #D8C8B4;
-    --color-text: #222222;
+    --color-background: #F5F7F6;
+    --color-text: #2C3E50;
   }
 
   .dark {
-    --color-background: #2A3A34;
-    --color-text: #F5F1ED;
+    --color-background: #2C3E50;
+    --color-text: #F5F7F6;
   }
 
   body {
-    @apply bg-primary-200 text-dark-500 dark:bg-secondary-500 dark:text-primary-50;
+    @apply bg-primary-50 text-dark-500 dark:bg-dark-500 dark:text-primary-50;
   }
 }
 
