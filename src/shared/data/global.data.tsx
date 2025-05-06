@@ -79,7 +79,7 @@ export const headerData: HeaderProps = {
   showRssFeed: false,
   position: 'right',
   logo: {
-    src: '/images/mainerez1.png', // Your logo file should be placed in public/images/mainerez1.png
+    src: '/images/MaineRez1.png', // Updated to match exact filename case
     alt: 'MaineRez Logo',
   },
 };
