@@ -30,6 +30,17 @@ export default function RootLayout({ children }: LayoutProps) {
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        {/* Open Graph Meta Tags */}
+        <meta property="og:title" content={SITE.title} />
+        <meta property="og:description" content={SITE.description} />
+        <meta property="og:image" content="/images/MaineRez1.png" />
+        <meta property="og:url" content={SITE.origin} />
+        <meta property="og:type" content="website" />
+        {/* Twitter Card Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={SITE.title} />
+        <meta name="twitter:description" content={SITE.description} />
+        <meta name="twitter:image" content="/images/MaineRez1.png" />
       </head>
       <body className="tracking-tight antialiased text-dark-500 dark:text-primary-50 dark:bg-dark-500">
         <Providers>
