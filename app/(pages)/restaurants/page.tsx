@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import dynamic from 'next/dynamic';
 
-const AdSense = dynamic(() => import('~/components/AdSense'), { ssr: false });
+const AdSense = dynamic(() => import('../../../components/AdSense'), { ssr: false });
 
 const restaurantsFeatures = [
   {
