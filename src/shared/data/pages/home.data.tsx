@@ -48,9 +48,9 @@ export const heroHome: HeroProps = {
   subtitle: (
     <>
       <span className="hidden md:inline">
-        Nestled along the rocky shores of Casco Bay, Portland offers a perfect blend of small-town charm and big-city culture. From world-class seafood to stunning coastal views, discover why Portland is one of America's most beloved coastal destinations.
+        Nestled along the rocky shores of Casco Bay, Portland offers a perfect blend of small-town charm and big-city culture. From world-class seafood to stunning coastal views, discover why Portland is one of America&apos;s most beloved coastal destinations.
       </span>{' '}
-      Experience the best of Maine's vibrant city — where every corner offers a story, every meal is memorable, and every visit leaves you dreaming of the next.
+      Experience the best of Maine&apos;s vibrant city — where every corner offers a story, every meal is memorable, and every visit leaves you dreaming of the next.
     </>
   ),
   callToAction: {
@@ -125,7 +125,7 @@ export const featuresHome: FeaturesProps = {
     {
       title: 'Culinary Excellence',
       description:
-        'Portland is a food lover\'s paradise, boasting more restaurants per capita than any other city in America. From fresh seafood to innovative farm-to-table cuisine, every meal is a celebration of local flavors.',
+        'Portland is a food lover&apos;s paradise, boasting more restaurants per capita than any other city in America. From fresh seafood to innovative farm-to-table cuisine, every meal is a celebration of local flavors.',
       icon: IconComponents,
       callToAction: {
         text: 'View Restaurants',
@@ -135,7 +135,7 @@ export const featuresHome: FeaturesProps = {
     {
       title: 'Arts & Culture',
       description:
-        'Immerse yourself in Portland\'s vibrant arts scene, from the Portland Museum of Art to local galleries and theaters. The city\'s creative spirit is evident in every neighborhood.',
+        'Immerse yourself in Portland&apos;s vibrant arts scene, from the Portland Museum of Art to local galleries and theaters. The city&apos;s creative spirit is evident in every neighborhood.',
       icon: IconListCheck,
       callToAction: {
         text: 'Discover Arts',
@@ -180,26 +180,26 @@ export const contentHomeOne: ContentProps = {
   id: 'contentOne-on-home-one',
   hasBackground: true,
   header: {
-    title: 'A Food Lover\'s Paradise',
-    subtitle: 'Discover Portland\'s renowned culinary scene',
+    title: 'A Food Lover&apos;s Paradise',
+    subtitle: 'Discover Portland&apos;s renowned culinary scene',
     tagline: 'Dining',
   },
-  content: "Portland has earned its reputation as one of America's top food cities. From fresh seafood to craft breweries, every meal is an adventure waiting to be discovered.",
+  content: "Portland has earned its reputation as one of America&apos;s top food cities. From fresh seafood to craft breweries, every meal is an adventure waiting to be discovered.",
   items: [
     {
       title: 'World-Class Seafood',
       description:
-        'Experience the freshest lobster rolls at Eventide Oyster Co., where delicate lobster meat meets a warm, buttery bun. Don\'t miss the famous clam chowder and fresh oysters.',
+        'Experience the freshest lobster rolls at Eventide Oyster Co., where delicate lobster meat meets a warm, buttery bun. Don&apos;t miss the famous clam chowder and fresh oysters.',
     },
     {
       title: 'Craft Breweries',
       description:
-        'Portland is a beer lover\'s paradise with over 20 breweries. Visit Bissell Brothers, Allagash Brewing Company, and Austin Street Brewery for unique craft beers.',
+        'Portland is a beer lover&apos;s paradise with over 20 breweries. Visit Bissell Brothers, Allagash Brewing Company, and Austin Street Brewery for unique craft beers.',
     },
     {
       title: 'Farm-to-Table Dining',
       description:
-        'Enjoy locally sourced ingredients at Fore Street, where wood-fired cuisine features the best of Maine\'s seasonal produce and meats.',
+        'Enjoy locally sourced ingredients at Fore Street, where wood-fired cuisine features the best of Maine&apos;s seasonal produce and meats.',
     },
   ],
   image: {
@@ -215,7 +215,7 @@ export const contentHomeTwo: ContentProps = {
   id: 'contentOne-on-home-two',
   hasBackground: true,
   content:
-    'Beyond its culinary scene, Portland offers endless opportunities for exploration and adventure. From historic landmarks to outdoor activities, there\'s something for everyone.',
+    'Beyond its culinary scene, Portland offers endless opportunities for exploration and adventure. From historic landmarks to outdoor activities, there&apos;s something for everyone.',
   items: [
     {
       title: 'Historic Old Port',
@@ -289,13 +289,13 @@ export const testimonialsHome: TestimonialsProps = {
   header: {
     title: 'What visitors say about Portland',
     subtitle:
-      'From first-time visitors to longtime residents, everyone has a story to share about their Portland experience. Here\'s what people are saying about our beautiful city.',
+      'From first-time visitors to longtime residents, everyone has a story to share about their Portland experience. Here&apos;s what people are saying about our beautiful city.',
   },
   testimonials: [
     {
       name: 'Sarah Mitchell',
       job: 'Travel Blogger',
-      testimonial: `Portland exceeded all my expectations! The food scene is incredible, and the waterfront views are breathtaking. I can't wait to come back and explore more of this charming city.`,
+      testimonial: `Portland exceeded all my expectations! The food scene is incredible, and the waterfront views are breathtaking. I can&apos;t wait to come back and explore more of this charming city.`,
       image: {
         src: 'https://images.unsplash.com/photo-1619734086067-24bf8889ea7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
         alt: 'Sarah Mitchell',
@@ -315,7 +315,7 @@ export const testimonialsHome: TestimonialsProps = {
     {
       name: 'Emma Thompson',
       job: 'Local Artist',
-      testimonial: `The creative energy in Portland is inspiring. Between the galleries, street art, and local craftspeople, there's always something new to discover. It's a city that celebrates creativity in all forms.`,
+      testimonial: `The creative energy in Portland is inspiring. Between the galleries, street art, and local craftspeople, there&apos;s always something new to discover. It&apos;s a city that celebrates creativity in all forms.`,
       image: {
         src: 'https://images.unsplash.com/photo-1659057106920-da022cfbc0cd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
         alt: 'Emma Thompson',
@@ -335,7 +335,7 @@ export const testimonialsHome: TestimonialsProps = {
     {
       name: 'Lisa Rodriguez',
       job: 'Beer Enthusiast',
-      testimonial: `As a craft beer lover, Portland is paradise. The variety and quality of local breweries is impressive, and the beer community is welcoming. Don't miss the brewery tours and tasting rooms!`,
+      testimonial: `As a craft beer lover, Portland is paradise. The variety and quality of local breweries is impressive, and the beer community is welcoming. Don&apos;t miss the brewery tours and tasting rooms!`,
       image: {
         src: 'https://images.unsplash.com/photo-1694287877106-ee22f764aef1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
         alt: 'Lisa Rodriguez',
@@ -345,7 +345,7 @@ export const testimonialsHome: TestimonialsProps = {
     {
       name: 'James Anderson',
       job: 'History Buff',
-      testimonial: `The historic architecture and maritime heritage make Portland fascinating to explore. The Old Port's cobblestone streets and working waterfront tell stories of the city's rich past.`,
+      testimonial: `The historic architecture and maritime heritage make Portland fascinating to explore. The Old Port&apos;s cobblestone streets and working waterfront tell stories of the city&apos;s rich past.`,
       image: {
         src: 'https://images.unsplash.com/photo-1665984867752-6370ab5ae35e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
         alt: 'James Anderson',
@@ -376,7 +376,7 @@ export const faqs2Home: FAQsProps = {
     },
     {
       title: 'What are the must-try foods in Portland?',
-      description: `Don't miss the lobster rolls, fresh oysters, and clam chowder. Portland is also known for its craft breweries, artisanal coffee shops, and farm-to-table restaurants. The food scene is diverse and innovative.`,
+      description: `Don&apos;t miss the lobster rolls, fresh oysters, and clam chowder. Portland is also known for its craft breweries, artisanal coffee shops, and farm-to-table restaurants. The food scene is diverse and innovative.`,
     },
     {
       title: 'Are there good shopping options?',
@@ -388,7 +388,7 @@ export const faqs2Home: FAQsProps = {
     },
     {
       title: 'Is Portland family-friendly?',
-      description: `Absolutely! Families can enjoy the Children's Museum, local parks, boat tours, and many restaurants welcome children. The city offers a perfect mix of educational and fun activities for all ages.`,
+      description: `Absolutely! Families can enjoy the Children&apos;s Museum, local parks, boat tours, and many restaurants welcome children. The city offers a perfect mix of educational and fun activities for all ages.`,
     },
   ],
 };
