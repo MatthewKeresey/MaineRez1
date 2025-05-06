@@ -1,5 +1,7 @@
+'use client';
+
 import { useEffect } from 'react';
-import { useRouter } from 'next/router';
+import { usePathname } from 'next/navigation';
 
 interface AdSenseProps {
   adSlot: string;
@@ -20,7 +22,7 @@ const AdSense: React.FC<AdSenseProps> = ({
   style = {},
   className = ''
 }) => {
-  const router = useRouter();
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleRouteChange = () => {
@@ -35,13 +37,7 @@ const AdSense: React.FC<AdSenseProps> = ({
 
     // Load ad when component mounts
     handleRouteChange();
-
-    // Refresh on route change
-    router.events.on('routeChangeComplete', handleRouteChange);
-    return () => {
-      router.events.off('routeChangeComplete', handleRouteChange);
-    };
-  }, [router]);
+  }, [pathname]); // Re-run effect when pathname changes
 
   return (
     <div className={`adsbygoogle-container ${className}`}>
