@@ -655,28 +655,28 @@ export const contactHome: ContactProps = {
 
 // CallToAction data *******************
 export const callToAction2Home: CallToActionProps = {
-  title: 'Next.js + Tailwind CSS',
+  title: 'Discover Portland',
   subtitle:
-    'Aliquam sodales porttitor lacus ac tristique. Etiam posuere elit at leo feugiat sodales. Sed ac mauris quis sem tempor condimentum non at metus.',
+    'Experience the vibrant culture, stunning coastal views, and world-class dining that make Portland, Maine a must-visit destination.',
   callToAction: {
-    text: 'Get template',
-    href: 'https://github.com/onwidget/tailnext',
+    text: 'Plan Your Visit',
+    href: '/attractions',
     icon: IconDownload,
   },
   items: [
     {
-      title: 'Get template',
-      description: 'Aliquam sodales est lectus, quis.',
-      href: 'https://github.com/onwidget/tailnext',
+      title: 'Local Attractions',
+      description: 'Explore Portland\'s historic landmarks, art galleries, and scenic waterfront.',
+      href: '/attractions',
     },
     {
-      title: 'Learn more',
-      description: 'Class aptent taciti sociosqu ad litora torquent per conubia.',
-      href: '/',
+      title: 'Dining Guide',
+      description: 'Discover Portland\'s renowned restaurants, breweries, and food scene.',
+      href: '/dining',
     },
     {
-      title: 'Subscribe',
-      description: 'Morbi orci nunc, euismod ac dui id, convallis.',
+      title: 'Stay Updated',
+      description: 'Get the latest news about events, festivals, and special offers.',
       form: {
         icon: IconMail,
         input: {
