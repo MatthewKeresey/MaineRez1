@@ -183,8 +183,7 @@ export const contentHomeOne: ContentProps = {
     subtitle: 'Discover Portland\'s renowned culinary scene',
     tagline: 'Dining',
   },
-  content:
-    'Portland has earned its reputation as one of America's top food cities. From fresh seafood to craft breweries, every meal is an adventure waiting to be discovered.',
+  content: "Portland has earned its reputation as one of America's top food cities. From fresh seafood to craft breweries, every meal is an adventure waiting to be discovered.",
   items: [
     {
       title: 'World-Class Seafood',
