@@ -464,11 +464,11 @@ export const teamHome: TeamProps = {
   },
   teams: [
     {
-      name: 'Cindy Belcher',
-      occupation: 'SEO Consultant',
+      name: 'Chef Emily Carter',
+      occupation: 'Executive Chef, Portland Eats',
       image: {
-        src: 'https://images.unsplash.com/photo-1637858868799-7f26a0640eb6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
-        alt: 'Cindy Belcher',
+        src: '/images/MaineRez1.png',
+        alt: 'MaineRez Logo',
       },
       items: [
         {
@@ -489,11 +489,11 @@ export const teamHome: TeamProps = {
       ],
     },
     {
-      name: 'Toby Foster',
-      occupation: 'Marketing Tech',
+      name: 'Ava Thompson',
+      occupation: 'Local Artist & Gallery Owner',
       image: {
-        src: 'https://images.unsplash.com/photo-1614583224978-f05ce51ef5fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2172&q=80',
-        alt: 'Toby Foster',
+        src: '/images/MaineRez1.png',
+        alt: 'MaineRez Logo',
       },
       items: [
         {
@@ -514,11 +514,11 @@ export const teamHome: TeamProps = {
       ],
     },
     {
-      name: 'Clark Bourne',
-      occupation: 'Content Manager',
+      name: 'Marcus Lee',
+      occupation: 'Craft Brewer & Owner, Casco Bay Brewing',
       image: {
-        src: 'https://images.unsplash.com/photo-1639628735078-ed2f038a193e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80',
-        alt: 'Clark Bourne',
+        src: '/images/MaineRez1.png',
+        alt: 'MaineRez Logo',
       },
       items: [
         {
@@ -539,11 +539,11 @@ export const teamHome: TeamProps = {
       ],
     },
     {
-      name: 'Bella Chase',
-      occupation: 'UX Designer',
+      name: 'Sophie Bennett',
+      occupation: 'Outdoor Guide & Adventure Blogger',
       image: {
-        src: 'https://images.unsplash.com/photo-1628260412297-a3377e45006f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80',
-        alt: 'Bella Chase',
+        src: '/images/MaineRez1.png',
+        alt: 'MaineRez Logo',
       },
       items: [
         {
