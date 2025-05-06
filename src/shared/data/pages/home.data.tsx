@@ -459,7 +459,7 @@ export const teamHome: TeamProps = {
   header: {
     title: 'Team Members',
     subtitle:
-      'Suspendisse in dui nibh. Donec enim leo, sodales et egestas id, malesuada non diam. Sed dapibus velit et mauris condimentum, vel imperdiet erat egestas.',
+      'Our team is dedicated to providing you with the best possible experience in Portland, Maine.',
     // tagline: 'Team',
   },
   teams: [
