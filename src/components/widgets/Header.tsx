@@ -62,9 +62,9 @@ const Header = () => {
       } ${isToggleMenuOpen ? 'h-screen md:h-auto' : 'h-auto'}`}
       id="header"
     >
-      <div className="mx-auto w-full max-w-7xl md:flex md:justify-between md:py-3.5 md:px-4">
+      <div className="mx-auto w-full max-w-7xl md:flex md:justify-between md:py-1 md:px-4">
         <div
-          className={`flex justify-between py-3 px-3 md:py-0 md:px-0 ${
+          className={`flex justify-between py-1 px-3 md:py-0 md:px-0 ${
             isToggleMenuOpen
               ? 'md:bg-transparent md:dark:bg-transparent md:border-none bg-white dark:bg-slate-900 border-b border-gray-200 dark:border-slate-600'
               : ''
@@ -99,7 +99,7 @@ const Header = () => {
                   {links && links.length ? (
                     <>
                       <button
-                        className="flex items-center px-4 py-3 font-medium transition duration-150 ease-in-out hover:text-gray-900 dark:hover:text-white"
+                        className="flex items-center px-4 py-2 font-medium transition duration-150 ease-in-out hover:text-gray-900 dark:hover:text-white"
                         onClick={() => handleDropdownOnClick(index)}
                       >
                         {label}{' '}
@@ -133,7 +133,7 @@ const Header = () => {
                     </>
                   ) : (
                     <Link
-                      className="flex items-center px-4 py-3 font-medium transition duration-150 ease-in-out hover:text-gray-900 dark:hover:text-white"
+                      className="flex items-center px-4 py-2 font-medium transition duration-150 ease-in-out hover:text-gray-900 dark:hover:text-white"
                       href={href as string}
                       onClick={() => (isToggleMenuOpen ? handleToggleMenuOnClick() : handleDropdownOnClick(index))}
                     >
