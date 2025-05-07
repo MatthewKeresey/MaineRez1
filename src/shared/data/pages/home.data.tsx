@@ -622,21 +622,21 @@ export const teamHome: TeamProps = {
 export const contactHome: ContactProps = {
   hasBackground: true,
   header: {
-    title: 'Get in Touch',
-    subtitle: 'Want to be featured on our website or need more information?',
-    tagline: 'Contact',
+    title: 'Contact Us',
+    subtitle: 'Have questions about Portland? We\'re here to help!',
+    tagline: 'Get in Touch',
   },
   content:
-    'Whether you\'re a local business looking to be featured, a visitor seeking more information, or a resident with questions about Portland, we\'d love to hear from you. Send us an email and we\'ll get back to you as soon as possible.',
+    'Whether you\'re planning a visit to Portland, looking for local business information, or have questions about our city, we\'d love to hear from you. Our team of local experts is ready to help make your Portland experience unforgettable.',
   items: [
     {
       title: 'Email Us',
-      description: ['For business features and inquiries', 'Portland@mainerez.com'],
+      description: ['For visitor information', 'info@portlandguide.com'],
       icon: IconMail,
     },
     {
       title: 'Contact',
-      description: ['For general information', 'Portland@mainerez.com'],
+      description: ['For business inquiries', 'business@portlandguide.com'],
       icon: IconPhoneCall,
     },
     {
@@ -665,7 +665,7 @@ export const contactHome: ContactProps = {
       cols: 30,
       rows: 5,
       name: 'textarea',
-      placeholder: 'Tell us about your business or inquiry...',
+      placeholder: 'Tell us about your Portland questions or interests...',
     },
     btn: {
       title: 'Send Message',

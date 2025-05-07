@@ -7,7 +7,9 @@ export const attractionsContent: ContentProps = {
   items: [
     {
       title: 'Portland Head Light',
-      description: "Maine's most iconic lighthouse, offering stunning ocean views and history.",
+      description: 'Historic lighthouse with stunning ocean views',
+      src: '/images/casco-bay.jpg',
+      alt: 'Portland Head Light',
     },
     {
       title: 'Old Port District',

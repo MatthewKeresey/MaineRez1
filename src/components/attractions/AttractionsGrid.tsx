@@ -12,8 +12,8 @@ interface AttractionItem {
 const attractions: AttractionItem[] = [
   {
     title: 'Portland Head Light',
-    description: "Maine's most iconic lighthouse, offering stunning ocean views and history.",
-    imageSrc: '/images/portland-head-light.jpg',
+    description: 'Historic lighthouse with stunning ocean views',
+    imageSrc: '/images/casco-bay.jpg',
     href: '/attractions/portland-head-light',
   },
   {

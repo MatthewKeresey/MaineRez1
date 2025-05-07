@@ -6,8 +6,8 @@ const AdSense = dynamic(() => import('../../../components/AdSense'), { ssr: fals
 const attractionsFeatures = [
   {
     title: 'Portland Head Light',
-    description: "Maine's most iconic lighthouse, offering stunning ocean views and history.",
-    img: '/images/portland-head-light.jpg',
+    description: 'Historic lighthouse with stunning ocean views',
+    img: '/images/casco-bay.jpg',
   },
   {
     title: 'Old Port District',
