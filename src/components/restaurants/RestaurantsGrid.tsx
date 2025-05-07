@@ -25,25 +25,25 @@ const restaurants: RestaurantItem[] = [
   {
     title: 'Allagash Brewing',
     description: "Renowned brewery offering tours, tastings, and a welcoming beer garden experience.",
-    imageSrc: '/images/allagash.jpg',
+    imageSrc: '/images/eventide.jpg',
     href: '/restaurants/allagash',
   },
   {
     title: 'Farm-to-Table Experience',
     description: "Portland's finest seasonal ingredients transformed into memorable dining experiences.",
-    imageSrc: '/images/farm-table.jpg',
+    imageSrc: '/images/eventide.jpg',
     href: '/restaurants/farm-to-table',
   },
   {
     title: 'Old Port Dining',
     description: "Explore the historic district's diverse restaurant scene, from seafood shacks to fine dining.",
-    imageSrc: '/images/old-port.jpg',
+    imageSrc: '/images/old-port-shopping.jpg',
     href: '/restaurants/old-port',
   },
   {
     title: 'Local Food Scene',
     description: "Discover Portland's vibrant food markets, food trucks, and casual eateries.",
-    imageSrc: '/images/market.jpg',
+    imageSrc: '/images/portland-market.jpg',
     href: '/restaurants/local-food',
   },
 ];

@@ -25,7 +25,7 @@ const artItems: ArtItem[] = [
   {
     title: 'Local Galleries',
     description: "Explore diverse art galleries showcasing local and international artists.",
-    imageSrc: '/images/gallery.jpg',
+    imageSrc: '/images/local-gallery.jpg',
     href: '/arts/galleries',
   },
   {
@@ -37,13 +37,13 @@ const artItems: ArtItem[] = [
   {
     title: 'Portland Museum of Art',
     description: "Maine's largest and oldest public art institution, featuring an impressive collection.",
-    imageSrc: '/images/museum.jpg',
+    imageSrc: '/images/portland-museum.jpg',
     href: '/arts/museum',
   },
   {
     title: 'Cultural Events',
     description: "Year-round festivals, exhibitions, and performances celebrating arts and culture.",
-    imageSrc: '/images/events.jpg',
+    imageSrc: '/images/arts-district.jpg',
     href: '/arts/events',
   },
 ];

@@ -13,25 +13,25 @@ const shoppingItems: ShoppingItem[] = [
   {
     title: 'Old Port Shopping',
     description: "Explore unique boutiques and local shops in Portland's historic district.",
-    imageSrc: '/images/old-port.jpg',
+    imageSrc: '/images/old-port-shopping.jpg',
     href: '/shopping/old-port',
   },
   {
     title: 'Local Crafts',
     description: "Discover handmade Maine crafts, artwork, and unique local products.",
-    imageSrc: '/images/crafts.jpg',
+    imageSrc: '/images/local-crafts.jpg',
     href: '/shopping/crafts',
   },
   {
     title: 'Portland Markets',
     description: "Visit local markets featuring fresh produce, artisanal foods, and crafts.",
-    imageSrc: '/images/market.jpg',
+    imageSrc: '/images/portland-market.jpg',
     href: '/shopping/markets',
   },
   {
     title: 'Maine Mall',
     description: "South Portland's premier shopping destination with major retailers.",
-    imageSrc: '/images/mall.jpg',
+    imageSrc: '/images/maine-mall.jpg',
     href: '/shopping/maine-mall',
   },
   {
@@ -43,7 +43,7 @@ const shoppingItems: ShoppingItem[] = [
   {
     title: 'Waterfront Shops',
     description: "Shop with ocean views in Portland's working waterfront district.",
-    imageSrc: '/images/waterfront.jpg',
+    imageSrc: '/images/casco-bay.jpg',
     href: '/shopping/waterfront',
   },
 ];

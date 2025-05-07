@@ -19,31 +19,31 @@ const outdoorItems: OutdoorItem[] = [
   {
     title: 'Eastern Promenade Trail',
     description: "A scenic 2.1-mile trail offering stunning views of Casco Bay and Portland's waterfront.",
-    imageSrc: '/images/eastern-prom.jpg',
+    imageSrc: '/images/eastern-promenade.jpg',
     href: '/outdoors/eastern-prom',
   },
   {
     title: 'Island Hopping',
     description: "Take the ferry to explore Casco Bay's beautiful islands and beaches.",
-    imageSrc: '/images/islands.jpg',
+    imageSrc: '/images/island-exploration.jpg',
     href: '/outdoors/islands',
   },
   {
     title: 'Hiking Trails',
     description: "Discover Portland's network of urban and coastal hiking trails.",
-    imageSrc: '/images/hiking.jpg',
+    imageSrc: '/images/hiking-trail.jpg',
     href: '/outdoors/hiking',
   },
   {
     title: 'Beach Activities',
     description: "Enjoy swimming, sunbathing, and beachcombing at Portland's scenic beaches.",
-    imageSrc: '/images/beach.jpg',
+    imageSrc: '/images/kayaking-casco.jpg',
     href: '/outdoors/beaches',
   },
   {
     title: 'Harbor Tours',
     description: "Experience Portland from the water with scenic harbor and lighthouse tours.",
-    imageSrc: '/images/harbor.jpg',
+    imageSrc: '/images/casco-bay.jpg',
     href: '/outdoors/harbor-tours',
   },
 ];
