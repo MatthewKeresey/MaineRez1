@@ -384,21 +384,20 @@ export const faqs2Home: FAQsProps = {
   ],
 };
 
-// Pricing data on Home page *******************
-export const pricingHome: PricingProps = {
-  id: 'pricing-on-home',
+// Featured Businesses data on Home page *******************
+export const featuredBusinessesHome = {
+  id: 'featured-businesses-on-home',
   hasBackground: true,
   header: {
     title: 'Featured Local Businesses',
     subtitle: 'Discover Portlands finest restaurants, attractions, and activities.',
     tagline: 'Local Favorites',
   },
-  prices: [
+  businesses: [
     {
       title: 'Eventide Oyster Co.',
-      price: 0,
-      period: 'Featured Restaurant',
-      items: [
+      category: 'Featured Restaurant',
+      features: [
         { description: 'Award-winning seafood' },
         { description: 'Fresh oysters daily' },
         { description: 'Historic Old Port location' },
@@ -412,9 +411,8 @@ export const pricingHome: PricingProps = {
     },
     {
       title: 'Portland Museum of Art',
-      price: 0,
-      period: 'Featured Attraction',
-      items: [
+      category: 'Featured Attraction',
+      features: [
         { description: 'World-class exhibitions' },
         { description: 'Local & international artists' },
         { description: 'Art classes & events' },
@@ -429,9 +427,8 @@ export const pricingHome: PricingProps = {
     },
     {
       title: 'Casco Bay Kayak Tours',
-      price: 0,
-      period: 'Featured Activity',
-      items: [
+      category: 'Featured Activity',
+      features: [
         { description: 'Guided kayak adventures' },
         { description: 'Island exploration' },
         { description: 'Sunset & sunrise tours' },
