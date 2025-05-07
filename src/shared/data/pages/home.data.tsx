@@ -46,13 +46,13 @@ export const heroHome: HeroProps = {
     </>
   ),
   callToAction: {
-    text: 'Explore Portland',
+    text: 'Explore Attractions',
     href: '/attractions',
     icon: IconMapPin,
   },
   callToAction2: {
-    text: 'Book Now',
-    href: '/book',
+    text: 'Find Restaurants',
+    href: '/restaurants',
   },
   image: {
     src: '/images/casco-bay.jpg',
