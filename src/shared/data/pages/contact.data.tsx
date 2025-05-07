@@ -4,14 +4,14 @@ import { HeroProps } from '~/shared/types';
 
 // Hero data on Contact page *******************
 export const heroContact: HeroProps = {
-  title: 'Get in touch with us',
+  title: 'Contact Portland Guide',
   subtitle: (
     <>
-      <span className="hidden md:inline">{`Thank you for considering us for your project! We're excited to hear from you.`}</span>{' '}
-      {`Our team can assist you in building your dream website.`}
+      <span className="hidden md:inline">{`Have questions about visiting Portland? We're here to help!`}</span>{' '}
+      {`Our local experts can assist you in planning your perfect Portland experience.`}
     </>
   ),
-  tagline: 'Demo Contact Page',
+  tagline: 'Get in Touch',
 };
 
 // Contact data on Contact page *******************
@@ -74,35 +74,35 @@ export const contactPage: ContactProps = {
 export const features2Contact: FeaturesProps = {
   columns: 3,
   header: {
-    title: 'Support Center',
-    subtitle: 'Looking for something in particular?',
+    title: 'Visit Portland',
+    subtitle: 'Need help planning your trip?',
   },
   items: [
     {
-      title: 'Have a question?',
-      description: 'See our frequently asked questions',
+      title: 'Visitor Information',
+      description: 'Find answers to common questions',
       icon: IconHelp,
       callToAction: {
-        text: 'Go to FAQ page',
-        href: '/faqs',
+        text: 'View Visitor Guide',
+        href: '/guide',
       },
     },
     {
-      title: 'Chat with us',
-      description: 'Live chat with our support team',
+      title: 'Local Events',
+      description: 'Discover upcoming events in Portland',
       icon: IconMessages,
       callToAction: {
-        text: 'Write to us',
-        href: '/',
+        text: 'Browse Events',
+        href: '/events',
       },
     },
     {
-      title: 'Get help',
-      description: 'Speak to our team today',
+      title: 'Local Support',
+      description: 'Get help from our local experts',
       icon: IconHeadset,
       callToAction: {
-        text: 'Call us',
-        href: '/',
+        text: 'Contact Us',
+        href: '/contact',
       },
     },
   ],
