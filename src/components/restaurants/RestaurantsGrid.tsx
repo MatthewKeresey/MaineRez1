@@ -25,13 +25,13 @@ const restaurants: RestaurantItem[] = [
   {
     title: 'Allagash Brewing',
     description: "Renowned brewery offering tours, tastings, and a welcoming beer garden experience.",
-    imageSrc: '/images/eventide.jpg',
+    imageSrc: '/images/eventide-oyster.jpg',
     href: '/restaurants/allagash',
   },
   {
     title: 'Farm-to-Table Experience',
     description: "Portland's finest seasonal ingredients transformed into memorable dining experiences.",
-    imageSrc: '/images/eventide.jpg',
+    imageSrc: '/images/restaurants-hero.jpg',
     href: '/restaurants/farm-to-table',
   },
   {
