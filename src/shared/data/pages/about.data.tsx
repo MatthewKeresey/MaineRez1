@@ -51,8 +51,8 @@ export const hero2About: HeroProps = {
     href: '/contact',
   },
   image: {
-    src: '/images/portland-head-light.jpg',
-    alt: 'Portland Head Light',
+    src: '/images/casco-bay.jpg',
+    alt: 'Portland Harbor',
   },
 };
 
@@ -368,7 +368,7 @@ export const testimonials2About: TestimonialsProps = {
       job: 'Photography Enthusiast',
       testimonial: `Thanks to MaineRez, I captured the most beautiful spots in Portland. Their local insights helped me find the perfect locations for stunning photos.`,
       image: {
-        src: '/images/portland-head-light.jpg',
+        src: '/images/casco-bay.jpg',
         alt: 'James Anderson',
       },
       href: '/',
