@@ -40,9 +40,9 @@ export const heroHome: HeroProps = {
   subtitle: (
     <>
       <span className="hidden md:inline">
-        Nestled along the rocky shores of Casco Bay, Portland offers a perfect blend of small-town charm and big-city culture. From world-class seafood to stunning coastal views, discover why Portland is one of America's most beloved coastal destinations.
+        Nestled along the rocky shores of Casco Bay, Portland offers a perfect blend of small-town charm and big-city culture. From world-class seafood to stunning coastal views, discover why Portland is one of Americas most beloved coastal destinations.
       </span>{' '}
-      Experience the best of Maine's vibrant city — where every corner offers a story, every meal is memorable, and every visit leaves you dreaming of the next.
+      Experience the best of Maines vibrant city — where every corner offers a story, every meal is memorable, and every visit leaves you dreaming of the next.
     </>
   ),
   callToAction: {
