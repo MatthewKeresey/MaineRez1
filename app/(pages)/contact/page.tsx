@@ -1,22 +1,22 @@
-import type { Metadata } from 'next';
+import { Metadata } from 'next';
 
-import Contact2 from '~/components/widgets/Contact2';
+import Contact from '~/components/widgets/Contact';
 import Features2 from '~/components/widgets/Features2';
 import Hero from '~/components/widgets/Hero';
-import { heroContact, contact2Contact, features2Contact } from '~/shared/data/pages/contact.data';
+import { heroContact, contactPage, features2Contact } from '~/shared/data/pages/contact.data';
 
 export const metadata: Metadata = {
   title: 'Contact us',
 };
 
-const Page = () => {
+const ContactPage = () => {
   return (
     <>
       <Hero {...heroContact} />
-      <Contact2 {...contact2Contact} />
+      <Contact {...contactPage} />
       <Features2 {...features2Contact} />
     </>
   );
 };
 
-export default Page;
+export default ContactPage;
