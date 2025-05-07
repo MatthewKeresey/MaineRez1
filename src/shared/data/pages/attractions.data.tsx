@@ -3,17 +3,15 @@ import { ContentProps } from '~/shared/types';
 export const attractionsContent: ContentProps = {
   id: 'attractions-grid',
   hasBackground: true,
-  content: 'Discover Portland\'s Most Popular Attractions',
+  content: 'Discover Portlands Most Popular Attractions',
   items: [
     {
       title: 'Portland Head Light',
       description: 'Historic lighthouse with stunning ocean views',
-      src: '/images/casco-bay.jpg',
-      alt: 'Portland Head Light',
     },
     {
       title: 'Old Port District',
-      description: "Cobblestone streets, unique shops, and vibrant nightlife in Portland's historic heart.",
+      description: "Cobblestone streets, unique shops, and vibrant nightlife in Portlands historic heart.",
     },
     {
       title: 'Eastern Promenade',
@@ -33,7 +31,7 @@ export const attractionsContent: ContentProps = {
     }
   ],
   image: {
-    src: '/images/portland-head-light.jpg',
+    src: '/images/casco-bay.jpg',
     alt: 'Portland Attractions'
   },
   isReversed: false,
