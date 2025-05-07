@@ -243,7 +243,7 @@ export const stepsHome: StepsProps = {
   isReversed: false,
   isImageDisplayed: true,
   image: {
-    src: '/images/portland-market.jpg',
+    src: '/images/eastern-promenade.jpg',
     alt: 'Steps image',
   },
   header: {
@@ -317,7 +317,7 @@ export const testimonialsHome: TestimonialsProps = {
       job: 'Outdoor Enthusiast',
       testimonial: `The outdoor opportunities here are endless. I spent my days kayaking in the harbor and hiking the Eastern Promenade, then enjoyed amazing seafood dinners. Portland offers the perfect mix of adventure and relaxation.`,
       image: {
-        src: 'https://images.unsplash.com/photo-1572417884940-c24659be6068?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
+        src: '/images/eastern-promenade.jpg',
         alt: 'David Wilson',
       },
       href: '/',
@@ -458,8 +458,8 @@ export const teamHome: TeamProps = {
       name: 'Chef Emily Carter',
       occupation: 'Executive Chef, Portland Eats',
       image: {
-        src: '/images/portland-market.jpg',
-        alt: 'MaineRez Logo',
+        src: '/images/eastern-promenade.jpg',
+        alt: 'Chef Emily Carter',
       },
       items: [
         {
