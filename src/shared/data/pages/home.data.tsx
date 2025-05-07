@@ -40,9 +40,9 @@ export const heroHome: HeroProps = {
   subtitle: (
     <>
       <span className="hidden md:inline">
-        Nestled along the rocky shores of Casco Bay, Portland offers a perfect blend of small-town charm and big-city culture. From world-class seafood to stunning coastal views, discover why Portland is one of America&apos;s most beloved coastal destinations.
+        Nestled along the rocky shores of Casco Bay, Portland offers a perfect blend of small-town charm and big-city culture. From world-class seafood to stunning coastal views, discover why Portland is one of America's most beloved coastal destinations.
       </span>{' '}
-      Experience the best of Maine&apos;s vibrant city — where every corner offers a story, every meal is memorable, and every visit leaves you dreaming of the next.
+      Experience the best of Maine's vibrant city — where every corner offers a story, every meal is memorable, and every visit leaves you dreaming of the next.
     </>
   ),
   callToAction: {
@@ -53,6 +53,7 @@ export const heroHome: HeroProps = {
   callToAction2: {
     text: 'Find Restaurants',
     href: '/restaurants',
+    icon: IconMapPin,
   },
   image: {
     src: '/images/casco-bay.jpg',
@@ -172,8 +173,8 @@ export const contentHomeOne: ContentProps = {
   id: 'contentOne-on-home-one',
   hasBackground: true,
   header: {
-    title: 'A Food Lover&apos;s Paradise',
-    subtitle: 'Discover Portland&apos;s renowned culinary scene',
+    title: 'A Food Lover\'s Paradise',
+    subtitle: 'Discover Portland\'s renowned culinary scene',
     tagline: 'Dining',
   },
   content: "Portland has earned its reputation as one of America&apos;s top food cities. From fresh seafood to craft breweries, every meal is an adventure waiting to be discovered.",
