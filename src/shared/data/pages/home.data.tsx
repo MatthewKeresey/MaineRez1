@@ -394,7 +394,6 @@ export const pricingHome: PricingProps = {
   prices: [
     {
       title: 'Eventide Oyster Co.',
-      price: 0,
       period: 'Featured Restaurant',
       items: [
         { description: 'Award-winning seafood' },
@@ -410,7 +409,6 @@ export const pricingHome: PricingProps = {
     },
     {
       title: 'Portland Museum of Art',
-      price: 0,
       period: 'Featured Attraction',
       items: [
         { description: 'World-class exhibitions' },
@@ -427,7 +425,6 @@ export const pricingHome: PricingProps = {
     },
     {
       title: 'Casco Bay Kayak Tours',
-      price: 0,
       period: 'Featured Activity',
       items: [
         { description: 'Guided kayak adventures' },
