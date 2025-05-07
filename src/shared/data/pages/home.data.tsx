@@ -72,7 +72,7 @@ export const socialProofHome: SocialProofProps = {
     },
     {
       link: '/dining',
-      src: '/images/restaurants-hero.jpg',
+      src: '/images/eventide-oyster.jpg',
       alt: 'Portland Food Scene',
     },
     {
@@ -229,7 +229,7 @@ export const contentHomeTwo: ContentProps = {
     },
   ],
   image: {
-    src: '/images/old-port.jpg',
+    src: '/images/old-port-shopping.jpg',
     alt: 'Portland Attractions',
   },
   isReversed: true,
@@ -452,14 +452,13 @@ export const teamHome: TeamProps = {
     title: 'Team Members',
     subtitle:
       'Our team is dedicated to providing you with the best possible experience in Portland, Maine.',
-    // tagline: 'Team',
   },
   teams: [
     {
       name: 'Chef Emily Carter',
       occupation: 'Executive Chef, Portland Eats',
       image: {
-        src: '/images/MaineRez1.png',
+        src: '/images/portland-market.jpg',
         alt: 'MaineRez Logo',
       },
       items: [
@@ -484,7 +483,7 @@ export const teamHome: TeamProps = {
       name: 'Ava Thompson',
       occupation: 'Local Artist & Gallery Owner',
       image: {
-        src: '/images/MaineRez1.png',
+        src: '/images/local-gallery.jpg',
         alt: 'MaineRez Logo',
       },
       items: [
@@ -509,7 +508,7 @@ export const teamHome: TeamProps = {
       name: 'Marcus Lee',
       occupation: 'Craft Brewer & Owner, Casco Bay Brewing',
       image: {
-        src: '/images/MaineRez1.png',
+        src: '/images/eventide-oyster.jpg',
         alt: 'MaineRez Logo',
       },
       items: [
@@ -534,7 +533,7 @@ export const teamHome: TeamProps = {
       name: 'Sophie Bennett',
       occupation: 'Outdoor Guide & Adventure Blogger',
       image: {
-        src: '/images/MaineRez1.png',
+        src: '/images/kayaking-casco.jpg',
         alt: 'MaineRez Logo',
       },
       items: [

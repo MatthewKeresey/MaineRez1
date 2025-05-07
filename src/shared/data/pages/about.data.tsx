@@ -8,7 +8,6 @@ import {
   TeamProps,
   TestimonialsProps,
 } from '~/shared/types';
-import hero2Img from '~/assets/images/hero2.jpg';
 import {
   IconAdjustments,
   IconAward,
@@ -38,22 +37,22 @@ import {
 
 // Hero2 data on About page *******************
 export const hero2About: HeroProps = {
-  title: 'Great companies are made by great people',
+  title: 'Discover Portland, Maine with MaineRez',
   subtitle:
-    'Vivamus venenatis, lectus a pellentesque placerat, felis tellus ultrices eros, et aliquam sapien nibh sed sem. Fusce ut ante eget purus viverra malesuada. Morbi eget mi maximus, ultricies urna eget, tristique lorem. Fusce cursus venenatis quam, a blandit lectus vulputate id. Praesent id interdum orci, vitae condimentum dui.',
-  tagline: 'About Us Demo Page',
+    'Welcome to MaineRez, your ultimate guide to exploring Portland, Maine. We\'re passionate about showcasing the best of our vibrant coastal city - from its world-class dining scene and historic landmarks to its stunning natural beauty and rich cultural heritage.',
+  tagline: 'About MaineRez',
   callToAction: {
-    text: 'View jobs',
-    href: 'https://www.linkedin.com/',
-    targetBlank: true,
+    text: 'Explore Portland',
+    href: '/attractions',
+    targetBlank: false,
   },
   callToAction2: {
     text: 'Contact us',
     href: '/contact',
   },
   image: {
-    src: hero2Img,
-    alt: 'Hero TailNext',
+    src: '/images/portland-head-light.jpg',
+    alt: 'Portland Head Light',
   },
 };
 
@@ -63,20 +62,20 @@ export const statsAbout: StatsProps = {
   hasBackground: true,
   items: [
     {
-      title: 13269,
-      description: 'Downloads',
+      title: 200,
+      description: 'Local Businesses',
     },
     {
-      title: 24.8,
-      description: 'Stars',
+      title: 50,
+      description: 'Restaurants',
     },
     {
-      title: 1767.77,
-      description: 'Forks',
+      title: 20,
+      description: 'Breweries',
     },
     {
-      title: 484000,
-      description: 'Users',
+      title: 1000,
+      description: 'Happy Visitors',
     },
   ],
 };
@@ -86,9 +85,9 @@ export const featuresFourAbout: FeaturesProps = {
   id: 'features-four-on-about',
   hasBackground: false,
   header: {
-    title: 'Our mission',
+    title: 'Our Mission',
     subtitle:
-      'Quisque laoreet nisi et lectus consectetur, at placerat libero dictum. Donec sed hendrerit turpis. Nunc vel nibh blandit, hendrerit turpis non, mattis magna. Duis feugiat dui mi, eget iaculis ligula gravida congue. Nam quis mauris id eros imperdiet imperdiet. In et dolor non nisi vestibulum rhoncus nec eget dolor.',
+      'At MaineRez, we\'re dedicated to helping visitors and locals alike discover the authentic Portland experience. We believe in showcasing the city\'s unique character, supporting local businesses, and providing valuable insights that make every visit memorable.',
     tagline: 'Mission and Values',
   },
 };
@@ -98,42 +97,40 @@ export const featuresFourAboutTwo: FeaturesProps = {
   id: 'features-four-on-about-two',
   hasBackground: false,
   header: {
-    title: 'Our values',
-    subtitle: 'Etiam tellus tortor, mattis id mauris et, lobortis ullamcorper nunc.',
+    title: 'Our Values',
+    subtitle: 'We\'re committed to promoting Portland\'s best features while maintaining authenticity and local perspective.',
   },
   isAfterContent: true,
   columns: 2,
   items: [
     {
-      title: 'Customer-centricity',
-      description: 'Nullam non sodales massa. Ut justo neque, elementum et vehicula vel, pellentesque non orci.',
+      title: 'Local Expertise',
+      description: 'Our team consists of Portland natives and long-time residents who know the city inside and out.',
       icon: IconUser,
     },
     {
-      title: 'Innovation and adaptability',
-      description:
-        'Etiam ornare, purus nec venenatis porttitor, velit leo convallis dui, at porttitor nibh tortor quis velit.',
+      title: 'Authentic Experiences',
+      description: 'We focus on genuine local experiences that showcase Portland\'s true character and charm.',
       icon: IconBulb,
     },
     {
-      title: 'Quality assurance',
-      description: 'Morbi sit amet arcu vitae metus molestie auctor sit amet in risus. Sed vel lacinia purus.',
+      title: 'Quality Content',
+      description: 'Every recommendation and review is carefully curated to ensure the highest quality information.',
       icon: IconThumbUp,
     },
     {
-      title: 'Accessibility and customization',
-      description: 'Phasellus id cursus urna. Nullam feugiat tellus sed euismod venenatis.',
+      title: 'Community Focus',
+      description: 'We prioritize supporting local businesses and promoting sustainable tourism practices.',
       icon: IconAdjustments,
     },
     {
-      title: 'Collaboration and partnership',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis.',
+      title: 'Visitor Support',
+      description: 'We\'re dedicated to helping visitors make the most of their Portland experience.',
       icon: IconHeartHandshake,
     },
     {
-      title: 'Ethical and responsible design',
-      description: 'Maecenas urna augue, commodo vitae lectus euismod, tempor aliquam arcu.',
+      title: 'Sustainable Tourism',
+      description: 'We promote responsible tourism that respects and preserves Portland\'s unique character.',
       icon: IconHomeEco,
     },
   ],
@@ -143,42 +140,46 @@ export const featuresFourAboutTwo: FeaturesProps = {
 export const stepsAbout: StepsProps = {
   id: 'steps-on-about',
   hasBackground: true,
-  isImageDisplayed: false,
+  isImageDisplayed: true,
+  image: {
+    src: '/images/old-port-shopping.jpg',
+    alt: 'Portland History',
+  },
   header: {
-    title: 'History of TailNext',
+    title: 'Portland\'s Rich History',
     subtitle:
-      'Duis sit amet magna et sapien cursus fermentum. Curabitur ac mauris non magna condimentum scelerisque. Aliquam nunc ipsum, semper ac scelerisque sit amet, pulvinar vitae libero.',
-    tagline: 'Company History',
+      'From its early days as a fishing village to its current status as a vibrant cultural hub, Portland has a fascinating story to tell.',
+    tagline: 'City History',
   },
   items: [
     {
-      title: 'Our foundation',
+      title: 'Early Settlement',
       description:
-        'Donec pharetra, justo a rutrum venenatis, augue erat porta leo, non eleifend dui lectus ut turpis. Fusce tincidunt mattis magna eu commodo. Proin non facilisis enim, ut luctus dolor.',
+        'Portland was first settled in 1632 as a fishing and trading village. The city\'s deep harbor and strategic location made it an important port for early American commerce.',
       icon: IconNumber1,
     },
     {
-      title: 'The early years',
+      title: 'Maritime Heritage',
       description:
-        'Nunc scelerisque dui non nulla faucibus, sed elementum urna congue. Donec varius nisi sit amet massa malesuada euismod. Donec auctor interdum leo eget ultricies.',
+        'Throughout the 18th and 19th centuries, Portland became a major shipping center, with a thriving shipbuilding industry and bustling waterfront.',
       icon: IconNumber2,
     },
     {
-      title: 'Growth',
+      title: 'The Great Fire',
       description:
-        'Vestibulum euismod dolor vel magna consectetur, vitae ornare metus finibus. Nam nec magna lacinia, cursus purus ut, pellentesque ex. Aliquam nec porta sapien, nec iaculis odio. Donec sed lacus arcu.',
+        'In 1866, a devastating fire destroyed much of the city, leading to a period of rebuilding that shaped Portland\'s architectural character.',
       icon: IconNumber3,
     },
     {
-      title: 'Expanding horizons',
+      title: 'Modern Development',
       description:
-        'Aenean mollis est ac quam viverra, eget dictum justo iaculis. Morbi venenatis neque sed blandit faucibus. Pellentesque sit amet justo at ligula eleifend lacinia. Etiam nec orci quam.',
+        'The 20th century saw Portland evolve into a center for arts, culture, and culinary innovation, while preserving its historic charm.',
       icon: IconNumber4,
     },
     {
-      title: 'Our ongoing commitment',
+      title: 'Today\'s Portland',
       description:
-        'Sed vel purus a odio tincidunt mollis. Nam et tortor est. Aliquam sodales interdum tortor ac condimentum. Suspendisse laoreet nulla est, ac luctus est tempus ut.',
+        'Modern Portland is a vibrant city that balances historic preservation with contemporary innovation, making it one of America\'s most beloved coastal destinations.',
       icon: IconNumber5,
     },
   ],
@@ -190,41 +191,26 @@ export const features3About: FeaturesProps = {
   hasBackground: false,
   columns: 3,
   header: {
-    title: 'Our culture',
+    title: 'What Makes Portland Special',
     subtitle:
-      'Nullam maximus ante eros, ac eleifend mi condimentum ut. Donec volutpat felis ac purus pretium, vitae mollis quam scelerisque.',
-    tagline: 'culture',
+      'Portland\'s unique character comes from its perfect blend of coastal charm, urban sophistication, and authentic local culture.',
+    tagline: 'City Highlights',
   },
   items: [
     {
-      title: 'Customer engagement',
-      description: 'Nullam non sodales massa. Ut justo neque, elementum et vehicula vel, pellentesque non orci.',
-      icon: IconCirclesRelation,
-    },
-    {
-      title: 'Creativity and design excellence',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-      icon: IconPalette,
-    },
-    {
-      title: 'Continuous learning',
-      description: 'Morbi sit amet arcu vitae metus molestie auctor sit amet in risus. Sed vel lacinia purus.',
-      icon: IconBook,
-    },
-    {
-      title: 'Collaboration and cross-functionality',
-      description: 'Phasellus id cursus urna. Nullam feugiat tellus sed euismod venenatis.',
-      icon: IconPuzzle2,
-    },
-    {
-      title: 'Entrepreneurial spirit',
-      description: 'Phasellus interdum placerat enim sed vehicula. Ut tincidunt, magna in iaculis maximus.',
+      title: 'Culinary Excellence',
+      description: 'Home to award-winning restaurants and innovative chefs, Portland is a food lover\'s paradise.',
       icon: IconFlame,
     },
     {
-      title: 'Employee well-being and balance',
-      description: 'Maecenas urna augue, commodo vitae lectus euismod, tempor aliquam arcu.',
-      icon: IconScale,
+      title: 'Arts & Culture',
+      description: 'From the Portland Museum of Art to local galleries and theaters, the city celebrates creativity in all forms.',
+      icon: IconPalette,
+    },
+    {
+      title: 'Natural Beauty',
+      description: 'Stunning coastal views, historic lighthouses, and beautiful parks make Portland a feast for the eyes.',
+      icon: IconHomeEco,
     },
   ],
 };
@@ -232,32 +218,29 @@ export const features3About: FeaturesProps = {
 // Features data on About page *******************
 export const featuresAbout: FeaturesProps = {
   id: 'features-on-about',
-  hasBackground: true,
+  hasBackground: false,
+  columns: 3,
   header: {
-    title: 'Our record of excellence',
+    title: 'Our Services',
     subtitle:
-      'Etiam lobortis elementum ornare. Vestibulum lacinia magna ut eleifend facilisis. Cras ac mi nec diam auctor dictum.',
-    tagline: 'Achievements',
+      'We provide comprehensive guides and resources to help you experience the best of Portland.',
+    tagline: 'What We Offer',
   },
-  columns: 1,
   items: [
     {
-      title: 'Global recognition',
-      description:
-        'Nullam porttitor lacus elit, sed pellentesque eros aliquam eget. Phasellus interdum placerat enim sed vehicula. Ut tincidunt, magna in iaculis maximus, lectus ante dignissim neque, imperdiet sodales enim augue a quam.',
-      icon: IconAward,
+      title: 'Dining Guides',
+      description: 'Discover the best restaurants, cafes, and food experiences in Portland.',
+      icon: IconFlame,
     },
     {
-      title: 'Innovator of the year award',
-      description:
-        'Cras mollis elit massa, vel interdum libero molestie a. Nulla facilisi. Suspendisse cursus non sapien ut tincidunt. Sed non tortor sit amet nisl tristique facilisis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.',
-      icon: IconAward,
+      title: 'Attraction Reviews',
+      description: 'Explore Portland\'s top attractions, from historic sites to modern entertainment.',
+      icon: IconMapPin,
     },
     {
-      title: 'Sustainability award',
-      description:
-        'Sed non tortor sit amet nisl tristique facilisis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent in tempor orci. Vestibulum velit justo, dignissim quis nisl nec, scelerisque ultrices mi sapien diam quis elit.',
-      icon: IconAward,
+      title: 'Local Events',
+      description: 'Stay updated on Portland\'s vibrant calendar of events and festivals.',
+      icon: IconClock,
     },
   ],
 };
@@ -267,42 +250,16 @@ export const teamAbout: TeamProps = {
   id: 'team-on-about',
   hasBackground: false,
   header: {
-    title: 'Meet our executive team',
+    title: 'Meet Our Team',
     subtitle:
-      'Proin quis neque vehicula, sagittis felis ut, scelerisque mi. Nullam consequat, erat eu luctus sodales, ipsum tellus facilisis magna, eu condimentum lectus.',
-    tagline: 'team',
+      'Our team of local experts is dedicated to helping you discover the best of Portland.',
   },
   teams: [
     {
-      name: 'John Peterson',
-      occupation: 'Founder & CEO',
-      image: {
-        src: 'https://images.unsplash.com/photo-1504257432389-52343af06ae3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80',
-        alt: 'John Peterson',
-      },
-      items: [
-        {
-          title: 'Know more on Twitter',
-          icon: IconBrandTwitter,
-          href: '#',
-        },
-        {
-          title: 'Know more on Linkedin',
-          icon: IconBrandLinkedin,
-          href: '#',
-        },
-        {
-          title: 'Contact by email',
-          icon: IconMail,
-          href: '#',
-        },
-      ],
-    },
-    {
       name: 'Sarah Mitchell',
-      occupation: 'Chief Creative Officer',
+      occupation: 'Local Food Expert',
       image: {
-        src: 'https://images.unsplash.com/photo-1618835962148-cf177563c6c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80',
+        src: '/images/eventide-oyster.jpg',
         alt: 'Sarah Mitchell',
       },
       items: [
@@ -324,11 +281,11 @@ export const teamAbout: TeamProps = {
       ],
     },
     {
-      name: 'David Foster',
-      occupation: 'Chief Technology Officer',
+      name: 'Michael Chen',
+      occupation: 'Arts & Culture Guide',
       image: {
-        src: 'https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=250&q=80',
-        alt: 'David Foster',
+        src: '/images/arts-district.jpg',
+        alt: 'Michael Chen',
       },
       items: [
         {
@@ -349,111 +306,11 @@ export const teamAbout: TeamProps = {
       ],
     },
     {
-      name: 'Mary Smith',
-      occupation: 'Chief Marketing Office',
+      name: 'Emma Thompson',
+      occupation: 'Outdoor Adventure Specialist',
       image: {
-        src: 'https://images.unsplash.com/photo-1607503873903-c5e95f80d7b9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80',
-        alt: 'Mary Smith',
-      },
-      items: [
-        {
-          title: 'Know more on Twitter',
-          icon: IconBrandTwitter,
-          href: '#',
-        },
-        {
-          title: 'Know more on Linkedin',
-          icon: IconBrandLinkedin,
-          href: '#',
-        },
-        {
-          title: 'Contact by email',
-          icon: IconMail,
-          href: '#',
-        },
-      ],
-    },
-    {
-      name: 'Michael Turner',
-      occupation: 'Chief Financial Officer',
-      image: {
-        src: 'https://images.unsplash.com/photo-1619380061814-58f03707f082?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80',
-        alt: 'Michael Turner',
-      },
-      items: [
-        {
-          title: 'Know more on Twitter',
-          icon: IconBrandTwitter,
-          href: '#',
-        },
-        {
-          title: 'Know more on Linkedin',
-          icon: IconBrandLinkedin,
-          href: '#',
-        },
-        {
-          title: 'Contact by email',
-          icon: IconMail,
-          href: '#',
-        },
-      ],
-    },
-    {
-      name: 'Laura Adams',
-      occupation: 'Chief Customer Relations Officer',
-      image: {
-        src: 'https://images.unsplash.com/photo-1485893086445-ed75865251e0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80',
-        alt: 'Laura Adams',
-      },
-      items: [
-        {
-          title: 'Know more on Twitter',
-          icon: IconBrandTwitter,
-          href: '#',
-        },
-        {
-          title: 'Know more on Linkedin',
-          icon: IconBrandLinkedin,
-          href: '#',
-        },
-        {
-          title: 'Contact by email',
-          icon: IconMail,
-          href: '#',
-        },
-      ],
-    },
-    {
-      name: 'Robert Williams',
-      occupation: 'Chief Operations Officer',
-      image: {
-        src: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80',
-        alt: 'Robert Williams',
-      },
-      items: [
-        {
-          title: 'Know more on Twitter',
-          icon: IconBrandTwitter,
-          href: '#',
-        },
-        {
-          title: 'Know more on Linkedin',
-          icon: IconBrandLinkedin,
-          href: '#',
-        },
-        {
-          title: 'Contact by email',
-          icon: IconMail,
-          href: '#',
-        },
-      ],
-    },
-    {
-      name: 'Emily Davis',
-      occupation: 'Chief Strategy Officer',
-      image: {
-        src: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80',
-        alt: 'Emily Davis',
+        src: '/images/kayaking-casco.jpg',
+        alt: 'Emma Thompson',
       },
       items: [
         {
@@ -476,73 +333,43 @@ export const teamAbout: TeamProps = {
   ],
 };
 
-// Testimonial2 data on About page *******************
+// Testimonials2 data on About page *******************
 export const testimonials2About: TestimonialsProps = {
   id: 'testimonialsTwo-on-about',
   hasBackground: true,
-  isTestimonialUp: true,
   header: {
-    title: 'Our success stories',
-    tagline: 'Customer comments',
+    title: 'What Our Visitors Say',
+    subtitle:
+      'Hear from people who have used MaineRez to explore Portland and discover its hidden gems.',
   },
   testimonials: [
     {
-      name: 'Jane Smith',
-      job: 'UX Designer',
-      testimonial: `Your templates have been a game-changer for my projects. They're not just beautifully designed; they're also incredibly easy to customize. Thanks to your templates, I've been able to save time and deliver stunning websites to my clients.`,
+      name: 'David Wilson',
+      job: 'Travel Blogger',
+      testimonial: `MaineRez helped me discover the authentic Portland experience. Their recommendations led me to amazing local spots I would have never found on my own.`,
       image: {
-        src: 'https://images.unsplash.com/photo-1619734086067-24bf8889ea7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
-        alt: 'Jane Smith',
+        src: '/images/portland-market.jpg',
+        alt: 'David Wilson',
       },
       href: '/',
     },
     {
-      name: 'John Doe',
-      job: 'Frontend Developer',
-      testimonial: `I can't say enough good things about your Next.js and Tailwind CSS templates. As a frontend developer, I appreciate the clean and well-organized code. These templates have significantly sped up my development process, and the results are always impressive.`,
+      name: 'Lisa Rodriguez',
+      job: 'Food Critic',
+      testimonial: `The dining guides are spot-on! I found incredible restaurants and local food experiences that made my visit to Portland truly memorable.`,
       image: {
-        src: 'https://images.unsplash.com/photo-1565049786474-1dea82a8b995?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
-        alt: 'John Doe',
+        src: '/images/eventide-oyster.jpg',
+        alt: 'Lisa Rodriguez',
       },
       href: '/',
     },
     {
-      name: 'Emily Turner',
-      job: 'Marketing Manager',
-      testimonial: `This templates have made our marketing campaigns stand out. The responsiveness and performance of the websites we've built with them have boosted our conversion rates. Thank you for helping us shine in the digital world!`,
+      name: 'James Anderson',
+      job: 'Photography Enthusiast',
+      testimonial: `Thanks to MaineRez, I captured the most beautiful spots in Portland. Their local insights helped me find the perfect locations for stunning photos.`,
       image: {
-        src: 'https://images.unsplash.com/photo-1659057106920-da022cfbc0cd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
-        alt: 'Emily Turner',
-      },
-      href: '/',
-    },
-    {
-      name: 'Michael Clark',
-      job: 'Startup Founder',
-      testimonial: `I stumbled upon your templates while looking for a way to launch my startup quickly. Your templates not only saved me valuable time but also gave my business a professional and modern online presence. Highly recommended!`,
-      image: {
-        src: 'https://images.unsplash.com/photo-1572417884940-c24659be6068?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
-        alt: 'Michael Clark',
-      },
-      href: '/',
-    },
-    {
-      name: 'Linda Johnson',
-      job: 'Freelance Web Designer',
-      testimonial: `I've been using your templates for my freelance projects, and my clients are always thrilled with the results. The templates are not only visually appealing but also user-friendly, making my job much easier.`,
-      image: {
-        src: 'https://images.unsplash.com/photo-1694287877106-ee22f764aef1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
-        alt: 'Linda Johnson',
-      },
-      href: '/',
-    },
-    {
-      name: 'David Rogers',
-      job: 'E-commerce Entrepreneur',
-      testimonial: `The speed and SEO-friendliness of the websites I've built with these templates have led to increased traffic and sales. I couldn't be happier!`,
-      image: {
-        src: 'https://images.unsplash.com/photo-1665984867752-6370ab5ae35e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
-        alt: 'David Rogers',
+        src: '/images/portland-head-light.jpg',
+        alt: 'James Anderson',
       },
       href: '/',
     },
@@ -551,101 +378,85 @@ export const testimonials2About: TestimonialsProps = {
 
 // FAQS data on About page *******************
 export const faqsAbout: FAQsProps = {
-  id: 'faqs-on-faqs',
+  id: 'faqs-on-about',
   hasBackground: false,
   header: {
     title: 'Frequently Asked Questions',
     subtitle:
-      'Duis turpis dui, fringilla mattis sem nec, fringilla euismod neque. Morbi tincidunt lacus nec tortor scelerisque pulvinar.',
+      'Have questions about MaineRez or planning your visit to Portland? Here are some common questions and answers.',
     tagline: 'FAQS',
   },
   items: [
     {
-      title: 'Who we are and what we do?',
-      description: `Nunc mollis tempor quam, non fringilla elit sagittis in. Nullam vitae consectetur mi, a elementum arcu. Sed laoreet, ipsum et vehicula dignissim, leo orci pretium sem, ac condimentum tellus est quis ligula.`,
+      title: 'How do I use MaineRez to plan my visit?',
+      description: `Browse our comprehensive guides for attractions, dining, and events. Use our interactive maps and recommendations to create your perfect Portland itinerary.`,
     },
     {
-      title: 'What values and principles guide our work?',
-      description: `Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer eleifend vestibulum nisl in iaculis. Mauris dictum ac purus vestibulum auctor. Praesent imperdiet lectus et massa faucibus, quis viverra massa rhoncus.`,
+      title: 'Are your recommendations up to date?',
+      description: `Yes, we regularly update our content to ensure you have the most current information about Portland\'s attractions, restaurants, and events.`,
     },
     {
-      title: 'What is our experience?',
-      description: `Mauris vitae eros a dui varius luctus. Suspendisse rutrum, sapien nec blandit bibendum, justo sapien sollicitudin erat, id aliquam sapien purus quis leo. Aliquam vulputate vestibulum consectetur.`,
+      title: 'Can I contribute to MaineRez?',
+      description: `We welcome contributions from locals and visitors alike! Share your experiences, photos, and recommendations to help others discover Portland.`,
     },
     {
-      title: 'What is our team like?',
-      description: `Nunc dapibus lacinia ipsum ut elementum. Integer in pretium sapien. Ut pretium nisl mauris, ut rutrum justo condimentum id. Etiam aliquet, arcu at iaculis laoreet, est arcu egestas sapien, eget sollicitudin odio orci et nunc.`,
-    },
-    {
-      title: 'How do we engage with the community?',
-      description: `Duis in maximus mauris, id eleifend mauris. Nam a fringilla arcu. Curabitur convallis, tellus non aliquet rhoncus, lacus massa auctor eros, in interdum lectus augue sed augue. Fusce tempor ex id faucibus efficitur.`,
-    },
-    {
-      title: 'What support channels do we offer?',
-      description: `Nullam imperdiet sapien tincidunt erat dapibus faucibus. Vestibulum a sem nec lorem imperdiet scelerisque non sed lacus. Ut pulvinar id diam vitae auctor. Nam tempus, neque et elementum consectetur, ex ipsum pulvinar risus, vel sodales ligula tortor eu eros.`,
+      title: 'How can I support local businesses?',
+      description: `Our guides highlight local businesses and sustainable tourism practices. We encourage visitors to shop local and support Portland\'s vibrant community.`,
     },
   ],
 };
 
 // Contact data on About page *******************
 export const contactAbout: ContactProps = {
-  id: 'contact-on-about',
   hasBackground: true,
   header: {
-    title: 'Contact us',
-    tagline: 'Contact info',
+    title: 'Get in Touch',
+    subtitle: 'Have questions or suggestions? We\'d love to hear from you!',
+    tagline: 'Contact',
   },
   content:
-    'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis nec ipsum orci. Ut scelerisque sagittis ante, ac tincidunt sem venenatis ut.',
+    'Whether you\'re planning a visit to Portland, looking to feature your business, or have feedback to share, our team is here to help. Reach out to us and we\'ll get back to you as soon as possible.',
   items: [
     {
-      title: 'Our Address',
-      description: ['1230 Maecenas Street Donec Road', 'New York, EEUU'],
-      icon: IconMapPin,
+      title: 'Email Us',
+      description: ['For general inquiries', 'Portland@mainerez.com'],
+      icon: IconMail,
     },
     {
       title: 'Contact',
-      description: ['Mobile: +1 (123) 456-7890', 'Mail: tailnext@gmail.com'],
+      description: ['For business features', 'Portland@mainerez.com'],
       icon: IconPhoneCall,
     },
     {
       title: 'Working hours',
-      description: ['Monday - Friday: 08:00 - 17:00', 'Saturday & Sunday: 08:00 - 12:00'],
+      description: ['Monday - Friday: 09:00 - 17:00', 'Saturday & Sunday: 10:00 - 15:00'],
       icon: IconClock,
     },
   ],
   form: {
+    title: 'Send Us a Message',
     inputs: [
       {
         type: 'text',
-        label: 'Name',
         name: 'name',
-        placeholder: 'Introduce your name',
         autocomplete: 'off',
+        placeholder: 'Your name',
       },
       {
         type: 'email',
-        label: 'Email address',
         name: 'email',
-        placeholder: 'Introduce your email address',
         autocomplete: 'on',
+        placeholder: 'Your email address',
       },
     ],
     textarea: {
       cols: 30,
       rows: 5,
-      label: 'How can we help you?',
       name: 'textarea',
-      placeholder: 'Write your message...',
+      placeholder: 'Tell us about your inquiry...',
     },
-    checkboxes: [
-      {
-        label: 'Have you read our privacy policy?',
-        value: '',
-      },
-    ],
     btn: {
-      title: 'Contact us',
+      title: 'Send Message',
       type: 'submit',
     },
   },
