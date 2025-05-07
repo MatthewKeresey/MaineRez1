@@ -443,6 +443,68 @@ export const featuredBusinessesHome = {
   ],
 };
 
+// Pricing data on Home page *******************
+export const pricingHome: PricingProps = {
+  id: 'pricing-on-home',
+  hasBackground: true,
+  header: {
+    title: 'Featured Local Businesses',
+    subtitle: 'Discover Portlands finest restaurants, attractions, and activities.',
+    tagline: 'Local Favorites',
+  },
+  prices: [
+    {
+      title: 'Eventide Oyster Co.',
+      price: 0,
+      period: 'Featured Restaurant',
+      items: [
+        { description: 'Award-winning seafood' },
+        { description: 'Fresh oysters daily' },
+        { description: 'Historic Old Port location' },
+      ],
+      callToAction: {
+        targetBlank: false,
+        text: 'Visit Website',
+        href: '/restaurants',
+      },
+      hasRibbon: false,
+    },
+    {
+      title: 'Portland Museum of Art',
+      price: 0,
+      period: 'Featured Attraction',
+      items: [
+        { description: 'World-class exhibitions' },
+        { description: 'Local & international artists' },
+        { description: 'Art classes & events' },
+      ],
+      callToAction: {
+        targetBlank: false,
+        text: 'Plan Visit',
+        href: '/attractions',
+      },
+      hasRibbon: true,
+      ribbonTitle: 'Popular',
+    },
+    {
+      title: 'Casco Bay Kayak Tours',
+      price: 0,
+      period: 'Featured Activity',
+      items: [
+        { description: 'Guided kayak adventures' },
+        { description: 'Island exploration' },
+        { description: 'Sunset & sunrise tours' },
+      ],
+      callToAction: {
+        targetBlank: false,
+        text: 'Book Tour',
+        href: '/outdoors',
+      },
+      hasRibbon: false,
+    },
+  ],
+};
+
 // Team data on Home page *******************
 export const teamHome: TeamProps = {
   id: 'team-on-home',
