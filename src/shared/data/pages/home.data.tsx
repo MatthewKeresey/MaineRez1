@@ -55,7 +55,7 @@ export const heroHome: HeroProps = {
     href: '/book',
   },
   image: {
-    src: '/images/portland-head-light.jpg',
+    src: '/images/casco-bay.jpg',
     alt: 'Portland, Maine Harbor',
   },
 };
@@ -67,8 +67,8 @@ export const socialProofHome: SocialProofProps = {
   images: [
     {
       link: '/attractions',
-      src: '/images/portland-head-light.jpg',
-      alt: 'Portland Head Light',
+      src: '/images/casco-bay.jpg',
+      alt: 'Portland Harbor',
     },
     {
       link: '/dining',
@@ -230,7 +230,7 @@ export const contentHomeTwo: ContentProps = {
   ],
   image: {
     src: '/images/old-port-shopping.jpg',
-    alt: 'Portland Attractions',
+    alt: 'Portland, Maine Harbor',
   },
   isReversed: true,
   isAfterContent: true,
