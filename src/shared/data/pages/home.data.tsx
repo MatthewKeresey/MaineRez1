@@ -29,14 +29,6 @@ import {
   TeamProps,
   TestimonialsProps,
 } from '../../types';
-import heroImg from '~/assets/images/hero.jpg';
-import nextJsLogo from '~/assets/images/nextjs-logo.png';
-import reactLogo from '~/assets/images/react-logo.png';
-import tailwindCssLogo from '~/assets/images/tailwind-css-logo.png';
-import typescriptLogo from '~/assets/images/typescript-logo.png';
-import cameraFrontImg from '~/assets/images/camera-front.jpg';
-import cameraBackImg from '~/assets/images/camera-back.jpg';
-import gasImg from '~/assets/images/gas.jpg';
 
 // Hero data on Home page *******************
 export const heroHome: HeroProps = {
@@ -63,7 +55,7 @@ export const heroHome: HeroProps = {
     href: '/book',
   },
   image: {
-    src: heroImg,
+    src: '/images/portland-head-light.jpg',
     alt: 'Portland, Maine Harbor',
   },
 };
@@ -75,22 +67,22 @@ export const socialProofHome: SocialProofProps = {
   images: [
     {
       link: '/attractions',
-      src: '/images/portland-lighthouse.jpg',
+      src: '/images/portland-head-light.jpg',
       alt: 'Portland Head Light',
     },
     {
       link: '/dining',
-      src: '/images/portland-food.jpg',
+      src: '/images/restaurants-hero.jpg',
       alt: 'Portland Food Scene',
     },
     {
       link: '/arts',
-      src: '/images/portland-arts.jpg',
+      src: '/images/arts-district.jpg',
       alt: 'Portland Arts District',
     },
     {
       link: '/outdoors',
-      src: '/images/portland-outdoors.jpg',
+      src: '/images/kayaking-casco.jpg',
       alt: 'Portland Outdoor Activities',
     },
   ],
@@ -203,7 +195,7 @@ export const contentHomeOne: ContentProps = {
     },
   ],
   image: {
-    src: cameraFrontImg,
+    src: '/images/eventide-oyster.jpg',
     alt: 'Portland Dining Scene',
   },
   isReversed: false,
@@ -237,7 +229,7 @@ export const contentHomeTwo: ContentProps = {
     },
   ],
   image: {
-    src: cameraBackImg,
+    src: '/images/old-port.jpg',
     alt: 'Portland Attractions',
   },
   isReversed: true,
@@ -251,7 +243,7 @@ export const stepsHome: StepsProps = {
   isReversed: false,
   isImageDisplayed: true,
   image: {
-    src: gasImg,
+    src: '/images/portland-market.jpg',
     alt: 'Steps image',
   },
   header: {
