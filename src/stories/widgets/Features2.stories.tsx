@@ -1,8 +1,10 @@
+import React from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
 import { Title, Subtitle, Description, Primary, Controls, Story, Stories } from '@storybook/blocks';
 
 import Component from '~/components/widgets/Features2';
-import { featuresHome as mockData } from '~/shared/data/pages/home.data';
+import { getFeaturesHome } from '~/shared/data/pages/home';
+const mockData = getFeaturesHome();
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
@@ -32,30 +34,33 @@ const meta = {
 } satisfies Meta<typeof Component>;
 
 export default meta;
-type Story = StoryObj<typeof meta>;
 
-// More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
-export const Base: Story = {
+export const Default: StoryObj<typeof Component> = {
+  args: mockData,
+};
+
+export const WithBackground: StoryObj<typeof Component> = {
   args: {
     ...mockData,
+    hasBackground: true,
   },
 };
 
-export const OneColumn: Story = {
+export const OneColumn: StoryObj<typeof Component> = {
   args: {
     ...mockData,
     columns: 1,
   },
 };
 
-export const TwoColumns: Story = {
+export const TwoColumns: StoryObj<typeof Component> = {
   args: {
     ...mockData,
     columns: 2,
   },
 };
 
-export const Mobile: Story = {
+export const Mobile: StoryObj<typeof Component> = {
   args: {
     ...mockData,
   },
