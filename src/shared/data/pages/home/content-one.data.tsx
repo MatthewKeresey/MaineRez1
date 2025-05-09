@@ -1,19 +1,20 @@
 import React from 'react';
 import { ContentProps } from '~/shared/types';
-import { getContent } from '~/shared/content/content-helper';
+import content from '~/shared/content/content.json';
+
+const contentOneSection = content.sections.contentOne;
 
 export const contentHomeOne: ContentProps = {
-  id: 'contentOne-on-home',
+  id: 'contentOne-on-home-one',
   hasBackground: true,
   header: {
-    title: getContent('home.contentOne.title'),
-    subtitle: getContent('home.contentOne.subtitle'),
-    tagline: getContent('home.contentOne.tagline'),
+    title: contentOneSection.title,
+    subtitle: contentOneSection.subtitle,
+    tagline: contentOneSection.tagline,
   },
-  content: getContent('home.contentOne.content'),
-  image: {
-    src: '/images/old-port.jpg',
-    alt: 'Portland Old Port',
-  },
+  content: contentOneSection.content,
+  items: contentOneSection.items,
+  image: contentOneSection.image,
   isReversed: false,
+  isAfterContent: false,
 }; 

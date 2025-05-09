@@ -1,33 +1,16 @@
 import React from 'react';
 import { FAQsProps } from '~/shared/types';
-import { getContent, getContentObject } from '~/shared/content/content-helper';
+import content from '~/shared/content/content.json';
 
-const faqsContent = getContentObject('home.faqs.items');
+const faqsSection = content.sections.faqs;
 
-export const faqs2Home: FAQsProps = {
+export const faqsHome: FAQsProps = {
   id: 'faqs-on-home',
   hasBackground: false,
   header: {
-    title: getContent('home.faqs.title'),
-    subtitle: getContent('home.faqs.subtitle'),
-    tagline: getContent('home.faqs.tagline'),
+    title: faqsSection.header.title,
+    subtitle: faqsSection.header.subtitle,
+    tagline: faqsSection.header.tagline,
   },
-  items: [
-    {
-      title: faqsContent.bestTime.title,
-      description: faqsContent.bestTime.description,
-    },
-    {
-      title: faqsContent.transportation.title,
-      description: faqsContent.transportation.description,
-    },
-    {
-      title: faqsContent.attractions.title,
-      description: faqsContent.attractions.description,
-    },
-    {
-      title: faqsContent.family.title,
-      description: faqsContent.family.description,
-    },
-  ],
+  items: faqsSection.items,
 }; 

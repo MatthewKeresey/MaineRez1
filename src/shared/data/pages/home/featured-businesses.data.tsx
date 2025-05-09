@@ -1,63 +1,22 @@
 import React from 'react';
-import { IconCheck } from '@tabler/icons-react';
-import { PricingProps } from '~/shared/types';
-import { getContent, getContentObject } from '~/shared/content/content-helper';
+import { FeaturedBusinessesProps } from '~/shared/types';
+import content from '~/shared/content/content.json';
 
-const businessesContent = getContentObject('home.featuredBusinesses.items');
+const featuredBusinessesSection = content.sections.featuredBusinesses;
 
-export const featuredBusinessesHome: PricingProps = {
+export const featuredBusinessesHome: FeaturedBusinessesProps = {
   id: 'featured-businesses-on-home',
-  hasBackground: true,
+  hasBackground: false,
   header: {
-    title: getContent('home.featuredBusinesses.title'),
-    subtitle: getContent('home.featuredBusinesses.subtitle'),
-    tagline: getContent('home.featuredBusinesses.tagline'),
+    title: featuredBusinessesSection.header.title,
+    subtitle: featuredBusinessesSection.header.subtitle,
+    tagline: featuredBusinessesSection.header.tagline,
   },
-  prices: [
-    {
-      title: businessesContent.eventide.title,
-      description: businessesContent.eventide.description,
-      price: 0,
-      period: '',
-      items: businessesContent.eventide.features.map((feature: string) => ({
-        description: feature,
-        icon: IconCheck,
-      })),
-      callToAction: {
-        text: getContent('common.buttons.learnMore'),
-        href: '/restaurants/eventide',
-      },
-      hasRibbon: false,
+  businesses: featuredBusinessesSection.businesses.map(business => ({
+    ...business,
+    callToAction: {
+      ...business.callToAction,
+      targetBlank: false,
     },
-    {
-      title: businessesContent.pma.title,
-      description: businessesContent.pma.description,
-      price: 0,
-      period: '',
-      items: businessesContent.pma.features.map((feature: string) => ({
-        description: feature,
-        icon: IconCheck,
-      })),
-      callToAction: {
-        text: getContent('common.buttons.learnMore'),
-        href: '/attractions/pma',
-      },
-      hasRibbon: false,
-    },
-    {
-      title: businessesContent.kayak.title,
-      description: businessesContent.kayak.description,
-      price: 0,
-      period: '',
-      items: businessesContent.kayak.features.map((feature: string) => ({
-        description: feature,
-        icon: IconCheck,
-      })),
-      callToAction: {
-        text: getContent('common.buttons.learnMore'),
-        href: '/outdoors/kayaking',
-      },
-      hasRibbon: false,
-    },
-  ],
+  })),
 }; 

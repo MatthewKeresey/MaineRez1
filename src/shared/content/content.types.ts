@@ -20,14 +20,57 @@ export interface Page extends BaseItem {
 
 // Section types
 export interface Section extends BaseItem {
-  fields: {
-    title?: string;
-    subtitle?: string;
-    tagline?: string;
-    cta?: string;
-    items?: string[];
-    [key: string]: any;
+  title?: string;
+  subtitle?: string;
+  tagline?: string;
+  content?: string;
+  items?: Array<{
+    title: string;
+    description: string;
+    icon?: string;
+  }>;
+  image?: {
+    src: string;
+    alt: string;
   };
+  images?: Array<{
+    src: string;
+    alt: string;
+    link: string;
+  }>;
+  header?: {
+    title: string;
+    subtitle: string;
+    tagline: string;
+  };
+  callToAction?: {
+    text: string;
+    href: string;
+    icon?: string;
+  };
+  callToAction2?: {
+    text: string;
+    href: string;
+    icon?: string;
+  };
+  hasBackground?: boolean;
+  isReversed?: boolean;
+  isAfterContent?: boolean;
+  isImageDisplayed?: boolean;
+  businesses?: Array<{
+    title: string;
+    category: string;
+    features: Array<{
+      description: string;
+    }>;
+    callToAction: {
+      text: string;
+      href: string;
+    };
+    hasRibbon: boolean;
+    ribbonTitle?: string;
+  }>;
+  prompt?: string;
 }
 
 // Location types

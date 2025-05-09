@@ -1,21 +1,19 @@
 import React from 'react';
 import { HeroProps } from '~/shared/types';
-import { getContent } from '~/shared/content/content-helper';
+import content from '~/shared/content/content.json';
+
+const heroSection = content.sections.hero;
 
 export const heroHome: HeroProps = {
-  title: getContent('home.hero.title'),
-  subtitle: getContent('home.hero.subtitle'),
-  tagline: getContent('home.hero.tagline'),
+  title: heroSection.title,
+  subtitle: heroSection.subtitle,
+  tagline: heroSection.tagline,
   callToAction: {
-    text: getContent('common.buttons.learnMore'),
-    href: '/about',
+    text: heroSection.callToAction.text,
+    href: heroSection.callToAction.href,
   },
   callToAction2: {
-    text: getContent('common.buttons.contact'),
-    href: '/contact',
-  },
-  image: {
-    src: '/images/casco-bay.jpg',
-    alt: 'Portland Harbor',
+    text: heroSection.callToAction2.text,
+    href: heroSection.callToAction2.href,
   },
 }; 
