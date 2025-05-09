@@ -1,3 +1,4 @@
+import React from 'react';
 import type { Metadata } from 'next';
 
 import { SITE } from '~/config.js';
@@ -19,14 +20,12 @@ import {
   contentHomeOne,
   contentHomeTwo,
   faqs2Home,
-  featuresHome,
   heroHome,
   pricingHome,
   socialProofHome,
-  stepsHome,
-  teamHome,
   testimonialsHome,
 } from '~/shared/data/pages/home.data';
+import { getFeaturesHome, getStepsHome, getTeamHome } from '~/shared/data/pages/home';
 
 export const metadata: Metadata = {
   title: SITE.title,
@@ -37,14 +36,14 @@ export default function Page() {
     <>
       <Hero {...heroHome} />
       <SocialProof {...socialProofHome} />
-      <Features {...featuresHome} />
+      <Features {...getFeaturesHome()} />
       <Content {...contentHomeOne} />
       <Content {...contentHomeTwo} />
-      <Steps {...stepsHome} />
+      <Steps {...getStepsHome()} />
       <Testimonials {...testimonialsHome} />
       <FAQs2 {...faqs2Home} />
       <Pricing {...pricingHome} />
-      <Team {...teamHome} />
+      <Team {...getTeamHome()} />
       <Contact {...contactHome} />
       <CallToAction2 {...callToAction2Home} />
     </>
