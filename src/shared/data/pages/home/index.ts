@@ -1,0 +1,12 @@
+export { heroHome } from './hero.data';
+export { featuresHome } from './features.data';
+export { contentHomeOne } from './content-one.data';
+export { contentHomeTwo } from './content-two.data';
+export { stepsHome } from './steps.data';
+export { testimonialsHome } from './testimonials.data';
+export { faqs2Home } from './faqs.data';
+export { featuredBusinessesHome } from './featured-businesses.data';
+export { pricingHome } from './pricing.data';
+export { teamHome } from './team.data';
+export { contactHome } from './contact.data';
+export { socialProofHome } from './social-proof.data'; 
