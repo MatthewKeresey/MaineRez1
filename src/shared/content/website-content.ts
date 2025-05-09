@@ -19,7 +19,7 @@ export const websiteContent = {
   // Home page sections
   home: {
     hero: {
-      title: 'Welcome to Portland, Maine',
+      title: 'Welcome to Portland, Maine — Where Coastal Charm Meets Culinary Excellence',
       subtitle: 'Discover the charm of New England\'s most vibrant coastal city',
       tagline: 'Your Guide to Portland',
     },

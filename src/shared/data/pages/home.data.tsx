@@ -29,35 +29,26 @@ import {
   TeamProps,
   TestimonialsProps,
 } from '../../types';
+import { getContent } from '~/shared/content/content-helper';
 
 // Hero data on Home page *******************
 export const heroHome: HeroProps = {
-  title: (
-    <>
-      Welcome to <span className="hidden md:inline">Portland, Maine —</span> Where Coastal Charm Meets Culinary Excellence
-    </>
-  ),
-  subtitle: (
-    <>
-      <span className="hidden md:inline">
-        Nestled along the rocky shores of Casco Bay, Portland offers a perfect blend of small-town charm and big-city culture. From world-class seafood to stunning coastal views, discover why Portland is one of Americas most beloved coastal destinations.
-      </span>{' '}
-      Experience the best of Maines vibrant city — where every corner offers a story, every meal is memorable, and every visit leaves you dreaming of the next.
-    </>
-  ),
+  title: getContent('home.hero.title'),
+  subtitle: getContent('home.hero.subtitle'),
+  tagline: getContent('home.hero.tagline'),
   callToAction: {
-    text: 'Explore Attractions',
-    href: '/attractions',
+    text: getContent('home.hero.callToAction.text'),
+    href: getContent('home.hero.callToAction.href'),
     icon: IconMapPin,
   },
   callToAction2: {
-    text: 'Find Restaurants',
-    href: '/restaurants',
+    text: getContent('home.hero.callToAction2.text'),
+    href: getContent('home.hero.callToAction2.href'),
     icon: IconMapPin,
   },
   image: {
-    src: '/images/casco-bay.jpg',
-    alt: 'Portland, Maine Harbor',
+    src: getContent('home.hero.image.src'),
+    alt: getContent('home.hero.image.alt'),
   },
 };
 
@@ -128,7 +119,7 @@ export const featuresHome: FeaturesProps = {
     {
       title: 'Arts & Culture',
       description:
-        'Immerse yourself in Portland&apos;s vibrant arts scene, from the Portland Museum of Art to local galleries and theaters. The city&apos;s creative spirit is evident in every neighborhood.',
+        'Immerse yourself in Portlands vibrant arts scene, from the Portland Museum of Art to local galleries and theaters. The city&apos;s creative spirit is evident in every neighborhood.',
       icon: IconListCheck,
       callToAction: {
         text: 'Discover Arts',
