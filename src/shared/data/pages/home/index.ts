@@ -4,7 +4,7 @@ export { heroHome } from './hero.data';
 export { getFeaturesHome } from './features.data';
 export { getStepsHome } from './steps.data';
 export { testimonialsHome } from './testimonials.data';
-export { faqsHome } from './faqs.data';
+export { getFaqsHome } from './faqs.data';
 export { featuredBusinessesHome } from './featured-businesses.data';
 export { pricingHome } from './pricing.data';
 export { getTeamHome } from './team.data';
