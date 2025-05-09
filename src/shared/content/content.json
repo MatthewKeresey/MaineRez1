@@ -34,7 +34,8 @@
       "metaDescription": "Experience Portland's world-renowned food scene, from fresh seafood to innovative cuisine.",
       "slug": "/restaurants",
       "status": "published",
-      "sections": ["hero", "listings", "map", "categories"]
+      "sections": ["hero", "listings", "map", "categories"],
+      "prompt": "Create a dining page for [CITY/STATE] that showcases its culinary scene. Include sections for a hero image, restaurant listings, an interactive map, and categories of cuisine. Focus on what makes [CITY/STATE]'s food scene unique and worth experiencing."
     },
     "arts": {
       "id": "arts",
@@ -44,7 +45,8 @@
       "metaDescription": "Immerse yourself in Portland's vibrant arts and culture scene.",
       "slug": "/arts",
       "status": "published",
-      "sections": ["hero", "listings", "map", "categories"]
+      "sections": ["hero", "listings", "map", "categories"],
+      "prompt": "Create an arts and culture page for [CITY/STATE] that highlights its creative scene. Include sections for a hero image, venue listings, an interactive map, and categories of arts and culture. Focus on what makes [CITY/STATE]'s arts scene unique and worth experiencing."
     },
     "outdoors": {
       "id": "outdoors",
@@ -54,7 +56,8 @@
       "metaDescription": "Discover outdoor adventures and natural attractions in and around Portland.",
       "slug": "/outdoors",
       "status": "published",
-      "sections": ["hero", "listings", "map", "categories"]
+      "sections": ["hero", "listings", "map", "categories"],
+      "prompt": "Create an outdoors page for [CITY/STATE] that showcases its natural attractions and outdoor activities. Include sections for a hero image, attraction listings, an interactive map, and categories of outdoor experiences. Focus on what makes [CITY/STATE]'s outdoor scene unique and worth exploring."
     },
     "shopping": {
       "id": "shopping",
@@ -64,7 +67,8 @@
       "metaDescription": "Find unique shops and boutiques in Portland's vibrant shopping districts.",
       "slug": "/shopping",
       "status": "published",
-      "sections": ["hero", "listings", "map", "categories"]
+      "sections": ["hero", "listings", "map", "categories"],
+      "prompt": "Create a shopping page for [CITY/STATE] that highlights its retail scene. Include sections for a hero image, shop listings, an interactive map, and categories of shopping experiences. Focus on what makes [CITY/STATE]'s shopping scene unique and worth exploring."
     }
   },
 
@@ -72,59 +76,115 @@
     "hero": {
       "id": "hero",
       "type": "hero",
-      "title": "Welcome to Portland, Maine",
-      "subtitle": "Discover the perfect blend of historic charm and modern innovation in Maine's largest city",
+      "title": "Welcome to Portland, Maine — Where Coastal Charm Meets Culinary Excellence testing",
+      "subtitle": "testing Nestled along the rocky shores of Casco Bay, Portland offers a perfect blend of small-town charm and big-city culture. From world-class seafood to stunning coastal views, discover why Portland is one of Americas most beloved coastal destinations. Experience the best of Maines vibrant city — where every corner offers a story, every meal is memorable, and every visit leaves you dreaming of the next.",
       "tagline": "Your Gateway to Maine",
       "image": {
-        "src": "/images/portland-hero.jpg",
-        "alt": "Portland Waterfront"
+        "src": "/images/casco-bay.jpg",
+        "alt": "Portland, Maine Harbor"
       },
       "callToAction": {
-        "text": "Explore Portland",
-        "href": "/explore"
+        "text": "Explore Attractions",
+        "href": "/attractions",
+        "icon": "mapPin"
       },
       "callToAction2": {
-        "text": "Plan Your Visit",
-        "href": "/plan"
-      }
+        "text": "Find Restaurants",
+        "href": "/restaurants",
+        "icon": "mapPin"
+      },
+      "prompt": "Create a hero section for [CITY/STATE] that captures its unique character and main attractions. Include a compelling title that combines the city's defining characteristics, a descriptive subtitle that highlights its location and appeal, and appropriate call-to-action buttons. The content should be welcoming and informative, giving visitors a clear sense of what makes [CITY/STATE] special."
     },
     "features": {
       "id": "features",
       "type": "grid",
-      "fields": {
-        "title": "Why Visit Portland?",
-        "subtitle": "Experience the best of Maine's largest city",
-        "tagline": "Highlights",
-        "items": ["food", "culture", "outdoors"]
-      }
+      "title": "Discover Portland, Maine",
+      "subtitle": "Experience the perfect blend of coastal charm and urban sophistication. From historic lighthouses to award-winning restaurants, Portland offers unforgettable experiences for every visitor.",
+      "tagline": "Why Visit Portland",
+      "items": [
+        {
+          "title": "Historic Waterfront",
+          "description": "Explore the working waterfront of the Old Port, where lobster boats and fishing vessels share the harbor with luxury yachts. The historic cobblestone streets are lined with unique shops and restaurants.",
+          "icon": "tailwind",
+          "callToAction": {
+            "text": "Explore the Harbor",
+            "href": "/waterfront"
+          }
+        },
+        {
+          "title": "Culinary Excellence",
+          "description": "Portland is a food lover's paradise, boasting more restaurants per capita than any other city in America. From fresh seafood to innovative farm-to-table cuisine, every meal is a celebration of local flavors.",
+          "icon": "components",
+          "callToAction": {
+            "text": "View Restaurants",
+            "href": "/dining"
+          }
+        },
+        {
+          "title": "Arts & Culture",
+          "description": "Immerse yourself in Portlands vibrant arts scene, from the Portland Museum of Art to local galleries and theaters. The city's creative spirit is evident in every neighborhood.",
+          "icon": "listCheck",
+          "callToAction": {
+            "text": "Discover Arts",
+            "href": "/arts"
+          }
+        },
+        {
+          "title": "Outdoor Adventures",
+          "description": "Whether you prefer kayaking in Casco Bay, hiking the Eastern Promenade, or exploring the nearby islands, Portland offers endless opportunities for outdoor recreation.",
+          "icon": "rocket",
+          "callToAction": {
+            "text": "Plan Activities",
+            "href": "/outdoors"
+          }
+        },
+        {
+          "title": "Craft Beer Scene",
+          "description": "Home to over 20 breweries, Portland is a craft beer destination. Sample unique brews at local favorites like Allagash, Bissell Brothers, and Rising Tide.",
+          "icon": "arrowsRightLeft",
+          "callToAction": {
+            "text": "Tour Breweries",
+            "href": "/breweries"
+          }
+        },
+        {
+          "title": "Shopping & Entertainment",
+          "description": "From boutique shops in the Old Port to the Maine Mall, Portland offers diverse shopping experiences. Enjoy live music, theater, and entertainment throughout the city.",
+          "icon": "bulb",
+          "callToAction": {
+            "text": "Shop Local",
+            "href": "/shopping"
+          }
+        }
+      ],
+      "prompt": "Create a features section for [CITY/STATE] that highlights its main attractions and unique selling points. Include 6 key features that showcase different aspects of the city (e.g., history, food, arts, outdoors, entertainment, shopping). Each feature should have a compelling title, detailed description, and relevant call-to-action. Focus on what makes [CITY/STATE] unique and worth visiting."
     },
-    "listings": {
-      "id": "listings",
-      "type": "list",
-      "fields": {
-        "title": "Featured Places",
-        "subtitle": "Discover the best of Portland",
-        "tagline": "Curated Selection",
-        "items": []
-      }
-    },
-    "map": {
-      "id": "map",
-      "type": "map",
-      "fields": {
-        "title": "Explore the Area",
-        "subtitle": "Find your way around Portland",
-        "tagline": "Interactive Map"
-      }
-    },
-    "categories": {
-      "id": "categories",
-      "type": "grid",
-      "fields": {
-        "title": "Browse by Category",
-        "subtitle": "Find exactly what you're looking for",
-        "tagline": "Categories"
-      }
+    "contentOne": {
+      "id": "contentOne",
+      "type": "content",
+      "title": "A Food Lovers Paradise",
+      "subtitle": "Discover Portlands renowned culinary scene",
+      "tagline": "Dining",
+      "content": "Portland has earned its reputation as one of Americas top food cities. From fresh seafood to craft breweries, every meal is an adventure waiting to be discovered.",
+      "items": [
+        {
+          "title": "World-Class Seafood",
+          "description": "Experience the freshest lobster rolls at Eventide Oyster Co., where delicate lobster meat meets a warm, buttery bun. Don't miss the famous clam chowder and fresh oysters."
+        },
+        {
+          "title": "Craft Breweries",
+          "description": "Portland is a beer lovers paradise with over 20 breweries. Visit Bissell Brothers, Allagash Brewing Company, and Austin Street Brewery for unique craft beers."
+        },
+        {
+          "title": "Farm-to-Table Dining",
+          "description": "Enjoy locally sourced ingredients at Fore Street, where wood-fired cuisine features the best of Maines seasonal produce and meats."
+        }
+      ],
+      "image": {
+        "src": "/images/eventide-oyster.jpg",
+        "alt": "Portland Dining Scene"
+      },
+      "prompt": "Create a content section for [CITY/STATE] that focuses on its culinary scene. Include a compelling title, subtitle, and overview of the city's food culture. List 3-4 key aspects of the local cuisine, such as signature dishes, popular restaurants, or unique food experiences. The content should make readers want to visit [CITY/STATE] for its food scene."
     }
   },
 
@@ -393,7 +453,8 @@
             }
           ]
         }
-      ]
+      ],
+      "prompt": "Create a footer component for [CITY/STATE]'s tourism website. Include three columns: About (with links to About Us, Contact, and Careers), Resources (with links to Blog, Newsletter, and Events), and Legal (with links to Privacy Policy, Terms of Service, and Cookie Policy). Ensure all links are relevant to [CITY/STATE]'s tourism website."
     },
     "features": {
       "id": "features",
@@ -1091,7 +1152,8 @@
           ]
         }
       ],
-      "hasBackground": true
+      "hasBackground": true,
+      "prompt": "Create a faqs4 component for [CITY/STATE] that organizes visitor information into three main categories: Getting Here, Where to Stay, and Things to Do. Each category should include 3 relevant questions with detailed answers. Focus on practical information that helps visitors plan their trip to [CITY/STATE], including transportation, accommodations, and activities."
     },
     "features4": {
       "id": "features4",
@@ -1129,7 +1191,8 @@
       ],
       "columns": 2,
       "hasBackground": true,
-      "isImageDisplayed": true
+      "isImageDisplayed": true,
+      "prompt": "Create a features4 component for [CITY/STATE] that highlights 4 distinctive features that make the destination unique. Include a header with title, subtitle, and tagline. Each feature should have a title, description, and appropriate icon. Add a representative image and organize the features in two columns. Focus on what makes [CITY/STATE] special and worth visiting."
     },
     "heroWithLogo": {
       "id": "heroWithLogo",
@@ -1150,7 +1213,8 @@
         "href": "/attractions",
         "type": "button",
         "variant": "primary"
-      }
+      },
+      "prompt": "Create a hero component with logo for [CITY/STATE]'s tourism website. Include a welcoming title, engaging subtitle, tagline, logo, hero image, and a primary call-to-action button. The content should capture the essence of [CITY/STATE] and encourage visitors to explore."
     },
     "logoBanner": {
       "id": "logoBanner",
@@ -1175,7 +1239,8 @@
           "src": "/images/partners/visit-portland.png",
           "alt": "Visit Portland"
         }
-      ]
+      ],
+      "prompt": "Create a logo banner component for [CITY/STATE]'s tourism website. Include a title and 3-4 partner logos with their names and alt text. Focus on official organizations and partners relevant to [CITY/STATE]'s tourism industry."
     },
     "features2": {
       "id": "features2",
@@ -1241,7 +1306,8 @@
           }
         }
       ],
-      "columns": 3
+      "columns": 3,
+      "prompt": "Create a features2 component for [CITY/STATE]'s tourism website. Include a header with title, subtitle, and tagline. List 6 key features for planning a visit: Getting Here, Where to Stay, Things to Do, Dining Guide, Shopping, and Events Calendar. Each feature should have a title, description, icon, and call-to-action link. Focus on providing comprehensive planning information for visitors to [CITY/STATE]."
     },
     "features3": {
       "id": "features3",
@@ -1284,7 +1350,8 @@
         }
       ],
       "columns": 3,
-      "hasBackground": true
+      "hasBackground": true,
+      "prompt": "Create a features3 component for [CITY/STATE]'s tourism website. Include a header with title, subtitle, and tagline. List 6 key features that make [CITY/STATE] special, such as architecture, heritage, culture, arts, cuisine, and natural surroundings. Each feature should have a title, description, and appropriate icon. Focus on what makes [CITY/STATE] unique and worth visiting."
     },
     "faqs2": {
       "id": "faqs2",
@@ -1312,7 +1379,8 @@
           "description": "Absolutely! Families can enjoy the Children's Museum, the Maine Narrow Gauge Railroad, the Portland Observatory, and various parks. Many restaurants and attractions are welcoming to families with children."
         }
       ],
-      "hasBackground": true
+      "hasBackground": true,
+      "prompt": "Create a faqs2 component for [CITY/STATE]'s tourism website. Include a header with title, subtitle, and tagline. List 4 common questions about visiting [CITY/STATE], covering topics like dining, events, activities, and family-friendliness. Each question should have a detailed, helpful answer that provides valuable information for visitors."
     },
     "faqs3": {
       "id": "faqs3",
@@ -1344,7 +1412,8 @@
         "text": "View More Tips",
         "href": "/travel-tips"
       },
-      "hasBackground": true
+      "hasBackground": true,
+      "prompt": "Create a faqs3 component for [CITY/STATE]'s tourism website. Include a header with title, subtitle, and tagline. List 4 travel tips about exploring [CITY/STATE], covering topics like local transportation, viewpoints, nightlife, and hidden gems. Each tip should have a detailed description and include a call-to-action for more information."
     },
     "contact2": {
       "id": "contact2",
@@ -1399,7 +1468,8 @@
           "type": "submit"
         }
       },
-      "hasBackground": true
+      "hasBackground": true,
+      "prompt": "Create a contact2 component for [CITY/STATE]'s tourism website. Include a header with title, subtitle, and tagline. Design a contact form with fields for name, email, inquiry type (with options relevant to [CITY/STATE]), and message. Add a submit button and ensure the form is user-friendly and collects all necessary information for helping visitors plan their trip to [CITY/STATE]."
     },
     "footer2": {
       "id": "footer2",
@@ -1476,7 +1546,8 @@
           "href": "/cookies"
         }
       ],
-      "footNote": "© 2024 Visit Portland. All rights reserved."
+      "footNote": "© 2024 Visit Portland. All rights reserved.",
+      "prompt": "Create a footer2 component for [CITY/STATE]'s tourism website. Include four columns: About [CITY/STATE] (with descriptive text), Quick Links (with navigation options), Resources (with visitor information), and Contact (with address and email). Add social media links and legal links at the bottom. Include a copyright notice. Ensure all content is specific to [CITY/STATE] and provides comprehensive information for visitors."
     },
     "faqs": {
       "id": "faqs",
@@ -1505,7 +1576,8 @@
         }
       ],
       "columns": 2,
-      "hasBackground": true
+      "hasBackground": true,
+      "prompt": "Create a faqs component for [CITY/STATE]'s tourism website. Include a header with title, subtitle, and tagline. List 4 common questions about visiting [CITY/STATE], covering topics like timing, transportation, accommodations, and attractions. Each question should have a detailed answer that provides valuable information for visitors. Organize the questions in two columns for better readability."
     },
     "team": {
       "id": "team",
@@ -1597,7 +1669,8 @@
           ]
         }
       ],
-      "hasBackground": true
+      "hasBackground": true,
+      "prompt": "Create a team component for [CITY/STATE]'s tourism website. Include a header with title, subtitle, and tagline. List 4 key team members with their names, occupations, images, and contact information (email and LinkedIn). Focus on roles relevant to [CITY/STATE]'s tourism and visitor experience. Ensure all contact information is specific to [CITY/STATE]'s tourism organization."
     },
     "hero": {
       "id": "hero",
@@ -1616,7 +1689,8 @@
       "image": {
         "src": "/images/portland-hero.jpg",
         "alt": "Portland Waterfront"
-      }
+      },
+      "prompt": "Create a hero component for [CITY/STATE]'s tourism website. Include a welcoming title, engaging subtitle, tagline, two call-to-action buttons, and a hero image. The content should capture the essence of [CITY/STATE] and encourage visitors to explore and plan their visit."
     }
   },
 
@@ -1642,7 +1716,8 @@
         "label": "Message",
         "placeholder": "Enter your message"
       }
-    }
+    },
+    "prompt": "Create accessibility labels for [CITY/STATE]'s tourism website. Include navigation labels for main menu, dark mode toggle, and RSS feed. Add form labels and placeholders for email, name, and message fields. Ensure all labels are clear and descriptive for screen readers and assistive technologies."
   },
 
   "meta": {
@@ -1657,7 +1732,8 @@
         "handle": "@portlandguide",
         "site": "@portlandguide"
       }
-    }
+    },
+    "prompt": "Create meta information for [CITY/STATE]'s tourism website. Include a title, description, origin URL, default image, and Twitter handles. Focus on creating SEO-friendly content that accurately represents [CITY/STATE]'s main attractions and experiences."
   },
 
   "attractions": {
@@ -1696,7 +1772,8 @@
       "phone": "207-775-6148",
       "email": "info@portlandmuseum.org",
       "website": "https://www.portlandmuseum.org",
-      "status": "published"
+      "status": "published",
+      "prompt": "Create an attraction entry for a significant museum or cultural institution in [CITY/STATE]. Include details such as title, description, category, features, price range, hours, location (address, latitude, longitude), contact information (phone, email, website), and status. Focus on the institution's cultural significance and unique offerings."
     }
   },
 
@@ -1734,7 +1811,8 @@
       "phone": "207-775-2717",
       "email": "info@forestreet.biz",
       "website": "https://www.forestreet.biz",
-      "status": "published"
+      "status": "published",
+      "prompt": "Create a restaurant entry for a notable dining establishment in [CITY/STATE]. Include details such as title, description, cuisine types, price range, special features, hours, location (address, latitude, longitude), contact information (phone, email, website), and status. Focus on the restaurant's unique culinary approach and contribution to [CITY/STATE]'s food scene."
     }
   },
 
@@ -1772,7 +1850,8 @@
       "phone": "207-828-5600",
       "email": "info@space538.org",
       "website": "https://www.space538.org",
-      "status": "published"
+      "status": "published",
+      "prompt": "Create a gallery entry for a contemporary art space in [CITY/STATE]. Include details such as title, description, category, features, price range, hours, location (address, latitude, longitude), contact information (phone, email, website), and status. Focus on the gallery's role in supporting local artists and contributing to [CITY/STATE]'s arts community."
     }
   },
 
@@ -1802,7 +1881,8 @@
       "address": "Back Cove Trail, Portland, ME 04101",
       "latitude": 43.6680,
       "longitude": -70.2580,
-      "status": "published"
+      "status": "published",
+      "prompt": "Create a trail entry for a recreational path in [CITY/STATE]. Include details such as title, description, category, features, hours, location (address, latitude, longitude), and status. Focus on the trail's accessibility, activities available, and its contribution to [CITY/STATE]'s outdoor recreation options."
     }
   },
 
@@ -1842,7 +1922,8 @@
       "phone": "207-772-4045",
       "email": "info@longfellowbooks.com",
       "website": "https://www.longfellowbooks.com",
-      "status": "published"
+      "status": "published",
+      "prompt": "Create a shop entry for a notable bookstore or cultural retail establishment in [CITY/STATE]. Include details such as title, description, category, subcategory, price range, features, hours, location (address, latitude, longitude), contact information (phone, email, website), and status. Focus on the shop's unique offerings and its contribution to [CITY/STATE]'s cultural scene."
     }
   },
 
@@ -1899,21 +1980,24 @@
       "type": "category",
       "title": "Dining",
       "description": "Discover Portland's culinary scene",
-      "items": ["seafood", "american", "international", "cafes"]
+      "items": ["seafood", "american", "international", "cafes"],
+      "prompt": "Create a dining category structure for [CITY/STATE] that organizes the local culinary scene. Include a title, description, and list of cuisine types that best represent [CITY/STATE]'s diverse food offerings. Focus on the unique culinary traditions and specialties of the area."
     },
     "arts": {
       "id": "arts",
       "type": "category",
       "title": "Arts & Culture",
       "description": "Experience Portland's creative side",
-      "items": ["museums", "galleries", "theaters", "music"]
+      "items": ["museums", "galleries", "theaters", "music"],
+      "prompt": "Create an arts and culture category structure for [CITY/STATE] that organizes the local creative scene. Include a title, description, and list of cultural venues that showcase [CITY/STATE]'s artistic offerings. Focus on the unique cultural institutions and creative spaces that make the area special."
     },
     "outdoors": {
       "id": "outdoors",
       "type": "category",
       "title": "Outdoors",
       "description": "Enjoy Portland's natural beauty",
-      "items": ["parks", "trails", "beaches", "waterfront"]
+      "items": ["parks", "trails", "beaches", "waterfront"],
+      "prompt": "Create an outdoors category structure for [CITY/STATE] that organizes the local natural attractions. Include a title, description, and list of outdoor spaces that highlight [CITY/STATE]'s natural features. Focus on the unique outdoor recreation opportunities and natural landscapes that make the area special."
     }
   },
 
@@ -1939,7 +2023,8 @@
       "coordinates": {
         "latitude": 43.6535,
         "longitude": -70.2640
-      }
+      },
+      "prompt": "Create a location entry for a cultural district in [CITY/STATE]. Include details such as title, description, key features, and coordinates. Focus on the district's role in [CITY/STATE]'s cultural landscape and what makes it a must-visit area for tourists."
     }
   },
 
