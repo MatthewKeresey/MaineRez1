@@ -44,7 +44,7 @@ let contentCache: Content | null = null;
  * Load content from content.json
  */
 export const loadContent = async (): Promise<Content> => {
-  if (contentCache) {
+  if (contentCache !== null) {
     return contentCache;
   }
 
@@ -53,11 +53,13 @@ export const loadContent = async (): Promise<Content> => {
     if (!response.ok) {
       throw new Error('Failed to load content');
     }
-    contentCache = await response.json();
+    const data = await response.json();
+    contentCache = data as Content;
     return contentCache;
   } catch (error) {
     console.error('Error loading content:', error);
-    return {} as Content;
+    contentCache = {} as Content;
+    return contentCache;
   }
 };
 
