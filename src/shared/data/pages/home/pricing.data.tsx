@@ -12,7 +12,7 @@ export const pricingHome: PricingProps = {
   },
   prices: [
     {
-      name: 'Eventide Oyster Co.',
+      title: 'Eventide Oyster Co.',
       description: 'Award-winning seafood restaurant known for innovative takes on New England classics',
       price: 0,
       period: '',
@@ -37,7 +37,7 @@ export const pricingHome: PricingProps = {
       hasRibbon: false,
     },
     {
-      name: 'Portland Museum of Art',
+      title: 'Portland Museum of Art',
       description: 'Maine\'s largest art museum featuring works from local and international artists',
       price: 0,
       period: '',
@@ -62,7 +62,7 @@ export const pricingHome: PricingProps = {
       hasRibbon: false,
     },
     {
-      name: 'Casco Bay Kayak Tours',
+      title: 'Casco Bay Kayak Tours',
       description: 'Guided kayak tours exploring Portland\'s beautiful harbor and islands',
       price: 0,
       period: '',
