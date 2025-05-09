@@ -26,9 +26,13 @@ interface Section {
   [key: string]: any;
 }
 
+type SectionKey = 'hero' | 'features' | 'contentOne' | string;
+
 interface Content {
   pages: Record<string, any>;
-  sections: Record<string, Section>;
+  sections: {
+    [K in SectionKey]: Section;
+  };
   navigation: Record<string, any>;
 }
 
@@ -48,7 +52,7 @@ export const getContent = (path: string, defaultValue: string = ''): string => {
   // Handle the nested structure
   if (keys[0] === 'home') {
     // For home page content, look in sections
-    const sectionKey = keys[1];
+    const sectionKey = keys[1] as SectionKey;
     if (sectionKey && sectionKey in typedContent.sections) {
       current = typedContent.sections[sectionKey];
       // Remove the first two keys (home and section name)
@@ -78,7 +82,7 @@ export const getContentArray = (path: string): any[] => {
   // Handle the nested structure
   if (keys[0] === 'home') {
     // For home page content, look in sections
-    const sectionKey = keys[1];
+    const sectionKey = keys[1] as SectionKey;
     if (sectionKey && sectionKey in typedContent.sections) {
       current = typedContent.sections[sectionKey];
       // Remove the first two keys (home and section name)
@@ -108,7 +112,7 @@ export const getContentObject = (path: string): Record<string, any> => {
   // Handle the nested structure
   if (keys[0] === 'home') {
     // For home page content, look in sections
-    const sectionKey = keys[1];
+    const sectionKey = keys[1] as SectionKey;
     if (sectionKey && sectionKey in typedContent.sections) {
       current = typedContent.sections[sectionKey];
       // Remove the first two keys (home and section name)

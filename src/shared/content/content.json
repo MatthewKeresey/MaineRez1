@@ -76,8 +76,8 @@
     "hero": {
       "id": "hero",
       "type": "hero",
-      "title": "Welcome to Portland, Maine — Where Coastal Charm Meets Culinary Excellence",
-      "subtitle": "Nestled along the rocky shores of Casco Bay, Portland offers a perfect blend of small-town charm and big-city culture. From world-class seafood to stunning coastal views, discover why Portland is one of Americas most beloved coastal destinations. Experience the best of Maines vibrant city — where every corner offers a story, every meal is memorable, and every visit leaves you dreaming of the next.",
+      "title": "Experience Portland, Maine — A Coastal Gem with World-Class Dining",
+      "subtitle": "Discover Portland's unique blend of maritime heritage and modern culture. From award-winning restaurants to historic lighthouses, every moment here tells a story of Maine's rich coastal tradition.",
       "tagline": "Your Gateway to Maine",
       "image": {
         "src": "/images/casco-bay.jpg",
