@@ -2,20 +2,13 @@ import { StaticImageData } from 'next/image';
 import { ReactElement } from 'react';
 import type { TablerIcon } from "@tabler/icons-react"
 
-type Widget = {
-  id?: string;
-  /** Does it have a background? */
-  hasBackground?: boolean;
-};
-
-type WrapperTagProps = Widget & {
+type WrapperTagProps = {
   children: React.ReactNode;
   containerClass?: string;
 };
 
 type BackgroundProps = {
   children?: React.ReactNode;
-  hasBackground?: boolean;
 };
 
 type Header = {
@@ -243,7 +236,8 @@ type HeroProps = {
   image?: Image;
 };
 
-type FAQsProps = Widget & {
+type FAQsProps = {
+  id?: string;
   header?: Header;
   items?: Array<Item>;
   columns?: number;
@@ -258,26 +252,27 @@ type CollapseProps = {
   iconDown?: ReactElement;
 };
 
-type CallToActionProps = Widget & {
+type CallToActionProps = {
+  id?: string;
   title: string;
   subtitle: string;
   callToAction?: CallToActionType;
   items?: Array<Item>;
 };
 
-type FeaturesProps = Widget & {
+type FeaturesProps = {
+  id?: string;
   header?: Header;
   items?: Array<Item>;
-  /** How many columns should it have? */
   columns?: 1 | 2 | 3;
-  /** Do you want the image to be displayed? */
   isImageDisplayed?: boolean;
   image?: Image;
   isBeforeContent?: boolean;
   isAfterContent?: boolean;
 };
 
-type ContentProps = Widget & {
+type ContentProps = {
+  id?: string;
   header?: Header;
   content?: string;
   items?: Array<Item>;
@@ -286,17 +281,17 @@ type ContentProps = Widget & {
   isAfterContent?: boolean;
 };
 
-type StepsProps = Widget & {
+type StepsProps = {
+  id?: string;
   header?: Header;
   items: Array<Item>;
-  /** Do you want the image to be displayed? */
   isImageDisplayed?: boolean;
   image?: Image;
-  /** Do you want to reverse the widget? */
   isReversed?: boolean;
 };
 
-type TeamProps = Widget & {
+type TeamProps = {
+  id?: string;
   header?: Header;
   teams: Array<Team>;
 };
@@ -307,7 +302,8 @@ type AnnouncementProps = {
   callToAction2?: CallToActionType;
 };
 
-type TestimonialsProps = Widget & {
+type TestimonialsProps = {
+  id?: string;
   header?: Header;
   testimonials: Array<Testimonial>;
   isTestimonialUp?: boolean;
@@ -317,25 +313,30 @@ type TestimonialsProps = Widget & {
   callToAction?: CallToActionType;
 };
 
-type PricingProps = Widget & {
+type PricingProps = {
+  id?: string;
   header?: Header;
   prices: Array<Price>;
 };
 
-type ComparisonProps = Widget & {
+type ComparisonProps = {
+  id?: string;
   header?: Header;
   columns: Array<Column>;
 };
 
-type StatsProps = Widget & {
+type StatsProps = {
+  id?: string;
   items: Array<Item>;
 };
 
-type SocialProofProps = Widget & {
+type SocialProofProps = {
+  id?: string;
   images: Array<Image>;
 };
 
-type ContactProps = Widget & {
+type ContactProps = {
+  id?: string;
   header?: Header;
   content?: string;
   items?: Array<Item>;
@@ -372,7 +373,8 @@ type HeaderProps = {
   };
 };
 
-type FeaturedBusinessesProps = Widget & {
+type FeaturedBusinessesProps = {
+  id?: string;
   header?: Header;
   businesses: Array<{
     title: string;
@@ -389,3 +391,116 @@ type FeaturedBusinessesProps = Widget & {
     ribbonTitle?: string;
   }>;
 };
+
+export interface FAQsProps {
+  id: string;
+  header: {
+    title: string;
+    subtitle: string;
+    tagline: string;
+  };
+  items: Array<{
+    title: string;
+    description: string;
+  }>;
+}
+
+export interface FeaturedBusinessesProps {
+  id: string;
+  header: {
+    title: string;
+    subtitle: string;
+    tagline: string;
+  };
+  businesses: Array<{
+    title: string;
+    category: string;
+    features: Array<{
+      description: string;
+    }>;
+    callToAction: {
+      text: string;
+      href: string;
+    };
+    hasRibbon: boolean;
+    ribbonTitle?: string;
+  }>;
+}
+
+export interface PricingProps {
+  id: string;
+  header: {
+    title: string;
+    subtitle: string;
+    tagline: string;
+  };
+  prices: Array<{
+    title: string;
+    value: string;
+    period?: string;
+    description: string;
+    features: Array<{
+      title: string;
+      value: boolean;
+    }>;
+    callToAction: {
+      text: string;
+      href: string;
+    };
+    hasRibbon?: boolean;
+    ribbonTitle?: string;
+  }>;
+}
+
+export interface TeamProps {
+  id: string;
+  header: {
+    title: string;
+    subtitle: string;
+    tagline: string;
+  };
+  teams: Array<{
+    name: string;
+    occupation: string;
+    image: {
+      src: string;
+      alt: string;
+    };
+    items: Array<{
+      title: string;
+      icon?: any;
+    }>;
+  }>;
+}
+
+export interface ContactProps {
+  header: {
+    title: string;
+    subtitle: string;
+    tagline: string;
+  };
+  content: string;
+  items: Array<{
+    title: string;
+    description: string;
+    icon?: any;
+  }>;
+  form: {
+    title: string;
+    inputs: Array<{
+      type: string;
+      name: string;
+      label: string;
+      placeholder?: string;
+      autocomplete?: string;
+    }>;
+    textarea: {
+      name: string;
+      placeholder: string;
+    };
+    btn: {
+      title: string;
+      type: 'submit' | 'button' | 'reset';
+    };
+  };
+}

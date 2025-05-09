@@ -187,7 +187,6 @@ export const testimonialsHome: TestimonialsProps = testimonialsSection ? {
 const faqsSection = content.sections?.faqs;
 export const faqs2Home: FAQsProps = {
   id: 'faqsTwo-on-home',
-  hasBackground: false,
   header: faqsSection?.header || { title: '', subtitle: '', tagline: '' },
   items: faqsSection?.items || [],
 };
@@ -196,7 +195,6 @@ export const faqs2Home: FAQsProps = {
 const featuredBusinessesSection = content.sections?.featuredBusinesses;
 export const featuredBusinessesHome: FeaturedBusinessesProps = {
   id: 'featured-businesses-on-home',
-  hasBackground: true,
   header: featuredBusinessesSection?.header || { title: '', subtitle: '', tagline: '' },
   businesses: featuredBusinessesSection?.businesses || [],
 };
@@ -205,7 +203,6 @@ export const featuredBusinessesHome: FeaturedBusinessesProps = {
 const pricingSection = content.sections?.pricing;
 export const pricingHome: PricingProps = {
   id: 'pricing-on-home',
-  hasBackground: true,
   header: pricingSection?.header || { title: '', subtitle: '', tagline: '' },
   prices: pricingSection?.prices || [],
 };
@@ -214,7 +211,6 @@ export const pricingHome: PricingProps = {
 const teamSection = content.sections?.team;
 export const teamHome: TeamProps = {
   id: 'team-on-home',
-  hasBackground: false,
   header: teamSection?.header || { title: '', subtitle: '', tagline: '' },
   teams: teamSection?.teams?.map(team => ({
     ...team,
@@ -228,7 +224,6 @@ export const teamHome: TeamProps = {
 // Contact data on Home page *******************
 const contactSection = content.sections?.contact;
 export const contactHome: ContactProps = {
-  hasBackground: true,
   header: contactSection?.header || { title: '', subtitle: '', tagline: '' },
   content: contactSection?.content || '',
   items: contactSection?.items?.map(item => ({
