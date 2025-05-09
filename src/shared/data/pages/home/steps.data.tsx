@@ -1,37 +1,37 @@
 import React from 'react';
-import { IconArrowDown, IconClock, IconListCheck } from '@tabler/icons-react';
+import { IconCalendar, IconHome, IconMapPin } from '@tabler/icons-react';
 import { StepsProps } from '~/shared/types';
+import { getContent, getContentObject } from '~/shared/content/content-helper';
+
+const stepsContent = getContentObject('home.steps.items');
 
 export const stepsHome: StepsProps = {
   id: 'steps-on-home',
   hasBackground: false,
   header: {
-    title: 'Plan Your Perfect Portland Visit',
-    subtitle: 'Follow these simple steps to make the most of your trip',
-    tagline: 'Getting Started',
+    title: getContent('home.steps.title'),
+    subtitle: getContent('home.steps.subtitle'),
+    tagline: getContent('home.steps.tagline'),
   },
   items: [
     {
-      title: 'Choose Your Dates',
-      description:
-        'Portland offers unique experiences in every season. Summer brings festivals and outdoor activities, while fall showcases stunning foliage and harvest events.',
-      icon: IconClock,
+      title: stepsContent.dates.title,
+      description: stepsContent.dates.description,
+      icon: IconCalendar,
     },
     {
-      title: 'Book Your Stay',
-      description:
-        'From waterfront hotels to charming B&Bs, Portland offers accommodations for every style and budget. Book early during peak seasons.',
-      icon: IconListCheck,
+      title: stepsContent.stay.title,
+      description: stepsContent.stay.description,
+      icon: IconHome,
     },
     {
-      title: 'Plan Your Activities',
-      description:
-        'Create your itinerary with our curated guides to dining, attractions, and events. Don\'t forget to leave room for spontaneous discoveries!',
-      icon: IconArrowDown,
+      title: stepsContent.activities.title,
+      description: stepsContent.activities.description,
+      icon: IconMapPin,
     },
   ],
   image: {
-    src: '/images/portland-harbor.jpg',
-    alt: 'Portland Harbor',
+    src: '/images/portland-map.jpg',
+    alt: 'Portland Map',
   },
 }; 

@@ -1,52 +1,63 @@
 import React from 'react';
+import { IconCheck } from '@tabler/icons-react';
+import { PricingProps } from '~/shared/types';
+import { getContent, getContentObject } from '~/shared/content/content-helper';
 
-export const featuredBusinessesHome = {
-  id: 'featuredBusinesses-on-home',
-  hasBackground: false,
+const businessesContent = getContentObject('home.featuredBusinesses.items');
+
+export const featuredBusinessesHome: PricingProps = {
+  id: 'featured-businesses-on-home',
+  hasBackground: true,
   header: {
-    title: 'Featured Local Businesses',
-    subtitle: 'Discover some of Portland\'s finest establishments',
-    tagline: 'Local Favorites',
+    title: getContent('home.featuredBusinesses.title'),
+    subtitle: getContent('home.featuredBusinesses.subtitle'),
+    tagline: getContent('home.featuredBusinesses.tagline'),
   },
-  items: [
+  prices: [
     {
-      title: 'Eventide Oyster Co.',
-      description: 'Award-winning seafood restaurant known for innovative takes on New England classics',
-      features: ['Fresh Oysters', 'Lobster Rolls', 'Craft Cocktails'],
+      title: businessesContent.eventide.title,
+      description: businessesContent.eventide.description,
+      price: 0,
+      period: '',
+      items: businessesContent.eventide.features.map(feature => ({
+        description: feature,
+        icon: IconCheck,
+      })),
       callToAction: {
-        text: 'Visit Restaurant',
+        text: getContent('common.buttons.learnMore'),
         href: '/restaurants/eventide',
       },
-      image: {
-        src: '/images/eventide-oyster.jpg',
-        alt: 'Eventide Oyster Co.',
-      },
+      hasRibbon: false,
     },
     {
-      title: 'Portland Museum of Art',
-      description: 'Maine\'s largest art museum featuring works from local and international artists',
-      features: ['Contemporary Art', 'Historic Collection', 'Special Exhibitions'],
+      title: businessesContent.pma.title,
+      description: businessesContent.pma.description,
+      price: 0,
+      period: '',
+      items: businessesContent.pma.features.map(feature => ({
+        description: feature,
+        icon: IconCheck,
+      })),
       callToAction: {
-        text: 'View Exhibits',
+        text: getContent('common.buttons.learnMore'),
         href: '/attractions/pma',
       },
-      image: {
-        src: '/images/portland-museum.jpg',
-        alt: 'Portland Museum of Art',
-      },
+      hasRibbon: false,
     },
     {
-      title: 'Casco Bay Kayak Tours',
-      description: 'Guided kayak tours exploring Portland\'s beautiful harbor and islands',
-      features: ['Guided Tours', 'Equipment Provided', 'Scenic Routes'],
+      title: businessesContent.kayak.title,
+      description: businessesContent.kayak.description,
+      price: 0,
+      period: '',
+      items: businessesContent.kayak.features.map(feature => ({
+        description: feature,
+        icon: IconCheck,
+      })),
       callToAction: {
-        text: 'Book Tour',
+        text: getContent('common.buttons.learnMore'),
         href: '/outdoors/kayaking',
       },
-      image: {
-        src: '/images/kayaking-casco.jpg',
-        alt: 'Casco Bay Kayak Tours',
-      },
+      hasRibbon: false,
     },
   ],
 }; 

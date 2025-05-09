@@ -1,57 +1,60 @@
 import React from 'react';
 import { IconClock, IconMail, IconPhoneCall } from '@tabler/icons-react';
 import { ContactProps } from '~/shared/types';
+import { getContent, getContentObject } from '~/shared/content/content-helper';
+
+const contactContent = getContentObject('home.contact');
 
 export const contactHome: ContactProps = {
   id: 'contact-on-home',
   hasBackground: true,
   header: {
-    title: 'Get in Touch',
-    subtitle: 'Have questions about Portland? We\'re here to help!',
-    tagline: 'Contact Us',
+    title: getContent('home.contact.title'),
+    subtitle: getContent('home.contact.subtitle'),
+    tagline: getContent('home.contact.tagline'),
   },
-  content: 'Whether you\'re planning a visit to Portland, looking for local business information, or have questions about our city, we\'d love to hear from you. Our team of local experts is ready to help make your Portland experience unforgettable.',
+  content: getContent('home.contact.content'),
   items: [
     {
-      title: 'Email Us',
-      description: ['For visitor information', 'info@portlandguide.com'],
+      title: contactContent.items.email.title,
+      description: contactContent.items.email.description,
       icon: IconMail,
     },
     {
-      title: 'Contact',
-      description: ['For business inquiries', 'business@portlandguide.com'],
+      title: contactContent.items.business.title,
+      description: contactContent.items.business.description,
       icon: IconPhoneCall,
     },
     {
-      title: 'Working hours',
-      description: ['Monday - Friday: 09:00 - 17:00', 'Saturday & Sunday: 10:00 - 15:00'],
+      title: contactContent.items.hours.title,
+      description: contactContent.items.hours.description,
       icon: IconClock,
     },
   ],
   form: {
-    title: 'Send Us a Message',
+    title: contactContent.form.title,
     inputs: [
       {
         type: 'text',
         name: 'name',
         autocomplete: 'off',
-        placeholder: 'Your name',
+        placeholder: contactContent.form.inputs.name.placeholder,
       },
       {
         type: 'email',
         name: 'email',
         autocomplete: 'on',
-        placeholder: 'Your email address',
+        placeholder: contactContent.form.inputs.email.placeholder,
       },
     ],
     textarea: {
       cols: 30,
       rows: 5,
       name: 'textarea',
-      placeholder: 'Tell us about your Portland questions or interests...',
+      placeholder: contactContent.form.textarea.placeholder,
     },
     btn: {
-      title: 'Send Message',
+      title: contactContent.form.button.title,
       type: 'submit',
     },
   },
