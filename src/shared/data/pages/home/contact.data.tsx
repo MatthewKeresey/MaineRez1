@@ -1,60 +1,60 @@
 import React from 'react';
 import { IconClock, IconMail, IconPhoneCall } from '@tabler/icons-react';
 import { ContactProps } from '~/shared/types';
-import { getContent, getContentObject } from '~/shared/content/content-helper';
+import content from '~/shared/content/content.json';
 
-const contactContent = getContentObject('home.contact');
+const contactSection = content.sections.contact;
 
 export const contactHome: ContactProps = {
   id: 'contact-on-home',
   hasBackground: true,
   header: {
-    title: getContent('home.contact.title'),
-    subtitle: getContent('home.contact.subtitle'),
-    tagline: getContent('home.contact.tagline'),
+    title: contactSection.header.title,
+    subtitle: contactSection.header.subtitle,
+    tagline: contactSection.header.tagline,
   },
-  content: getContent('home.contact.content'),
+  content: contactSection.content,
   items: [
     {
-      title: contactContent.items.email.title,
-      description: contactContent.items.email.description,
+      title: contactSection.items[0].title,
+      description: contactSection.items[0].description,
       icon: IconMail,
     },
     {
-      title: contactContent.items.business.title,
-      description: contactContent.items.business.description,
+      title: contactSection.items[1].title,
+      description: contactSection.items[1].description,
       icon: IconPhoneCall,
     },
     {
-      title: contactContent.items.hours.title,
-      description: contactContent.items.hours.description,
+      title: contactSection.items[2].title,
+      description: contactSection.items[2].description,
       icon: IconClock,
     },
   ],
   form: {
-    title: contactContent.form.title,
+    title: contactSection.form.title,
     inputs: [
       {
         type: 'text',
         name: 'name',
         autocomplete: 'off',
-        placeholder: contactContent.form.inputs.name.placeholder,
+        placeholder: contactSection.form.inputs[0].placeholder,
       },
       {
         type: 'email',
         name: 'email',
         autocomplete: 'on',
-        placeholder: contactContent.form.inputs.email.placeholder,
+        placeholder: contactSection.form.inputs[1].placeholder,
       },
     ],
     textarea: {
       cols: 30,
       rows: 5,
       name: 'textarea',
-      placeholder: contactContent.form.textarea.placeholder,
+      placeholder: contactSection.form.textarea.placeholder,
     },
     btn: {
-      title: contactContent.form.button.title,
+      title: contactSection.form.btn.title,
       type: 'submit',
     },
   },
