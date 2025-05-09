@@ -1863,8 +1863,7 @@
           "description": "Absolutely! Families can enjoy the Children's Museum, the Maine Narrow Gauge Railroad, the Portland Observatory, and various parks. Many restaurants and attractions are welcoming to families with children."
         }
       ],
-      "hasBackground": true,
-      "prompt": "Create a faqs2 component for [CITY/STATE]'s tourism website. Include a header with title, subtitle, and tagline. List 4 common questions about visiting [CITY/STATE], covering topics like dining, events, activities, and family-friendliness. Each question should have a detailed, helpful answer that provides valuable information for visitors."
+      "hasBackground": false
     },
     "faqs3": {
       "id": "faqs3",
