@@ -2,7 +2,7 @@ import React from 'react';
 import { ContentProps } from '~/shared/types';
 import content from '~/shared/content/content.json';
 
-const contentOneSection = content.sections.contentOne;
+const contentOneSection = content.sections['contentOne'];
 
 export const contentHomeOne: ContentProps = {
   id: 'contentOne-on-home-one',

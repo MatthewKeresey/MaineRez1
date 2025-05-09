@@ -2,7 +2,7 @@ import React from 'react';
 import { StepsProps } from '~/shared/types';
 import content from '~/shared/content/content.json';
 
-const stepsSection = content.sections.steps;
+const stepsSection = content.sections['steps'];
 
 export const stepsHome: StepsProps = {
   id: 'steps-on-home',

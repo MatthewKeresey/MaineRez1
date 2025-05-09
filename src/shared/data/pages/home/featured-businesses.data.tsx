@@ -2,7 +2,7 @@ import React from 'react';
 import { FeaturedBusinessesProps } from '~/shared/types';
 import content from '~/shared/content/content.json';
 
-const featuredBusinessesSection = content.sections.featuredBusinesses;
+const featuredBusinessesSection = content.sections['featuredBusinesses'];
 
 export const featuredBusinessesHome: FeaturedBusinessesProps = {
   id: 'featured-businesses-on-home',

@@ -2,7 +2,7 @@ import React from 'react';
 import { FAQsProps } from '~/shared/types';
 import content from '~/shared/content/content.json';
 
-const faqsSection = content.sections.faqs;
+const faqsSection = content.sections['faqs'];
 
 export const faqsHome: FAQsProps = {
   id: 'faqs-on-home',

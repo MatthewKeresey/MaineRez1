@@ -13,7 +13,7 @@ const iconMap: Record<string, Icon> = {
   tailwind: IconBrandTailwind,
 };
 
-const featuresSection = content.sections.features;
+const featuresSection = content.sections['features'];
 
 export const featuresHome: FeaturesProps = {
   id: 'features-on-home',
