@@ -30,6 +30,7 @@ import {
   TeamProps,
   TestimonialsProps,
   FeaturedBusinessesProps,
+  Item,
 } from '../../types';
 import content from '../../content/content.json';
 
@@ -97,17 +98,7 @@ export const featuresHome: FeaturesProps = {
   items: featuresSection.items.map((item: any) => ({
     title: item.title,
     description: item.description,
-    icon: (() => {
-      switch (item.icon) {
-        case 'tailwind': return IconBrandTailwind;
-        case 'components': return IconComponents;
-        case 'listCheck': return IconListCheck;
-        case 'rocket': return IconRocket;
-        case 'arrowsRightLeft': return IconArrowsRightLeft;
-        case 'bulb': return IconBulb;
-        default: return IconCheck;
-      }
-    })(),
+    icon: iconMap[item.icon as IconName] || undefined,
     callToAction: item.callToAction,
   })),
 };
@@ -279,7 +270,10 @@ export const contactHome: ContactProps = contactSection ? {
   hasBackground: contactSection.hasBackground ?? true,
   header: contactSection.header,
   content: contactSection.content,
-  items: contactSection.items,
+  items: contactSection.items.map(item => ({
+    ...item,
+    icon: iconMap[item.icon as IconName] || undefined
+  })),
   form: {
     ...contactSection.form,
     textarea: {
@@ -313,16 +307,29 @@ export const callToAction2Home: CallToActionProps = callToAction2Section ? {
     ...callToAction2Section.callToAction,
     icon: IconMapPin
   },
-  items: callToAction2Section.items.map(item => ({
-    ...item,
-    form: item.form ? {
-      ...item.form,
-      btn: {
-        ...item.form.btn,
-        type: item.form.btn.type as 'submit' | 'button' | 'reset'
-      }
-    } : undefined
-  }))
+  items: callToAction2Section.items.map(item => {
+    const mappedItem: Item = {
+      title: item.title,
+      description: item.description,
+    };
+
+    if ('href' in item) {
+      mappedItem.href = item.href;
+    }
+
+    if ('form' in item && item.form) {
+      mappedItem.form = {
+        ...item.form,
+        icon: item.form.icon ? iconMap[item.form.icon as IconName] || undefined : undefined,
+        btn: {
+          ...item.form.btn,
+          type: item.form.btn.type as 'submit' | 'button' | 'reset'
+        }
+      };
+    }
+
+    return mappedItem;
+  })
 } : {
   title: '',
   subtitle: '',
