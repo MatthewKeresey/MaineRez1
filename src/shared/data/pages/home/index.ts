@@ -1,8 +1,8 @@
 export { contentHomeOne } from './content-one.data';
 export { contentHomeTwo } from './content-two.data';
 export { heroHome } from './hero.data';
-export { featuresHome } from './features.data';
-export { stepsHome } from './steps.data';
+export { getFeaturesHome } from './features.data';
+export { getStepsHome } from './steps.data';
 export { testimonialsHome } from './testimonials.data';
 export { faqsHome } from './faqs.data';
 export { featuredBusinessesHome } from './featured-businesses.data';
