@@ -28,14 +28,12 @@ interface Section {
 
 interface Content {
   pages: Record<string, any>;
-  sections: {
-    hero: Section;
-    features: Section;
-    contentOne: Section;
-    [key: string]: Section;
-  };
+  sections: Record<string, Section>;
   navigation: Record<string, any>;
 }
+
+// Type assertion for the content object
+const typedContent = content as Content;
 
 /**
  * Safely access nested content properties using dot notation
@@ -45,14 +43,14 @@ interface Content {
  */
 export const getContent = (path: string, defaultValue: string = ''): string => {
   const keys = path.split('.');
-  let current: any = content as Content;
+  let current: any = typedContent;
 
   // Handle the nested structure
   if (keys[0] === 'home') {
     // For home page content, look in sections
     const sectionKey = keys[1];
-    if (sectionKey && sectionKey in content.sections) {
-      current = content.sections[sectionKey];
+    if (sectionKey && sectionKey in typedContent.sections) {
+      current = typedContent.sections[sectionKey];
       // Remove the first two keys (home and section name)
       keys.splice(0, 2);
     }
@@ -75,14 +73,14 @@ export const getContent = (path: string, defaultValue: string = ''): string => {
  */
 export const getContentArray = (path: string): any[] => {
   const keys = path.split('.');
-  let current: any = content as Content;
+  let current: any = typedContent;
 
   // Handle the nested structure
   if (keys[0] === 'home') {
     // For home page content, look in sections
     const sectionKey = keys[1];
-    if (sectionKey && sectionKey in content.sections) {
-      current = content.sections[sectionKey];
+    if (sectionKey && sectionKey in typedContent.sections) {
+      current = typedContent.sections[sectionKey];
       // Remove the first two keys (home and section name)
       keys.splice(0, 2);
     }
@@ -105,14 +103,14 @@ export const getContentArray = (path: string): any[] => {
  */
 export const getContentObject = (path: string): Record<string, any> => {
   const keys = path.split('.');
-  let current: any = content as Content;
+  let current: any = typedContent;
 
   // Handle the nested structure
   if (keys[0] === 'home') {
     // For home page content, look in sections
     const sectionKey = keys[1];
-    if (sectionKey && sectionKey in content.sections) {
-      current = content.sections[sectionKey];
+    if (sectionKey && sectionKey in typedContent.sections) {
+      current = typedContent.sections[sectionKey];
       // Remove the first two keys (home and section name)
       keys.splice(0, 2);
     }
