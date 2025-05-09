@@ -1,6 +1,16 @@
 import React from 'react';
-import { StepsProps } from '~/shared/types';
+import { StepsProps, Icon } from '~/shared/types';
 import content from '~/shared/content/content.json';
+
+import { IconArrowDown, IconArrowRight, IconCalendar, IconHome, IconMapPin } from '@tabler/icons-react';
+
+const iconMap: Record<string, Icon> = {
+  arrowDown: IconArrowDown,
+  arrowRight: IconArrowRight,
+  calendar: IconCalendar,
+  home: IconHome,
+  mapPin: IconMapPin,
+};
 
 const stepsSection = content.sections['steps'];
 
@@ -12,7 +22,7 @@ export const stepsHome: StepsProps = {
   },
   items: stepsSection.items.map(item => ({
     ...item,
-    icon: item.icon,
+    icon: iconMap[item.icon] || IconArrowDown,
   })),
   image: stepsSection.image,
   isReversed: stepsSection.isReversed,
