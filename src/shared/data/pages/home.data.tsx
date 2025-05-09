@@ -84,25 +84,6 @@ export const socialProofHome: SocialProofProps = {
   ],
 };
 
-// Features data on Home page *******************
-const featuresSection = content.sections.features;
-export const featuresHome: FeaturesProps = {
-  id: 'features-on-home',
-  hasBackground: false,
-  columns: 3,
-  header: {
-    title: featuresSection.title,
-    subtitle: featuresSection.subtitle,
-    tagline: featuresSection.tagline,
-  },
-  items: featuresSection.items.map((item: any) => ({
-    title: item.title,
-    description: item.description,
-    icon: iconMap[item.icon as IconName] || undefined,
-    callToAction: item.callToAction,
-  })),
-};
-
 // Content data on Home page *******************
 const contentOneSection = content.sections.contentOne;
 export const contentHomeOne: ContentProps = {
