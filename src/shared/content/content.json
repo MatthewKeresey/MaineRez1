@@ -197,17 +197,8 @@
         { "title": "Historic Old Port" },
         { "title": "Eastern Promenade" },
         { "title": "Casco Bay Islands" },
-        { "title": "Portland Museum of Art" },
-        { "title": "Victoria Mansion" },
-        { "title": "Willard Beach" }
-      ],
-      "image": {
-        "src": "/images/old-port-shopping.jpg",
-        "alt": "Portland, Maine Harbor"
-      },
-      "isReversed": true,
-      "isAfterContent": true,
-      "prompt": "Create a content section for [CITY/STATE] that highlights additional opportunities for exploration and adventure beyond food. Include a compelling title, subtitle, and a list of key places or experiences."
+        { "title": "Portland Museum of Art" }
+      ]
     },
     "steps": {
       "id": "steps-on-home",
@@ -319,41 +310,31 @@
       "prompt": "Create a testimonials section for [CITY/STATE] that features quotes and feedback from visitors and locals. Include names, jobs, testimonials, and images."
     },
     "faqs": {
-      "id": "faqsTwo-on-home",
+      "id": "faqs",
       "type": "faqs",
-      "hasBackground": false,
       "header": {
         "title": "Frequently Asked Questions",
-        "subtitle": "Planning your visit to Portland? Here are answers to some common questions about our city, from the best time to visit to local transportation options.",
-        "tagline": "FAQS"
+        "subtitle": "Find answers to common questions about visiting Portland",
+        "tagline": "FAQs"
       },
       "items": [
         {
-          "title": "When is the best time to visit Portland?",
-          "description": "Portland is beautiful year-round, but summer (June-August) offers the best weather for outdoor activities. Fall brings stunning foliage, while winter offers cozy indoor experiences and fewer crowds. Spring is perfect for whale watching and early-season lobster."
+          "title": "What is the best time to visit Portland?",
+          "description": "Portland is beautiful year-round, but the best time to visit is from June to October when the weather is mild and all attractions are open. Summer offers perfect conditions for outdoor activities and harbor tours."
         },
         {
           "title": "How do I get around Portland?",
-          "description": "Portland is very walkable, especially in the Old Port and Arts District. The city also offers public transportation, taxis, and rideshare services. For exploring the islands, ferries run regularly from the waterfront."
+          "description": "Portland is very walkable, especially in the Old Port and Arts District. The city also has a reliable bus system, taxis, and rideshare services. Many attractions are within walking distance of downtown."
         },
         {
-          "title": "What are the must-try foods in Portland?",
-          "description": "Don't miss the lobster rolls, fresh oysters, and clam chowder. Portland is also known for its craft breweries, artisanal coffee shops, and farm-to-table restaurants. The food scene is diverse and innovative."
+          "title": "What are the must-visit attractions?",
+          "description": "Don't miss the Portland Head Light, Old Port district, Portland Museum of Art, and Eastern Promenade. The Casco Bay Islands and local breweries are also popular attractions."
         },
         {
-          "title": "Are there good shopping options?",
-          "description": "Yes! The Old Port features unique boutiques and local crafts, while the Arts District offers galleries and specialty shops. The Maine Mall provides traditional retail options, and local markets showcase Maine-made products."
-        },
-        {
-          "title": "What outdoor activities are available?",
-          "description": "Enjoy kayaking in Casco Bay, hiking the Eastern Promenade, exploring nearby islands, or relaxing at local beaches. The city also offers bike rentals and walking tours for exploring different neighborhoods."
-        },
-        {
-          "title": "Is Portland family-friendly?",
-          "description": "Absolutely! Families can enjoy the Children's Museum, local parks, boat tours, and many restaurants welcome children. The city offers a perfect mix of educational and fun activities for all ages."
+          "title": "Where should I stay in Portland?",
+          "description": "The Old Port and Arts District are popular areas to stay, offering easy access to restaurants, shops, and attractions. There are options for every budget, from luxury hotels to charming B&Bs."
         }
-      ],
-      "prompt": "Create a FAQs section for [CITY/STATE] that answers common visitor questions. Include 5-6 questions and answers about travel, food, activities, and local tips."
+      ]
     },
     "featuredBusinesses": {
       "id": "featured-businesses-on-home",
@@ -1096,11 +1077,11 @@
         },
         {
           "title": "Where should I stay in Portland?",
-          "description": "The Old Port and Arts District are popular areas with many hotels and inns. Waterfront accommodations offer beautiful views, while the West End provides a quieter residential feel."
+          "description": "The Old Port and Arts District are popular areas with many hotels and inns. The West End offers charming bed and breakfasts, while the waterfront area provides scenic views and easy access to attractions."
         },
         {
           "title": "What are the must-visit attractions?",
-          "description": "Don't miss the Portland Museum of Art, Portland Head Light, Old Port shopping, and the working waterfront. Take a ferry to the islands or enjoy the local food scene."
+          "description": "Don't miss the Portland Head Light, Old Port district, Portland Museum of Art, and the Eastern Promenade. The Casco Bay Islands and local breweries are also popular attractions."
         }
       ],
       "columns": 2,
