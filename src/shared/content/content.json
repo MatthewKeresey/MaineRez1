@@ -338,7 +338,8 @@
           "title": "Where should I stay in Portland?",
           "description": "The Old Port and Arts District are popular areas to stay, offering easy access to restaurants, shops, and attractions. There are options for every budget, from luxury hotels to charming B&Bs."
         }
-      ]
+      ],
+      "hasBackground": false
     },
     "featuredBusinesses": {
       "id": "featured-businesses-on-home",
@@ -1085,7 +1086,7 @@
         },
         {
           "title": "What are the must-visit attractions?",
-          "description": "Don't miss the Portland Head Light, Old Port district, Portland Museum of Art, and the Eastern Promenade. The Casco Bay Islands and local breweries are also popular attractions."
+          "description": "Don't miss the Portland Head Light, Old Port district, Portland Museum of Art, and the Eastern Promenade. The city's food scene, particularly the seafood restaurants, is also a major attraction."
         }
       ],
       "columns": 2,
