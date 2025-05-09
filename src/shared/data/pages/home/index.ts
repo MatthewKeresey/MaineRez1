@@ -7,6 +7,6 @@ export { testimonialsHome } from './testimonials.data';
 export { faqsHome } from './faqs.data';
 export { featuredBusinessesHome } from './featured-businesses.data';
 export { pricingHome } from './pricing.data';
-export { teamHome } from './team.data';
+export { getTeamHome } from './team.data';
 export { contactHome } from './contact.data';
 export { socialProofHome } from './social-proof.data'; 
