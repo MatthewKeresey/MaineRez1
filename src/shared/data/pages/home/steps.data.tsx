@@ -3,9 +3,11 @@ declare var require: any;
 import { StepsProps, Icon } from '~/shared/types';
 import content from '~/shared/content/content.json';
 
-const stepsSection = content.sections['steps'];
-
 export function getStepsHome(): StepsProps {
+  const stepsSection = content.sections['steps'];
+  if (!stepsSection) {
+    throw new Error("Missing 'steps' section in content.json. Please check your JSON structure.");
+  }
   const { IconArrowDown, IconArrowRight, IconCalendar, IconHome, IconMapPin } = require('@tabler/icons-react');
   const iconMap: Record<string, Icon> = {
     arrowDown: IconArrowDown,

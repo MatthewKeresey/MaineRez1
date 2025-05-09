@@ -3,9 +3,11 @@ declare var require: any;
 import { FeaturesProps, Icon } from '~/shared/types';
 import content from '~/shared/content/content.json';
 
-const featuresSection = content.sections['features'];
-
 export function getFeaturesHome(): FeaturesProps {
+  const featuresSection = content.sections['features'];
+  if (!featuresSection) {
+    throw new Error("Missing 'features' section in content.json. Please check your JSON structure.");
+  }
   const { IconRocket, IconBulb, IconListCheck, IconArrowsRightLeft, IconComponents, IconBrandTailwind } = require('@tabler/icons-react');
   const iconMap: Record<string, Icon> = {
     rocket: IconRocket,

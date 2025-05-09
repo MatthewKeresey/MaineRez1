@@ -4,15 +4,17 @@ import content from '~/shared/content/content.json';
 
 import { IconBrandLinkedin, IconBrandTwitter, IconMail } from '@tabler/icons-react';
 
-const iconMap: Record<string, Icon> = {
-  linkedin: IconBrandLinkedin,
-  twitter: IconBrandTwitter,
-  mail: IconMail,
-};
-
-const teamSection = content.sections['team'];
-
 export function getTeamHome(): TeamProps {
+  const teamSection = content.sections['team'];
+  if (!teamSection) {
+    throw new Error("Missing 'team' section in content.json. Please check your JSON structure.");
+  }
+  const iconMap: Record<string, Icon> = {
+    linkedin: IconBrandLinkedin,
+    twitter: IconBrandTwitter,
+    mail: IconMail,
+  };
+
   return {
     id: 'team-on-home',
     hasBackground: false,
