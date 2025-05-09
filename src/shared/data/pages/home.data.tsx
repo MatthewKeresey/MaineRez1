@@ -190,7 +190,7 @@ if (!faqsSection) {
 }
 export const faqs2Home: FAQsProps = faqsSection ? {
   id: faqsSection.id || 'faqsTwo-on-home',
-  hasBackground: faqsSection.hasBackground ?? false,
+  hasBackground: false,
   header: faqsSection.header,
   items: faqsSection.items,
 } : {
