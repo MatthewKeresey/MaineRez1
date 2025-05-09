@@ -240,7 +240,8 @@
         },
         {
           "title": "Share Your Story",
-          "description": "Tag @MaineRez on social media to be featured and inspire future visitors!"
+          "description": "Tag @MaineRez on social media to be featured and inspire future visitors!",
+          "icon": ""
         }
       ],
       "prompt": "Create a steps section for [CITY/STATE] that guides visitors through planning their trip. Include 3-4 steps with titles, descriptions, and optional icons."
