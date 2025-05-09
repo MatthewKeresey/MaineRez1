@@ -1,6 +1,14 @@
 import React from 'react';
-import { TeamProps } from '~/shared/types';
+import { TeamProps, Icon } from '~/shared/types';
 import content from '~/shared/content/content.json';
+
+import { IconBrandLinkedin, IconBrandTwitter, IconMail } from '@tabler/icons-react';
+
+const iconMap: Record<string, Icon> = {
+  linkedin: IconBrandLinkedin,
+  twitter: IconBrandTwitter,
+  mail: IconMail,
+};
 
 const teamSection = content.sections['team'];
 
@@ -15,7 +23,7 @@ export const teamHome: TeamProps = {
     ...team,
     items: team.items?.map(item => ({
       ...item,
-      icon: item.icon,
+      icon: iconMap[item.icon] || IconMail,
     })),
   })),
 }; 
