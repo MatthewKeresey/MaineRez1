@@ -198,7 +198,11 @@
         { "title": "Eastern Promenade" },
         { "title": "Casco Bay Islands" },
         { "title": "Portland Museum of Art" }
-      ]
+      ],
+      "image": {
+        "src": "/images/old-port-shopping.jpg",
+        "alt": "Portland, Maine Harbor"
+      }
     },
     "steps": {
       "id": "steps-on-home",
