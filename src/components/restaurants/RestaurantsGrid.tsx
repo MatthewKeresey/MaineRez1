@@ -1,68 +1,52 @@
-import React from 'react';
+/** @jsxImportSource react */
+import type { FC } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { getContent } from '~/shared/content/content-helper';
 
 interface RestaurantItem {
+  id: string;
   title: string;
   description: string;
-  imageSrc: string;
+  image?: {
+    src: string;
+    alt: string;
+  };
   href: string;
 }
 
-const restaurants: RestaurantItem[] = [
-  {
-    title: 'Eventide Oyster Co.',
-    description: "Famous for their brown butter lobster rolls and fresh oysters. A must-visit Portland dining destination.",
-    imageSrc: '/images/eventide.jpg',
-    href: '/restaurants/eventide',
-  },
-  {
-    title: 'Fore Street',
-    description: "Wood-fired cooking and farm-to-table cuisine in a rustic-elegant setting with harbor views.",
-    imageSrc: '/images/fore-street.jpg',
-    href: '/restaurants/fore-street',
-  },
-  {
-    title: 'Allagash Brewing',
-    description: "Renowned brewery offering tours, tastings, and a welcoming beer garden experience.",
-    imageSrc: '/images/eventide-oyster.jpg',
-    href: '/restaurants/allagash',
-  },
-  {
-    title: 'Farm-to-Table Experience',
-    description: "Portland's finest seasonal ingredients transformed into memorable dining experiences.",
-    imageSrc: '/images/restaurants-hero.jpg',
-    href: '/restaurants/farm-to-table',
-  },
-  {
-    title: 'Old Port Dining',
-    description: "Explore the historic district's diverse restaurant scene, from seafood shacks to fine dining.",
-    imageSrc: '/images/old-port-shopping.jpg',
-    href: '/restaurants/old-port',
-  },
-  {
-    title: 'Local Food Scene',
-    description: "Discover Portland's vibrant food markets, food trucks, and casual eateries.",
-    imageSrc: '/images/portland-market.jpg',
-    href: '/restaurants/local-food',
-  },
-];
+// Get all restaurants from content.json
+const getRestaurants = (): RestaurantItem[] => {
+  const restaurantsData = getContent('restaurants');
+  return Object.entries(restaurantsData).map(([id, restaurant]: [string, any]) => ({
+    id,
+    title: restaurant.title,
+    description: restaurant.description,
+    image: {
+      src: `/images/restaurants/${id}.jpg`,
+      alt: restaurant.title
+    },
+    href: `/restaurants/${id}`
+  }));
+};
 
-export default function RestaurantsGrid() {
+const RestaurantsGrid: FC = () => {
+  const restaurants = getRestaurants();
+
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {restaurants.map((restaurant, index) => (
-          <Link key={index} href={restaurant.href} className="group">
+        {restaurants.map((restaurant) => (
+          <Link key={restaurant.id} href={restaurant.href} className="group">
             <div className="relative h-64 overflow-hidden rounded-lg shadow-lg transition-all duration-300 group-hover:shadow-xl">
               <Image
-                src={restaurant.imageSrc}
-                alt={restaurant.title}
+                src={restaurant.image?.src || '/images/restaurants/default.jpg'}
+                alt={restaurant.image?.alt || restaurant.title}
                 fill
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 className="object-cover transition-transform duration-300 group-hover:scale-105"
                 quality={75}
-                priority={index < 3}
+                priority={restaurants.indexOf(restaurant) < 3}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent">
                 <div className="absolute bottom-0 p-6">
@@ -80,4 +64,6 @@ export default function RestaurantsGrid() {
       </div>
     </div>
   );
-} 
+};
+
+export default RestaurantsGrid; 
