@@ -259,7 +259,13 @@ export const teamHome: TeamProps = teamSection ? {
   id: teamSection.id || 'team-on-home',
   hasBackground: teamSection.hasBackground ?? false,
   header: teamSection.header,
-  teams: teamSection.teams,
+  teams: teamSection.teams.map(team => ({
+    ...team,
+    items: team.items.map(item => ({
+      ...item,
+      icon: iconMap[item.icon as IconName] || undefined
+    }))
+  }))
 } : {
   id: 'team-on-home',
   hasBackground: false,
