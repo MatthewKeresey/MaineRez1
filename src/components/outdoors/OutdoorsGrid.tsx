@@ -1,3 +1,4 @@
+"use client";
 /** @jsxImportSource react */
 import type { FC } from 'react';
 import Image from 'next/image';
