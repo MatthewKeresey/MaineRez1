@@ -29,6 +29,7 @@ import {
   StepsProps,
   TeamProps,
   TestimonialsProps,
+  FeaturedBusinessesProps,
 } from '../../types';
 import content from '../../content/content.json';
 
@@ -152,8 +153,15 @@ export const contentHomeTwo: ContentProps = {
   isAfterContent: true,
 };
 
-// Steps data on Home page *******************
-const iconMap = {
+// Define the type for icon names that can be used in JSON
+type IconName = 'arrowDown' | 'arrowUp' | 'check' | 'rocket' | 'bulb' | 'arrowsRightLeft' | 'brandTailwind' | 'components' | 'listCheck' | '';
+
+// Define the type for the icon map
+type IconMapType = {
+  [K in IconName]: any;
+};
+
+const iconMap: IconMapType = {
   arrowDown: IconArrowDown,
   arrowUp: IconArrowUp,
   check: IconCheck,
@@ -166,6 +174,7 @@ const iconMap = {
   "": undefined
 };
 
+// Steps data on Home page *******************
 const stepsSection = content.sections.steps;
 export const stepsHome: StepsProps = stepsSection ? {
   id: stepsSection.id || 'steps-on-home',
@@ -174,11 +183,19 @@ export const stepsHome: StepsProps = stepsSection ? {
   isImageDisplayed: stepsSection.isImageDisplayed ?? true,
   image: stepsSection.image,
   header: stepsSection.header,
-  items: stepsSection.items.map((item: any) => ({
+  items: stepsSection.items.map((item) => ({
     ...item,
-    icon: iconMap[item.icon] || undefined
+    icon: iconMap[item.icon as IconName] || undefined
   })),
-} : stepsHome;
+} : {
+  id: 'steps-on-home',
+  hasBackground: false,
+  isReversed: false,
+  isImageDisplayed: true,
+  image: { src: '', alt: '' },
+  header: { title: '', subtitle: '', tagline: '' },
+  items: []
+};
 
 // Testimonials data on Home page *******************
 const testimonialsSection = content.sections.testimonials;
@@ -187,7 +204,12 @@ export const testimonialsHome: TestimonialsProps = testimonialsSection ? {
   hasBackground: testimonialsSection.hasBackground ?? true,
   header: testimonialsSection.header,
   testimonials: testimonialsSection.testimonials,
-} : testimonialsHome;
+} : {
+  id: 'testimonials-on-home',
+  hasBackground: true,
+  header: { title: '', subtitle: '', tagline: '' },
+  testimonials: []
+};
 
 // FAQS data on Home page *******************
 const faqsSection = content.sections.faqs;
@@ -196,16 +218,26 @@ export const faqs2Home: FAQsProps = faqsSection ? {
   hasBackground: faqsSection.hasBackground ?? false,
   header: faqsSection.header,
   items: faqsSection.items,
-} : faqs2Home;
+} : {
+  id: 'faqsTwo-on-home',
+  hasBackground: false,
+  header: { title: '', subtitle: '', tagline: '' },
+  items: []
+};
 
 // Featured Businesses data on Home page *******************
 const featuredBusinessesSection = content.sections.featuredBusinesses;
-export const featuredBusinessesHome = featuredBusinessesSection ? {
+export const featuredBusinessesHome: FeaturedBusinessesProps = featuredBusinessesSection ? {
   id: featuredBusinessesSection.id || 'featured-businesses-on-home',
   hasBackground: featuredBusinessesSection.hasBackground ?? true,
   header: featuredBusinessesSection.header,
   businesses: featuredBusinessesSection.businesses,
-} : featuredBusinessesHome;
+} : {
+  id: 'featured-businesses-on-home',
+  hasBackground: true,
+  header: { title: '', subtitle: '', tagline: '' },
+  businesses: []
+};
 
 // Pricing data on Home page *******************
 const pricingSection = content.sections.pricing;
@@ -214,7 +246,12 @@ export const pricingHome: PricingProps = pricingSection ? {
   hasBackground: pricingSection.hasBackground ?? true,
   header: pricingSection.header,
   prices: pricingSection.prices,
-} : pricingHome;
+} : {
+  id: 'pricing-on-home',
+  hasBackground: true,
+  header: { title: '', subtitle: '', tagline: '' },
+  prices: []
+};
 
 // Team data on Home page *******************
 const teamSection = content.sections.team;
@@ -223,7 +260,12 @@ export const teamHome: TeamProps = teamSection ? {
   hasBackground: teamSection.hasBackground ?? false,
   header: teamSection.header,
   teams: teamSection.teams,
-} : teamHome;
+} : {
+  id: 'team-on-home',
+  hasBackground: false,
+  header: { title: '', subtitle: '', tagline: '' },
+  teams: []
+};
 
 // Contact data on Home page *******************
 const contactSection = content.sections.contact;
@@ -232,14 +274,52 @@ export const contactHome: ContactProps = contactSection ? {
   header: contactSection.header,
   content: contactSection.content,
   items: contactSection.items,
-  form: contactSection.form,
-} : contactHome;
+  form: {
+    ...contactSection.form,
+    textarea: {
+      ...contactSection.form.textarea,
+      name: contactSection.form.textarea.name || 'message'
+    },
+    btn: {
+      ...contactSection.form.btn,
+      type: contactSection.form.btn.type as 'submit' | 'button' | 'reset'
+    }
+  }
+} : {
+  hasBackground: true,
+  header: { title: '', subtitle: '', tagline: '' },
+  content: '',
+  items: [],
+  form: {
+    title: '',
+    inputs: [],
+    textarea: { name: 'message', placeholder: '' },
+    btn: { title: '', type: 'submit' }
+  }
+};
 
 // CallToAction data *******************
 const callToAction2Section = content.sections.callToAction2;
 export const callToAction2Home: CallToActionProps = callToAction2Section ? {
   title: callToAction2Section.title,
   subtitle: callToAction2Section.subtitle,
-  callToAction: callToAction2Section.callToAction,
-  items: callToAction2Section.items,
-} : callToAction2Home;
+  callToAction: {
+    ...callToAction2Section.callToAction,
+    icon: IconMapPin
+  },
+  items: callToAction2Section.items.map(item => ({
+    ...item,
+    form: item.form ? {
+      ...item.form,
+      btn: {
+        ...item.form.btn,
+        type: item.form.btn.type as 'submit' | 'button' | 'reset'
+      }
+    } : undefined
+  }))
+} : {
+  title: '',
+  subtitle: '',
+  callToAction: { text: '', href: '', icon: IconMapPin },
+  items: []
+};

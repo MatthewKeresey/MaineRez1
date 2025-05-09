@@ -371,3 +371,21 @@ type HeaderProps = {
     alt: string;
   };
 };
+
+type FeaturedBusinessesProps = Widget & {
+  header?: Header;
+  businesses: Array<{
+    title: string;
+    category: string;
+    features: Array<{
+      description: string;
+    }>;
+    callToAction: {
+      targetBlank: boolean;
+      text: string;
+      href: string;
+    };
+    hasRibbon: boolean;
+    ribbonTitle?: string;
+  }>;
+};
