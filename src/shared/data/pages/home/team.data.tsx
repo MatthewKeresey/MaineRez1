@@ -10,7 +10,7 @@ export const teamHome: TeamProps = {
     subtitle: 'Get to know the people behind Portland Guide',
     tagline: 'Our Team',
   },
-  members: [
+  teams: [
     {
       name: 'Sarah Johnson',
       occupation: 'Food & Dining Expert',
