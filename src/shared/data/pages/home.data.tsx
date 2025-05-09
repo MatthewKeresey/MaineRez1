@@ -184,101 +184,68 @@ export const testimonialsHome: TestimonialsProps = testimonialsSection ? {
 };
 
 // FAQS data on Home page *******************
-const faqsSection = content.sections.faqs;
-if (!faqsSection) {
-  throw new Error("Missing 'faqs' section in content.json. Please check your JSON structure and deployment.");
-}
-export const faqs2Home: FAQsProps = faqsSection ? {
-  id: faqsSection.id || 'faqsTwo-on-home',
-  hasBackground: false,
-  header: faqsSection.header,
-  items: faqsSection.items,
-} : {
+const faqsSection = content.sections?.faqs;
+export const faqs2Home: FAQsProps = {
   id: 'faqsTwo-on-home',
   hasBackground: false,
-  header: { title: '', subtitle: '', tagline: '' },
-  items: []
+  header: faqsSection?.header || { title: '', subtitle: '', tagline: '' },
+  items: faqsSection?.items || [],
 };
 
 // Featured Businesses data on Home page *******************
-const featuredBusinessesSection = content.sections.featuredBusinesses;
-export const featuredBusinessesHome: FeaturedBusinessesProps = featuredBusinessesSection ? {
-  id: featuredBusinessesSection.id || 'featured-businesses-on-home',
-  hasBackground: true,
-  header: featuredBusinessesSection.header,
-  businesses: featuredBusinessesSection.businesses,
-} : {
+const featuredBusinessesSection = content.sections?.featuredBusinesses;
+export const featuredBusinessesHome: FeaturedBusinessesProps = {
   id: 'featured-businesses-on-home',
   hasBackground: true,
-  header: { title: '', subtitle: '', tagline: '' },
-  businesses: []
+  header: featuredBusinessesSection?.header || { title: '', subtitle: '', tagline: '' },
+  businesses: featuredBusinessesSection?.businesses || [],
 };
 
 // Pricing data on Home page *******************
-const pricingSection = content.sections.pricing;
-export const pricingHome: PricingProps = pricingSection ? {
-  id: pricingSection.id || 'pricing-on-home',
-  hasBackground: true,
-  header: pricingSection.header,
-  prices: pricingSection.prices,
-} : {
+const pricingSection = content.sections?.pricing;
+export const pricingHome: PricingProps = {
   id: 'pricing-on-home',
   hasBackground: true,
-  header: { title: '', subtitle: '', tagline: '' },
-  prices: []
+  header: pricingSection?.header || { title: '', subtitle: '', tagline: '' },
+  prices: pricingSection?.prices || [],
 };
 
 // Team data on Home page *******************
-const teamSection = content.sections.team;
-export const teamHome: TeamProps = teamSection ? {
-  id: teamSection.id || 'team-on-home',
-  hasBackground: false,
-  header: teamSection.header,
-  teams: teamSection.teams.map(team => ({
-    ...team,
-    items: team.items.map(item => ({
-      ...item,
-      icon: iconMap[item.icon as IconName] || undefined
-    }))
-  }))
-} : {
+const teamSection = content.sections?.team;
+export const teamHome: TeamProps = {
   id: 'team-on-home',
   hasBackground: false,
-  header: { title: '', subtitle: '', tagline: '' },
-  teams: []
+  header: teamSection?.header || { title: '', subtitle: '', tagline: '' },
+  teams: teamSection?.teams?.map(team => ({
+    ...team,
+    items: team.items?.map(item => ({
+      ...item,
+      icon: iconMap[item.icon as IconName] || undefined
+    })) || []
+  })) || []
 };
 
 // Contact data on Home page *******************
-const contactSection = content.sections.contact;
-export const contactHome: ContactProps = contactSection ? {
+const contactSection = content.sections?.contact;
+export const contactHome: ContactProps = {
   hasBackground: true,
-  header: contactSection.header,
-  content: contactSection.content,
-  items: contactSection.items.map(item => ({
+  header: contactSection?.header || { title: '', subtitle: '', tagline: '' },
+  content: contactSection?.content || '',
+  items: contactSection?.items?.map(item => ({
     ...item,
     icon: iconMap[item.icon as IconName] || undefined
-  })),
+  })) || [],
   form: {
-    ...contactSection.form,
+    title: contactSection?.form?.title || '',
+    inputs: contactSection?.form?.inputs || [],
     textarea: {
-      ...contactSection.form.textarea,
-      name: contactSection.form.textarea.name || 'message'
+      name: contactSection?.form?.textarea?.name || 'message',
+      placeholder: contactSection?.form?.textarea?.placeholder || ''
     },
     btn: {
-      ...contactSection.form.btn,
-      type: contactSection.form.btn.type as 'submit' | 'button' | 'reset'
+      title: contactSection?.form?.btn?.title || '',
+      type: (contactSection?.form?.btn?.type as 'submit' | 'button' | 'reset') || 'submit'
     }
-  }
-} : {
-  hasBackground: true,
-  header: { title: '', subtitle: '', tagline: '' },
-  content: '',
-  items: [],
-  form: {
-    title: '',
-    inputs: [],
-    textarea: { name: 'message', placeholder: '' },
-    btn: { title: '', type: 'submit' }
   }
 };
 
