@@ -19,7 +19,7 @@ export const featuredBusinessesHome: PricingProps = {
       description: businessesContent.eventide.description,
       price: 0,
       period: '',
-      items: businessesContent.eventide.features.map(feature => ({
+      items: businessesContent.eventide.features.map((feature: string) => ({
         description: feature,
         icon: IconCheck,
       })),
@@ -34,7 +34,7 @@ export const featuredBusinessesHome: PricingProps = {
       description: businessesContent.pma.description,
       price: 0,
       period: '',
-      items: businessesContent.pma.features.map(feature => ({
+      items: businessesContent.pma.features.map((feature: string) => ({
         description: feature,
         icon: IconCheck,
       })),
@@ -49,7 +49,7 @@ export const featuredBusinessesHome: PricingProps = {
       description: businessesContent.kayak.description,
       price: 0,
       period: '',
-      items: businessesContent.kayak.features.map(feature => ({
+      items: businessesContent.kayak.features.map((feature: string) => ({
         description: feature,
         icon: IconCheck,
       })),
