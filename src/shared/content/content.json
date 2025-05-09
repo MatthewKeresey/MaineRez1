@@ -1,0 +1,2851 @@
+{
+  "pages": {
+    "home": {
+      "id": "home",
+      "type": "page",
+      "title": "Portland Guide",
+      "subtitle": "Your Ultimate Guide to Portland, Maine",
+      "metaDescription": "Discover the best of Portland, Maine - from world-class dining to historic attractions and outdoor adventures.",
+      "slug": "/",
+      "status": "published",
+      "sections": ["hero", "features", "attractions", "dining", "shopping", "events"],
+      "seo": {
+        "title": "Portland Guide | Your Ultimate Guide to Portland, Maine",
+        "keywords": ["portland", "maine", "travel", "guide", "attractions", "dining"]
+      },
+      "prompt": "Create a home page structure for [CITY/STATE] that includes: a welcoming title, engaging subtitle, meta description, and SEO keywords. Include sections for hero, features, attractions, dining, shopping, and events. Focus on the unique aspects of [CITY/STATE] and its main attractions."
+    },
+    "attractions": {
+      "id": "attractions",
+      "type": "page",
+      "title": "Attractions",
+      "subtitle": "Discover Portland's Best Attractions",
+      "metaDescription": "Explore Portland's top attractions, from historic landmarks to museums and outdoor spaces.",
+      "slug": "/attractions",
+      "status": "published",
+      "sections": ["hero", "listings", "map", "categories"],
+      "prompt": "Generate an attractions page for [CITY/STATE] that highlights its main tourist destinations, landmarks, and points of interest. Include sections for a hero image, listings of attractions, an interactive map, and categories of attractions. Focus on what makes [CITY/STATE] unique and worth visiting."
+    },
+    "restaurants": {
+      "id": "restaurants",
+      "type": "page",
+      "title": "Dining",
+      "subtitle": "Portland's Culinary Scene",
+      "metaDescription": "Experience Portland's world-renowned food scene, from fresh seafood to innovative cuisine.",
+      "slug": "/restaurants",
+      "status": "published",
+      "sections": ["hero", "listings", "map", "categories"],
+      "prompt": "Create a dining page for [CITY/STATE] that showcases its culinary scene. Include sections for a hero image, restaurant listings, an interactive map, and categories of cuisine. Focus on what makes [CITY/STATE]'s food scene unique and worth experiencing."
+    },
+    "arts": {
+      "id": "arts",
+      "type": "page",
+      "title": "Arts & Culture",
+      "subtitle": "Portland's Creative Scene",
+      "metaDescription": "Immerse yourself in Portland's vibrant arts and culture scene.",
+      "slug": "/arts",
+      "status": "published",
+      "sections": ["hero", "listings", "map", "categories"],
+      "prompt": "Create an arts and culture page for [CITY/STATE] that highlights its creative scene. Include sections for a hero image, venue listings, an interactive map, and categories of arts and culture. Focus on what makes [CITY/STATE]'s arts scene unique and worth experiencing."
+    },
+    "outdoors": {
+      "id": "outdoors",
+      "type": "page",
+      "title": "Outdoors",
+      "subtitle": "Explore Portland's Natural Beauty",
+      "metaDescription": "Discover outdoor adventures and natural attractions in and around Portland.",
+      "slug": "/outdoors",
+      "status": "published",
+      "sections": ["hero", "listings", "map", "categories"],
+      "prompt": "Create an outdoors page for [CITY/STATE] that showcases its natural attractions and outdoor activities. Include sections for a hero image, attraction listings, an interactive map, and categories of outdoor experiences. Focus on what makes [CITY/STATE]'s outdoor scene unique and worth exploring."
+    },
+    "shopping": {
+      "id": "shopping",
+      "type": "page",
+      "title": "Shopping",
+      "subtitle": "Portland's Best Shops",
+      "metaDescription": "Find unique shops and boutiques in Portland's vibrant shopping districts.",
+      "slug": "/shopping",
+      "status": "published",
+      "sections": ["hero", "listings", "map", "categories"],
+      "prompt": "Create a shopping page for [CITY/STATE] that highlights its retail scene. Include sections for a hero image, shop listings, an interactive map, and categories of shopping experiences. Focus on what makes [CITY/STATE]'s shopping scene unique and worth exploring."
+    }
+  },
+
+  "sections": {
+    "hero": {
+      "id": "hero",
+      "type": "hero",
+      "title": "Experience Portland, Maine — A Coastal Gem with World-Class Dining",
+      "subtitle": "Discover Portland's unique blend of maritime heritage and modern culture. From award-winning restaurants to historic lighthouses, every moment here tells a story of Maine's rich coastal tradition.",
+      "tagline": "Your Gateway to Maine",
+      "image": {
+        "src": "/images/casco-bay.jpg",
+        "alt": "Portland, Maine Harbor"
+      },
+      "callToAction": {
+        "text": "Explore Attractions",
+        "href": "/attractions",
+        "icon": "mapPin"
+      },
+      "callToAction2": {
+        "text": "Find Restaurants",
+        "href": "/restaurants",
+        "icon": "mapPin"
+      },
+      "prompt": "Create a hero section for [CITY/STATE] that captures its unique character and main attractions. Include a compelling title that combines the city's defining characteristics, a descriptive subtitle that highlights its location and appeal, and appropriate call-to-action buttons. The content should be welcoming and informative, giving visitors a clear sense of what makes [CITY/STATE] special."
+    },
+    "features": {
+      "id": "features",
+      "type": "grid",
+      "title": "Discover Portland, Maine",
+      "subtitle": "Experience the perfect blend of coastal charm and urban sophistication. From historic lighthouses to award-winning restaurants, Portland offers unforgettable experiences for every visitor.",
+      "tagline": "Why Visit Portland",
+      "items": [
+        {
+          "title": "Historic Waterfront",
+          "description": "Explore the working waterfront of the Old Port, where lobster boats and fishing vessels share the harbor with luxury yachts. The historic cobblestone streets are lined with unique shops and restaurants.",
+          "callToAction": {
+            "text": "Explore the Harbor",
+            "href": "/waterfront"
+          }
+        },
+        {
+          "title": "Culinary Excellence",
+          "description": "Portland is a food lover's paradise, boasting more restaurants per capita than any other city in America. From fresh seafood to innovative farm-to-table cuisine, every meal is a celebration of local flavors.",
+          "callToAction": {
+            "text": "View Restaurants",
+            "href": "/dining"
+          }
+        },
+        {
+          "title": "Arts & Culture",
+          "description": "Immerse yourself in Portlands vibrant arts scene, from the Portland Museum of Art to local galleries and theaters. The city's creative spirit is evident in every neighborhood.",
+          "callToAction": {
+            "text": "Discover Arts",
+            "href": "/arts"
+          }
+        },
+        {
+          "title": "Outdoor Adventures",
+          "description": "Whether you prefer kayaking in Casco Bay, hiking the Eastern Promenade, or exploring the nearby islands, Portland offers endless opportunities for outdoor recreation.",
+          "callToAction": {
+            "text": "Plan Activities",
+            "href": "/outdoors"
+          }
+        },
+        {
+          "title": "Craft Beer Scene",
+          "description": "Home to over 20 breweries, Portland is a craft beer destination. Sample unique brews at local favorites like Allagash, Bissell Brothers, and Rising Tide.",
+          "callToAction": {
+            "text": "Tour Breweries",
+            "href": "/breweries"
+          }
+        },
+        {
+          "title": "Shopping & Entertainment",
+          "description": "From boutique shops in the Old Port to the Maine Mall, Portland offers diverse shopping experiences. Enjoy live music, theater, and entertainment throughout the city.",
+          "callToAction": {
+            "text": "Shop Local",
+            "href": "/shopping"
+          }
+        }
+      ]
+    },
+    "contentOne": {
+      "id": "contentOne",
+      "type": "content",
+      "title": "A Food Lovers Paradise",
+      "subtitle": "Discover Portlands renowned culinary scene",
+      "tagline": "Dining",
+      "content": "Portland has earned its reputation as one of Americas top food cities. From fresh seafood to craft breweries, every meal is an adventure waiting to be discovered.",
+      "items": [
+        {
+          "title": "World-Class Seafood",
+          "description": "Experience the freshest lobster rolls at Eventide Oyster Co., where delicate lobster meat meets a warm, buttery bun. Don't miss the famous clam chowder and fresh oysters."
+        },
+        {
+          "title": "Craft Breweries",
+          "description": "Portland is a beer lovers paradise with over 20 breweries. Visit Bissell Brothers, Allagash Brewing Company, and Austin Street Brewery for unique craft beers."
+        },
+        {
+          "title": "Farm-to-Table Dining",
+          "description": "Enjoy locally sourced ingredients at Fore Street, where wood-fired cuisine features the best of Maines seasonal produce and meats."
+        }
+      ],
+      "image": {
+        "src": "/images/eventide-oyster.jpg",
+        "alt": "Portland Dining Scene"
+      }
+    },
+    "contentTwo": {
+      "id": "contentTwo",
+      "type": "content",
+      "content": "Beyond its culinary scene, Portland offers endless opportunities for exploration and adventure. From historic landmarks to outdoor activities, there's something for everyone.",
+      "items": [
+        {
+          "title": "Historic Old Port"
+        },
+        {
+          "title": "Eastern Promenade"
+        },
+        {
+          "title": "Casco Bay Islands"
+        },
+        {
+          "title": "Portland Museum of Art"
+        },
+        {
+          "title": "Victoria Mansion"
+        },
+        {
+          "title": "Willard Beach"
+        }
+      ],
+      "image": {
+        "src": "/images/old-port-shopping.jpg",
+        "alt": "Portland, Maine Harbor"
+      }
+    },
+    "steps": {
+      "id": "steps",
+      "type": "steps",
+      "header": {
+        "title": "Plan Your Perfect Portland Visit"
+      },
+      "image": {
+        "src": "/images/eastern-promenade.jpg",
+        "alt": "Steps image"
+      },
+      "items": [
+        {
+          "title": "Choose Your Adventure",
+          "description": "Select from top attractions, dining, and outdoor activities to build your ideal Portland itinerary."
+        },
+        {
+          "title": "Book & Reserve",
+          "description": "Reserve tables at renowned restaurants, book tours, and secure your stay with local partners."
+        },
+        {
+          "title": "Experience Portland",
+          "description": "Enjoy your visit with curated recommendations and insider tips from MaineRez."
+        },
+        {
+          "title": "Share Your Story",
+          "description": "Tag @MaineRez on social media to be featured and inspire future visitors!"
+        }
+      ]
+    },
+    "socialProof": {
+      "id": "socialProof",
+      "type": "socialProof",
+      "images": [
+        {
+          "link": "/attractions",
+          "src": "/images/casco-bay.jpg",
+          "alt": "Portland Harbor"
+        },
+        {
+          "link": "/dining",
+          "src": "/images/eventide-oyster.jpg",
+          "alt": "Portland Food Scene"
+        },
+        {
+          "link": "/arts",
+          "src": "/images/arts-district.jpg",
+          "alt": "Portland Arts District"
+        },
+        {
+          "link": "/outdoors",
+          "src": "/images/kayaking-casco.jpg",
+          "alt": "Portland Outdoor Activities"
+        }
+      ]
+    }
+  },
+
+  "navigation": {
+    "header": {
+      "id": "header",
+      "type": "navigation",
+      "logo": {
+        "src": "/images/logo.svg",
+        "alt": "Portland Guide Logo"
+      },
+      "links": [
+        {
+          "label": "Home",
+          "href": "/"
+        },
+        {
+          "label": "Attractions",
+          "href": "/attractions"
+        },
+        {
+          "label": "Dining",
+          "href": "/restaurants"
+        },
+        {
+          "label": "Arts",
+          "href": "/arts"
+        },
+        {
+          "label": "Outdoors",
+          "href": "/outdoors"
+        },
+        {
+          "label": "Shopping",
+          "href": "/shopping"
+        }
+      ],
+      "actions": [
+        {
+          "text": "Contact Us",
+          "href": "/contact",
+          "type": "button",
+          "variant": "primary"
+        }
+      ],
+      "settings": {
+        "isSticky": true,
+        "showToggleTheme": true,
+        "showRssFeed": false,
+        "position": "center"
+      }
+    },
+    "footer": {
+      "id": "footer",
+      "type": "navigation",
+      "logo": {
+        "src": "/images/logo.svg",
+        "alt": "Portland Guide Logo"
+      },
+      "links": [
+        {
+          "label": "About",
+          "href": "/about"
+        },
+        {
+          "label": "Contact",
+          "href": "/contact"
+        },
+        {
+          "label": "Privacy Policy",
+          "href": "/privacy"
+        },
+        {
+          "label": "Terms of Service",
+          "href": "/terms"
+        }
+      ],
+      "social": {
+        "twitter": "@portlandguide",
+        "instagram": "@portlandguide",
+        "facebook": "portlandguide"
+      },
+      "copyright": "© 2024 Portland Guide. All rights reserved."
+    },
+    "footer2": {
+      "id": "footer2",
+      "type": "navigation",
+      "columns": [
+        {
+          "title": "About Portland",
+          "texts": [
+            "Portland, Maine's largest city, offers a unique blend of historic charm and modern amenities.",
+            "Known for its vibrant food scene, arts community, and scenic waterfront."
+          ]
+        },
+        {
+          "title": "Quick Links",
+          "texts": [
+            "Plan Your Visit",
+            "Explore Attractions",
+            "Find Accommodations",
+            "Dining Guide"
+          ]
+        },
+        {
+          "title": "Resources",
+          "texts": [
+            "Visitor Information",
+            "Maps & Directions",
+            "Transportation",
+            "Events Calendar"
+          ]
+        },
+        {
+          "title": "Contact",
+          "texts": [
+            "Visit Portland",
+            "245 Commercial Street",
+            "Portland, ME 04101",
+            "info@visitportland.com"
+          ]
+        }
+      ],
+      "socials": [
+        {
+          "label": "Twitter",
+          "icon": "twitter",
+          "href": "https://twitter.com/visitportland"
+        },
+        {
+          "label": "Facebook",
+          "icon": "facebook",
+          "href": "https://facebook.com/visitportland"
+        },
+        {
+          "label": "Instagram",
+          "icon": "instagram",
+          "href": "https://instagram.com/visitportland"
+        },
+        {
+          "label": "LinkedIn",
+          "icon": "linkedin",
+          "href": "https://linkedin.com/company/visitportland"
+        }
+      ],
+      "links": [
+        {
+          "label": "Privacy Policy",
+          "href": "/privacy"
+        },
+        {
+          "label": "Terms of Service",
+          "href": "/terms"
+        },
+        {
+          "label": "Cookie Policy",
+          "href": "/cookies"
+        }
+      ],
+      "footNote": "© 2024 Visit Portland. All rights reserved."
+    }
+  },
+
+  "components": {
+    "callToAction": {
+      "id": "callToAction",
+      "type": "component",
+      "title": "Ready to Explore Portland?",
+      "subtitle": "Start planning your visit to Portland, Maine today.",
+      "items": [
+        {
+          "id": "contact",
+          "title": "Contact Us",
+          "description": "Have questions? We're here to help plan your perfect Portland experience.",
+          "href": "/contact",
+          "form": {
+            "input": {
+              "type": "email",
+              "name": "email",
+              "autocomplete": "email",
+              "placeholder": "Enter your email"
+            },
+            "btn": {
+              "type": "submit",
+              "title": "Subscribe"
+            }
+          }
+        },
+        {
+          "id": "guide",
+          "title": "Download Guide",
+          "description": "Get our comprehensive guide to Portland's best attractions and hidden gems.",
+          "href": "/guide"
+        }
+      ],
+      "prompt": "Create a call-to-action component for [CITY/STATE] that encourages visitors to explore the destination. Include a compelling title, subtitle, and two main items: a contact form for inquiries and a downloadable guide. Focus on the unique experiences and attractions that [CITY/STATE] offers."
+    },
+    "announcement": {
+      "id": "announcement",
+      "type": "component",
+      "title": "Special Offer",
+      "callToAction": {
+        "text": "Book your summer visit now and get 20% off selected tours",
+        "href": "/special-offer",
+        "icon": "gift"
+      },
+      "callToAction2": {
+        "text": "Follow us on Twitter",
+        "href": "https://twitter.com/visitportland",
+        "icon": "twitter"
+      },
+      "prompt": "Generate an announcement component for [CITY/STATE] that includes a special offer or promotion relevant to the destination. Include two call-to-action buttons: one for the special offer and another for social media engagement. Consider seasonal events or unique experiences in [CITY/STATE]."
+    },
+    "footer": {
+      "id": "footer",
+      "type": "component",
+      "columns": [
+        {
+          "title": "About",
+          "links": [
+            {
+              "label": "About Us",
+              "href": "/about"
+            },
+            {
+              "label": "Contact",
+              "href": "/contact"
+            },
+            {
+              "label": "Careers",
+              "href": "/careers"
+            }
+          ]
+        },
+        {
+          "title": "Resources",
+          "links": [
+            {
+              "label": "Blog",
+              "href": "/blog"
+            },
+            {
+              "label": "Newsletter",
+              "href": "/newsletter"
+            },
+            {
+              "label": "Events",
+              "href": "/events"
+            }
+          ]
+        },
+        {
+          "title": "Legal",
+          "links": [
+            {
+              "label": "Privacy Policy",
+              "href": "/privacy"
+            },
+            {
+              "label": "Terms of Service",
+              "href": "/terms"
+            },
+            {
+              "label": "Cookie Policy",
+              "href": "/cookies"
+            }
+          ]
+        }
+      ],
+      "prompt": "Create a footer component for [CITY/STATE]'s tourism website. Include three columns: About (with links to About Us, Contact, and Careers), Resources (with links to Blog, Newsletter, and Events), and Legal (with links to Privacy Policy, Terms of Service, and Cookie Policy). Ensure all links are relevant to [CITY/STATE]'s tourism website."
+    },
+    "features": {
+      "id": "features",
+      "type": "component",
+      "header": {
+        "title": "Why Visit Portland?",
+        "subtitle": "Discover what makes Portland special",
+        "tagline": "Highlights"
+      },
+      "items": [
+        {
+          "title": "Historic Old Port",
+          "description": "Explore the charming cobblestone streets and historic buildings of Portland's waterfront district.",
+          "icon": "building"
+        },
+        {
+          "title": "Culinary Excellence",
+          "description": "Experience world-class dining with fresh seafood, farm-to-table restaurants, and award-winning chefs.",
+          "icon": "utensils"
+        },
+        {
+          "title": "Arts & Culture",
+          "description": "Immerse yourself in Portland's thriving arts scene, from galleries to museums and live performances.",
+          "icon": "palette"
+        },
+        {
+          "title": "Natural Beauty",
+          "description": "Enjoy stunning coastal views, nearby islands, and beautiful parks throughout the city.",
+          "icon": "mountain"
+        },
+        {
+          "title": "Shopping",
+          "description": "Discover unique boutiques, art galleries, and local shops throughout the city.",
+          "icon": "shopping-bag"
+        },
+        {
+          "title": "Nightlife",
+          "description": "Experience craft breweries, cocktail bars, and live music venues in the vibrant Old Port.",
+          "icon": "music"
+        }
+      ],
+      "columns": 3,
+      "hasBackground": true,
+      "prompt": "Create a features component for [CITY/STATE] that highlights 6 key aspects that make the destination special. Include a header with title, subtitle, and tagline. Each feature should have a title, description, and appropriate icon. Focus on unique attractions, cultural aspects, dining, natural features, shopping, and entertainment options specific to [CITY/STATE]."
+    },
+    "steps": {
+      "id": "steps",
+      "type": "component",
+      "header": {
+        "title": "Plan Your Visit",
+        "subtitle": "Follow these steps to make the most of your Portland experience",
+        "tagline": "Getting Started"
+      },
+      "items": [
+        {
+          "title": "Choose Your Dates",
+          "description": "Consider visiting during summer for the best weather, or fall for beautiful foliage. Winter offers fewer crowds and cozy indoor activities."
+        },
+        {
+          "title": "Book Accommodations",
+          "description": "Stay in the Old Port for easy access to attractions, the Arts District for cultural experiences, or the West End for a quieter atmosphere."
+        },
+        {
+          "title": "Plan Your Activities",
+          "description": "Research attractions, book tours in advance, and check event calendars. Don't forget to make restaurant reservations for popular spots."
+        },
+        {
+          "title": "Pack Accordingly",
+          "description": "Bring comfortable walking shoes, layers for changing weather, and a camera to capture the beautiful scenery."
+        }
+      ],
+      "image": {
+        "src": "/images/portland-steps.jpg",
+        "alt": "Planning your Portland visit"
+      },
+      "isImageDisplayed": true,
+      "isReversed": false,
+      "hasBackground": true,
+      "prompt": "Create a steps component for [CITY/STATE] that guides visitors through planning their trip. Include 4 key steps with practical advice about timing, accommodations, activities, and preparation. Add a relevant image and ensure the content is specific to [CITY/STATE]'s climate, attractions, and unique features."
+    },
+    "testimonials": {
+      "id": "testimonials",
+      "type": "component",
+      "header": {
+        "title": "Visitor Stories",
+        "subtitle": "What our visitors say about their Portland experience",
+        "tagline": "Testimonials"
+      },
+      "testimonials": [
+        {
+          "name": "Sarah Thompson",
+          "job": "Food Blogger",
+          "testimonial": "Portland's food scene exceeded all expectations! From fresh seafood to innovative farm-to-table restaurants, every meal was a delight. The local chefs are incredibly talented and passionate about their craft.",
+          "image": {
+            "src": "/images/testimonials/sarah.jpg",
+            "alt": "Sarah Thompson"
+          }
+        },
+        {
+          "name": "Michael Rodriguez",
+          "job": "Photographer",
+          "testimonial": "The historic architecture and waterfront views provided endless opportunities for stunning photos. The city's charm and character are truly unique. I can't wait to come back and capture more of Portland's beauty.",
+          "image": {
+            "src": "/images/testimonials/michael.jpg",
+            "alt": "Michael Rodriguez"
+          }
+        },
+        {
+          "name": "Emily Chen",
+          "job": "Travel Writer",
+          "testimonial": "Portland offers the perfect blend of urban sophistication and coastal charm. The museums, galleries, and cultural events make it a must-visit destination for art lovers. The local community is warm and welcoming.",
+          "image": {
+            "src": "/images/testimonials/emily.jpg",
+            "alt": "Emily Chen"
+          }
+        }
+      ],
+      "callToAction": {
+        "text": "Share Your Story",
+        "href": "/share-story",
+        "icon": "pencil"
+      },
+      "isTestimonialUp": true,
+      "hasBackground": true,
+      "prompt": "Generate a testimonials component for [CITY/STATE] featuring 3 diverse visitor experiences. Include testimonials from different perspectives (e.g., food blogger, photographer, travel writer) that highlight unique aspects of [CITY/STATE]. Each testimonial should have a name, job title, personal story, and image. Add a call-to-action for visitors to share their own experiences."
+    },
+    "faq": {
+      "id": "faq",
+      "type": "component",
+      "title": "Frequently Asked Questions",
+      "subtitle": "Find answers to common questions about visiting Portland",
+      "items": [
+        {
+          "title": "What's the best time to visit Portland?",
+          "description": "Portland is beautiful year-round, but summer (June-August) offers the best weather for outdoor activities. Fall (September-October) brings stunning foliage, while winter offers a cozy atmosphere and fewer crowds."
+        },
+        {
+          "title": "How do I get around the city?",
+          "description": "Portland is very walkable, especially in the Old Port and Arts District. We also have a public bus system, taxis, and rideshare services. Many attractions are within walking distance of downtown."
+        },
+        {
+          "title": "Where should I stay in Portland?",
+          "description": "The Old Port and Arts District are popular areas with many hotels and inns. Waterfront accommodations offer beautiful views, while the West End provides a quieter residential feel."
+        },
+        {
+          "title": "What are the must-visit attractions?",
+          "description": "Don't miss the Portland Museum of Art, Portland Head Light, Old Port shopping, and the working waterfront. Take a ferry to the islands or enjoy the local food scene."
+        }
+      ],
+      "columns": 2,
+      "hasBackground": true,
+      "prompt": "Create a FAQ component for [CITY/STATE] that addresses common visitor questions. Include 4 key questions about timing, transportation, accommodations, and attractions. Provide detailed, practical answers that are specific to [CITY/STATE]'s unique features, climate, and visitor experience."
+    },
+    "stats": {
+      "id": "stats",
+      "type": "component",
+      "items": [
+        {
+          "title": 67,
+          "description": "Restaurants"
+        },
+        {
+          "title": 25,
+          "description": "Art Galleries"
+        },
+        {
+          "title": 12,
+          "description": "Museums"
+        },
+        {
+          "title": 8,
+          "description": "Islands"
+        }
+      ],
+      "hasBackground": true,
+      "prompt": "Create a stats component for [CITY/STATE] that showcases 4 key numerical facts about the destination. Include relevant statistics about restaurants, cultural venues, attractions, or natural features. Ensure the numbers are accurate and representative of [CITY/STATE]'s unique offerings."
+    },
+    "pricing": {
+      "id": "pricing",
+      "type": "component",
+      "header": {
+        "title": "Tour Packages",
+        "subtitle": "Choose the perfect tour for your Portland visit",
+        "tagline": "Tours"
+      },
+      "prices": [
+        {
+          "title": "Basic Tour",
+          "subtitle": "Perfect for first-time visitors",
+          "price": 49,
+          "period": "per person",
+          "items": [
+            "2-hour guided walking tour",
+            "Historic Old Port exploration",
+            "Local guide",
+            "Small group size",
+            "Photo opportunities"
+          ],
+          "callToAction": {
+            "text": "Book Now",
+            "href": "/book-tour/basic",
+            "icon": "calendar"
+          }
+        },
+        {
+          "title": "Food Tour",
+          "subtitle": "Experience Portland's culinary scene",
+          "price": 89,
+          "period": "per person",
+          "items": [
+            "3-hour guided food tour",
+            "5-6 local food stops",
+            "Food expert guide",
+            "Small group size",
+            "Food samples included",
+            "Recipe booklet"
+          ],
+          "callToAction": {
+            "text": "Book Now",
+            "href": "/book-tour/food",
+            "icon": "calendar"
+          },
+          "hasRibbon": true,
+          "ribbonTitle": "Popular"
+        },
+        {
+          "title": "Premium Tour",
+          "subtitle": "Luxury private experience",
+          "price": 299,
+          "period": "per group",
+          "items": [
+            "6-hour private tour",
+            "Customized itinerary",
+            "Expert local guide",
+            "Luxury vehicle",
+            "Lunch included",
+            "Skip-the-line access",
+            "Professional photos",
+            "Souvenir package"
+          ],
+          "callToAction": {
+            "text": "Book Now",
+            "href": "/book-tour/premium",
+            "icon": "calendar"
+          }
+        }
+      ],
+      "hasBackground": true,
+      "prompt": "Generate a pricing component for [CITY/STATE] that offers 3 different tour packages. Include a basic tour for first-time visitors, a specialized tour focusing on [CITY/STATE]'s unique features, and a premium private experience. Each package should have a title, subtitle, price, period, list of included items, and a call-to-action button. Consider [CITY/STATE]'s main attractions and local specialties when designing the tours."
+    },
+    "contact": {
+      "id": "contact",
+      "type": "component",
+      "header": {
+        "title": "Get in Touch",
+        "subtitle": "Have questions about visiting Portland? We're here to help!",
+        "tagline": "Contact Us"
+      },
+      "content": "Our visitor information team is ready to assist you with planning your Portland adventure. Whether you need recommendations for restaurants, help with accommodations, or information about local events, we're here to make your visit memorable.",
+      "items": [
+        {
+          "title": "Visitor Information Center",
+          "description": [
+            "245 Commercial Street",
+            "Portland, ME 04101",
+            "Open daily 9am-5pm"
+          ],
+          "icon": "map-pin"
+        },
+        {
+          "title": "Contact Information",
+          "description": [
+            "Phone: (207) 772-5800",
+            "Email: info@visitportland.com"
+          ],
+          "icon": "phone"
+        },
+        {
+          "title": "Social Media",
+          "description": [
+            "Follow us on Instagram, Facebook, and Twitter",
+            "@VisitPortlandME"
+          ],
+          "icon": "share"
+        }
+      ],
+      "form": {
+        "title": "Send us a message",
+        "description": "Fill out the form below and we'll get back to you as soon as possible.",
+        "inputs": [
+          {
+            "type": "text",
+            "name": "name",
+            "label": "Name",
+            "placeholder": "Your name",
+            "autocomplete": "name"
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": "Email",
+            "placeholder": "Your email address",
+            "autocomplete": "email"
+          },
+          {
+            "type": "textarea",
+            "name": "message",
+            "label": "Message",
+            "placeholder": "How can we help you?",
+            "rows": 4
+          }
+        ],
+        "btn": {
+          "title": "Send Message",
+          "type": "submit"
+        }
+      },
+      "hasBackground": true,
+      "prompt": "Create a contact component for [CITY/STATE] that includes a visitor information center, contact details, and a contact form. Include the physical address, phone number, email, and social media handles specific to [CITY/STATE]. The form should collect visitor information and allow them to send inquiries about visiting [CITY/STATE]."
+    },
+    "socialProof": {
+      "id": "socialProof",
+      "type": "component",
+      "images": [
+        {
+          "src": "/images/partners/travel-portland.png",
+          "alt": "Travel Portland",
+          "link": "https://www.travelportland.com"
+        },
+        {
+          "src": "/images/partners/portland-maine.png",
+          "alt": "City of Portland",
+          "link": "https://www.portlandmaine.gov"
+        },
+        {
+          "src": "/images/partners/portland-chamber.png",
+          "alt": "Portland Regional Chamber",
+          "link": "https://www.portlandregion.com"
+        },
+        {
+          "src": "/images/partners/visit-maine.png",
+          "alt": "Visit Maine",
+          "link": "https://www.visitmaine.com"
+        }
+      ],
+      "hasBackground": true,
+      "prompt": "Create a social proof component for [CITY/STATE] that showcases 4 key partner organizations or official entities. Include logos and links to relevant tourism boards, city government, chamber of commerce, and state tourism websites. Ensure all partners are official and relevant to [CITY/STATE]."
+    },
+    "hero2": {
+      "id": "hero2",
+      "type": "component",
+      "title": "Experience Portland's Vibrant Culture",
+      "subtitle": "From historic landmarks to modern attractions, discover why Portland is Maine's premier destination",
+      "tagline": "Discover Portland",
+      "callToAction": {
+        "text": "Start Exploring",
+        "href": "/explore"
+      },
+      "callToAction2": {
+        "text": "View Events",
+        "href": "/events"
+      },
+      "image": {
+        "src": "/images/portland-hero2.jpg",
+        "alt": "Portland Arts District"
+      },
+      "prompt": "Generate a hero2 component for [CITY/STATE] that captures the essence of the destination. Include a compelling title, subtitle, and tagline that highlight [CITY/STATE]'s unique features. Add two call-to-action buttons for exploration and events, and include an image that represents [CITY/STATE]'s most iconic or beautiful location."
+    },
+    "logoSection": {
+      "id": "logoSection",
+      "type": "component",
+      "title": "Featured Partners",
+      "subtitle": "Trusted by Portland's finest establishments",
+      "logos": [
+        {
+          "id": "partner1",
+          "name": "Portland Chamber of Commerce",
+          "src": "/images/partners/chamber.png",
+          "alt": "Portland Chamber of Commerce"
+        },
+        {
+          "id": "partner2",
+          "name": "Maine Tourism Association",
+          "src": "/images/partners/tourism.png",
+          "alt": "Maine Tourism Association"
+        }
+      ],
+      "prompt": "Create a logo section component for [CITY/STATE] that features 2-3 key partner organizations. Include the chamber of commerce and tourism association specific to [CITY/STATE]. Each logo should have a name, image source, and alt text. Focus on official and reputable organizations that represent [CITY/STATE]."
+    },
+    "comparison": {
+      "id": "comparison",
+      "type": "component",
+      "header": {
+        "title": "Portland Neighborhoods",
+        "subtitle": "Compare different areas of the city",
+        "tagline": "Explore"
+      },
+      "columns": [
+        {
+          "title": "Features",
+          "items": [
+            "Historic Buildings",
+            "Restaurants",
+            "Shopping",
+            "Arts & Culture",
+            "Nightlife",
+            "Family-Friendly",
+            "Waterfront Access",
+            "Public Transportation"
+          ]
+        },
+        {
+          "title": "Old Port",
+          "items": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "callToAction": {
+            "text": "Explore Old Port",
+            "href": "/neighborhoods/old-port",
+            "icon": "map"
+          }
+        },
+        {
+          "title": "Arts District",
+          "items": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            false,
+            true
+          ],
+          "callToAction": {
+            "text": "Explore Arts District",
+            "href": "/neighborhoods/arts-district",
+            "icon": "map"
+          }
+        },
+        {
+          "title": "West End",
+          "items": [
+            true,
+            true,
+            false,
+            false,
+            false,
+            true,
+            false,
+            true
+          ],
+          "callToAction": {
+            "text": "Explore West End",
+            "href": "/neighborhoods/west-end",
+            "icon": "map"
+          }
+        }
+      ],
+      "hasBackground": true,
+      "prompt": "Create a comparison component for [CITY/STATE] that compares 3 distinct neighborhoods or districts. Include a features list and mark which features are available in each area. Add call-to-action buttons for exploring each neighborhood. Focus on the unique characteristics and amenities of [CITY/STATE]'s main districts."
+    },
+    "content": {
+      "id": "content",
+      "type": "component",
+      "header": {
+        "title": "Discover Portland's Charm",
+        "subtitle": "Experience the perfect blend of historic charm and modern innovation",
+        "tagline": "About Portland"
+      },
+      "content": "Portland, Maine's largest city, offers visitors a unique combination of historic architecture, vibrant arts scene, and world-class dining. From the cobblestone streets of the Old Port to the contemporary galleries of the Arts District, every corner of the city tells a story.",
+      "items": [
+        {
+          "title": "Historic Architecture",
+          "description": "Explore the Victorian mansions, brick warehouses, and historic lighthouses that define Portland's architectural landscape."
+        },
+        {
+          "title": "Arts & Culture",
+          "description": "Discover the city's thriving arts scene through its numerous galleries, museums, and performing arts venues."
+        },
+        {
+          "title": "Culinary Excellence",
+          "description": "Experience Portland's renowned food scene, from fresh seafood to innovative farm-to-table restaurants."
+        },
+        {
+          "title": "Waterfront Activities",
+          "description": "Enjoy the working waterfront, take a ferry to the islands, or explore the harbor by kayak."
+        }
+      ],
+      "image": {
+        "src": "/images/portland-content.jpg",
+        "alt": "Portland Old Port District"
+      },
+      "isReversed": false,
+      "hasBackground": true,
+      "prompt": "Create a content component for [CITY/STATE] that provides an overview of the destination. Include a header with title, subtitle, and tagline. Write a main content paragraph that captures [CITY/STATE]'s essence. List 4 key features with descriptions, and include an image that represents [CITY/STATE]'s most iconic location. Focus on what makes [CITY/STATE] unique and worth visiting."
+    },
+    "team2": {
+      "id": "team2",
+      "type": "component",
+      "header": {
+        "title": "Our Leadership Team",
+        "subtitle": "Meet the people shaping Portland's tourism experience",
+        "tagline": "Leadership"
+      },
+      "teams": [
+        {
+          "name": "Jennifer Martinez",
+          "occupation": "Executive Director",
+          "image": {
+            "src": "/images/team/jennifer.jpg",
+            "alt": "Jennifer Martinez"
+          },
+          "items": [
+            {
+              "title": "Email",
+              "link": "mailto:jennifer@visitportland.com"
+            },
+            {
+              "title": "LinkedIn",
+              "link": "https://linkedin.com/in/jennifermartinez"
+            }
+          ]
+        },
+        {
+          "name": "Robert Thompson",
+          "occupation": "Operations Director",
+          "image": {
+            "src": "/images/team/robert.jpg",
+            "alt": "Robert Thompson"
+          },
+          "items": [
+            {
+              "title": "Email",
+              "link": "mailto:robert@visitportland.com"
+            },
+            {
+              "title": "LinkedIn",
+              "link": "https://linkedin.com/in/robertthompson"
+            }
+          ]
+        },
+        {
+          "name": "Lisa Anderson",
+          "occupation": "Partnership Director",
+          "image": {
+            "src": "/images/team/lisa.jpg",
+            "alt": "Lisa Anderson"
+          },
+          "items": [
+            {
+              "title": "Email",
+              "link": "mailto:lisa@visitportland.com"
+            },
+            {
+              "title": "LinkedIn",
+              "link": "https://linkedin.com/in/lisaanderson"
+            }
+          ]
+        },
+        {
+          "name": "James Wilson",
+          "occupation": "Development Director",
+          "image": {
+            "src": "/images/team/james.jpg",
+            "alt": "James Wilson"
+          },
+          "items": [
+            {
+              "title": "Email",
+              "link": "mailto:james@visitportland.com"
+            },
+            {
+              "title": "LinkedIn",
+              "link": "https://linkedin.com/in/jameswilson"
+            }
+          ]
+        }
+      ],
+      "hasBackground": true,
+      "prompt": "Generate a team2 component for [CITY/STATE] that showcases 4 key leadership positions in the tourism organization. Include a header with title, subtitle, and tagline. Each team member should have a name, occupation, image, and contact items (email and LinkedIn). Focus on roles relevant to [CITY/STATE]'s tourism and visitor experience."
+    },
+    "testimonials2": {
+      "id": "testimonials2",
+      "type": "component",
+      "header": {
+        "title": "Portland Experiences",
+        "subtitle": "Hear from visitors who discovered the magic of our city",
+        "tagline": "Visitor Stories"
+      },
+      "testimonials": [
+        {
+          "name": "David Wilson",
+          "job": "Travel Enthusiast",
+          "testimonial": "Portland's charm lies in its perfect balance of historic preservation and modern innovation. The Old Port's cobblestone streets and the Arts District's contemporary galleries create an unforgettable experience.",
+          "image": {
+            "src": "/images/testimonials/david.jpg",
+            "alt": "David Wilson"
+          }
+        },
+        {
+          "name": "Lisa Anderson",
+          "job": "Food Critic",
+          "testimonial": "The culinary scene here is extraordinary. From the freshest seafood to innovative farm-to-table concepts, Portland's restaurants showcase the best of Maine's bounty. A true food lover's paradise!",
+          "image": {
+            "src": "/images/testimonials/lisa.jpg",
+            "alt": "Lisa Anderson"
+          }
+        },
+        {
+          "name": "Robert Chen",
+          "job": "Photography Enthusiast",
+          "testimonial": "Every corner of Portland offers a new perspective to capture. The waterfront sunsets, historic architecture, and vibrant street life make it a photographer's dream destination.",
+          "image": {
+            "src": "/images/testimonials/robert.jpg",
+            "alt": "Robert Chen"
+          }
+        }
+      ],
+      "isTestimonialUp": true,
+      "hasBackground": true,
+      "prompt": "Create a testimonials2 component for [CITY/STATE] featuring 3 diverse visitor experiences. Include a header with title, subtitle, and tagline. Each testimonial should have a name, job title, personal story, and image. Focus on different aspects of [CITY/STATE] that make it special, such as culture, food, architecture, or natural beauty."
+    },
+    "faqs4": {
+      "id": "faqs4",
+      "type": "component",
+      "header": {
+        "title": "Portland Guide",
+        "subtitle": "Everything you need to know about visiting our city",
+        "tagline": "Visitor Guide"
+      },
+      "tabs": [
+        {
+          "link": {
+            "label": "Getting Here"
+          },
+          "items": [
+            {
+              "title": "What airports serve Portland?",
+              "description": "Portland International Jetport (PWM) is the main airport, offering direct flights from major cities. Boston's Logan Airport (BOS) is about 2 hours away and offers more flight options."
+            },
+            {
+              "title": "How do I get from the airport to downtown?",
+              "description": "You can take a taxi, rideshare service, or the Metro bus. Many hotels offer shuttle service, and rental cars are available at the airport."
+            },
+            {
+              "title": "Is there public transportation from Boston?",
+              "description": "Yes, Amtrak's Downeaster train runs between Boston and Portland multiple times daily. The journey takes about 2.5 hours."
+            }
+          ]
+        },
+        {
+          "link": {
+            "label": "Where to Stay"
+          },
+          "items": [
+            {
+              "title": "What are the best areas to stay in?",
+              "description": "The Old Port offers historic charm and waterfront views. The Arts District is close to museums and galleries. The West End provides a quieter residential feel."
+            },
+            {
+              "title": "Are there any unique accommodations?",
+              "description": "Yes, Portland offers historic inns, boutique hotels, and waterfront properties. There are also several bed and breakfasts in historic homes."
+            },
+            {
+              "title": "What's the average hotel price?",
+              "description": "Prices vary by season, with summer being the most expensive. Expect to pay $150-300 per night for mid-range hotels, with luxury properties costing more."
+            }
+          ]
+        },
+        {
+          "link": {
+            "label": "Things to Do"
+          },
+          "items": [
+            {
+              "title": "What are the must-see attractions?",
+              "description": "Don't miss the Portland Museum of Art, Portland Head Light, Old Port shopping, and the working waterfront. Take a ferry to the islands or enjoy the local food scene."
+            },
+            {
+              "title": "Are there any free activities?",
+              "description": "Yes! Enjoy the Eastern Promenade, visit the Portland Public Library, explore the Old Port, and attend the First Friday Art Walk. Many parks and beaches are free to visit."
+            },
+            {
+              "title": "What's the best way to see the city?",
+              "description": "Start with a guided walking tour, then explore the Old Port and Arts District. Consider a harbor cruise for waterfront views, or rent a bike to cover more ground."
+            }
+          ]
+        }
+      ],
+      "hasBackground": true,
+      "prompt": "Create a faqs4 component for [CITY/STATE] that organizes visitor information into three main categories: Getting Here, Where to Stay, and Things to Do. Each category should include 3 relevant questions with detailed answers. Focus on practical information that helps visitors plan their trip to [CITY/STATE], including transportation, accommodations, and activities."
+    },
+    "features4": {
+      "id": "features4",
+      "type": "component",
+      "header": {
+        "title": "Portland's Distinctive Features",
+        "subtitle": "Explore what makes our city unique",
+        "tagline": "City Highlights"
+      },
+      "image": {
+        "src": "/images/portland-waterfront.jpg",
+        "alt": "Portland Waterfront"
+      },
+      "items": [
+        {
+          "title": "Working Waterfront",
+          "description": "Experience the authentic maritime culture of Maine's largest port.",
+          "icon": "ship"
+        },
+        {
+          "title": "Arts District",
+          "description": "Discover galleries, theaters, and creative spaces in our cultural heart.",
+          "icon": "theater-masks"
+        },
+        {
+          "title": "Historic Old Port",
+          "description": "Stroll through cobblestone streets lined with unique shops and restaurants.",
+          "icon": "store"
+        },
+        {
+          "title": "Island Access",
+          "description": "Easy access to Casco Bay's beautiful islands and coastal adventures.",
+          "icon": "island"
+        }
+      ],
+      "columns": 2,
+      "hasBackground": true,
+      "isImageDisplayed": true,
+      "prompt": "Create a features4 component for [CITY/STATE] that highlights 4 distinctive features that make the destination unique. Include a header with title, subtitle, and tagline. Each feature should have a title, description, and appropriate icon. Add a representative image and organize the features in two columns. Focus on what makes [CITY/STATE] special and worth visiting."
+    },
+    "heroWithLogo": {
+      "id": "heroWithLogo",
+      "type": "component",
+      "title": "Welcome to Portland",
+      "subtitle": "Your Ultimate Guide to Maine's Most Vibrant City",
+      "tagline": "Discover the Best of Portland",
+      "logo": {
+        "src": "/images/logo/portland-guide.png",
+        "alt": "Portland Guide Logo"
+      },
+      "image": {
+        "src": "/images/hero/portland-waterfront.jpg",
+        "alt": "Portland Waterfront at sunset"
+      },
+      "callToAction": {
+        "text": "Start Exploring",
+        "href": "/attractions",
+        "type": "button",
+        "variant": "primary"
+      },
+      "prompt": "Create a hero component with logo for [CITY/STATE]'s tourism website. Include a welcoming title, engaging subtitle, tagline, logo, hero image, and a primary call-to-action button. The content should capture the essence of [CITY/STATE] and encourage visitors to explore."
+    },
+    "logoBanner": {
+      "id": "logoBanner",
+      "type": "component",
+      "title": "Our Partners",
+      "logos": [
+        {
+          "id": "partner1",
+          "name": "Portland Chamber of Commerce",
+          "src": "/images/partners/chamber.png",
+          "alt": "Portland Chamber of Commerce"
+        },
+        {
+          "id": "partner2",
+          "name": "Maine Tourism Association",
+          "src": "/images/partners/tourism.png",
+          "alt": "Maine Tourism Association"
+        },
+        {
+          "id": "partner3",
+          "name": "Visit Portland",
+          "src": "/images/partners/visit-portland.png",
+          "alt": "Visit Portland"
+        }
+      ],
+      "prompt": "Create a logo banner component for [CITY/STATE]'s tourism website. Include a title and 3-4 partner logos with their names and alt text. Focus on official organizations and partners relevant to [CITY/STATE]'s tourism industry."
+    },
+    "features2": {
+      "id": "features2",
+      "type": "component",
+      "header": {
+        "title": "Plan Your Visit",
+        "subtitle": "Everything you need to know about exploring Portland",
+        "tagline": "Guide"
+      },
+      "items": [
+        {
+          "title": "Getting Here",
+          "description": "Find information about transportation options, parking, and getting around the city.",
+          "icon": "map-pin",
+          "link": {
+            "text": "Learn More",
+            "href": "/getting-here"
+          }
+        },
+        {
+          "title": "Where to Stay",
+          "description": "Discover hotels, inns, and vacation rentals in different neighborhoods.",
+          "icon": "bed",
+          "link": {
+            "text": "Find Accommodations",
+            "href": "/accommodations"
+          }
+        },
+        {
+          "title": "Things to Do",
+          "description": "Explore attractions, tours, and activities for all interests and ages.",
+          "icon": "compass",
+          "link": {
+            "text": "View Activities",
+            "href": "/activities"
+          }
+        },
+        {
+          "title": "Dining Guide",
+          "description": "Find the best restaurants, cafes, and food experiences in Portland.",
+          "icon": "utensils",
+          "link": {
+            "text": "Explore Restaurants",
+            "href": "/restaurants"
+          }
+        },
+        {
+          "title": "Shopping",
+          "description": "Discover unique boutiques, local artisans, and specialty shops.",
+          "icon": "shopping-bag",
+          "link": {
+            "text": "Shop Local",
+            "href": "/shopping"
+          }
+        },
+        {
+          "title": "Events Calendar",
+          "description": "Stay updated on festivals, concerts, and special events throughout the year.",
+          "icon": "calendar",
+          "link": {
+            "text": "View Events",
+            "href": "/events"
+          }
+        }
+      ],
+      "columns": 3,
+      "prompt": "Create a features2 component for [CITY/STATE]'s tourism website. Include a header with title, subtitle, and tagline. List 6 key features for planning a visit: Getting Here, Where to Stay, Things to Do, Dining Guide, Shopping, and Events Calendar. Each feature should have a title, description, icon, and call-to-action link. Focus on providing comprehensive planning information for visitors to [CITY/STATE]."
+    },
+    "features3": {
+      "id": "features3",
+      "type": "component",
+      "header": {
+        "title": "Experience Portland",
+        "subtitle": "Discover the unique aspects that make Portland special",
+        "tagline": "Highlights"
+      },
+      "items": [
+        {
+          "title": "Historic Architecture",
+          "description": "Explore beautifully preserved buildings from the Victorian era and beyond.",
+          "icon": "building"
+        },
+        {
+          "title": "Maritime Heritage",
+          "description": "Discover the city's deep connection to the sea through its working waterfront.",
+          "icon": "anchor"
+        },
+        {
+          "title": "Cultural Evolution",
+          "description": "Experience how Portland has transformed while maintaining its authentic character.",
+          "icon": "history"
+        },
+        {
+          "title": "Artistic Community",
+          "description": "Immerse yourself in a vibrant arts scene with galleries, studios, and public art.",
+          "icon": "palette"
+        },
+        {
+          "title": "Culinary Innovation",
+          "description": "Taste the creativity of chefs pushing boundaries with local ingredients.",
+          "icon": "utensils"
+        },
+        {
+          "title": "Natural Surroundings",
+          "description": "Enjoy the perfect blend of urban life and coastal beauty.",
+          "icon": "mountain"
+        }
+      ],
+      "columns": 3,
+      "hasBackground": true,
+      "prompt": "Create a features3 component for [CITY/STATE]'s tourism website. Include a header with title, subtitle, and tagline. List 6 key features that make [CITY/STATE] special, such as architecture, heritage, culture, arts, cuisine, and natural surroundings. Each feature should have a title, description, and appropriate icon. Focus on what makes [CITY/STATE] unique and worth visiting."
+    },
+    "faqs2": {
+      "id": "faqs2",
+      "type": "component",
+      "header": {
+        "title": "Planning Your Visit",
+        "subtitle": "Everything you need to know to make the most of your Portland experience",
+        "tagline": "Visitor Guide"
+      },
+      "items": [
+        {
+          "title": "What are the best restaurants in Portland?",
+          "description": "Portland is known for its exceptional food scene. Some must-visit spots include Eventide Oyster Co. for seafood, Fore Street for farm-to-table dining, and Duckfat for casual fare. The city also has excellent breweries and coffee shops."
+        },
+        {
+          "title": "Are there any special events I should plan around?",
+          "description": "Portland hosts numerous events throughout the year, including the Old Port Festival in June, the Harvest on the Harbor food festival in October, and the Christmas Prelude in December. Check our events calendar for specific dates."
+        },
+        {
+          "title": "What outdoor activities are available?",
+          "description": "Visitors can enjoy kayaking in Casco Bay, hiking at the Eastern Promenade, biking along the Back Cove Trail, or taking a ferry to the nearby islands. The city also has beautiful parks and beaches for relaxation."
+        },
+        {
+          "title": "Is Portland family-friendly?",
+          "description": "Absolutely! Families can enjoy the Children's Museum, the Maine Narrow Gauge Railroad, the Portland Observatory, and various parks. Many restaurants and attractions are welcoming to families with children."
+        }
+      ],
+      "hasBackground": true,
+      "prompt": "Create a faqs2 component for [CITY/STATE]'s tourism website. Include a header with title, subtitle, and tagline. List 4 common questions about visiting [CITY/STATE], covering topics like dining, events, activities, and family-friendliness. Each question should have a detailed, helpful answer that provides valuable information for visitors."
+    },
+    "faqs3": {
+      "id": "faqs3",
+      "type": "component",
+      "header": {
+        "title": "Portland Travel Tips",
+        "subtitle": "Essential information to help you plan your perfect Portland getaway",
+        "tagline": "Travel Guide"
+      },
+      "items": [
+        {
+          "title": "What's the best way to explore the islands?",
+          "description": "Casco Bay Lines operates ferries to several islands. Peaks Island is the most popular, offering beaches, restaurants, and bike rentals. You can also take guided tours or rent kayaks to explore the islands."
+        },
+        {
+          "title": "Where can I find the best views of the city?",
+          "description": "The Eastern Promenade offers panoramic views of Casco Bay and the islands. The Portland Observatory provides a historic perspective, while the top of the Time and Temperature Building gives a modern city view."
+        },
+        {
+          "title": "What's the nightlife scene like?",
+          "description": "Portland has a vibrant nightlife with craft breweries, cocktail bars, and live music venues. The Old Port is the center of nightlife, featuring everything from casual pubs to upscale lounges and music clubs."
+        },
+        {
+          "title": "Are there any hidden gems I shouldn't miss?",
+          "description": "Don't miss the Portland Observatory, the Victoria Mansion, and the International Cryptozoology Museum. The Eastern Promenade Trail and the Back Cove Trail offer beautiful walks away from the main tourist areas."
+        }
+      ],
+      "callToAction": {
+        "text": "View More Tips",
+        "href": "/travel-tips"
+      },
+      "hasBackground": true,
+      "prompt": "Create a faqs3 component for [CITY/STATE]'s tourism website. Include a header with title, subtitle, and tagline. List 4 travel tips about exploring [CITY/STATE], covering topics like local transportation, viewpoints, nightlife, and hidden gems. Each tip should have a detailed description and include a call-to-action for more information."
+    },
+    "contact2": {
+      "id": "contact2",
+      "type": "component",
+      "header": {
+        "title": "Request Information",
+        "subtitle": "Need help planning your Portland visit? Send us a message!",
+        "tagline": "Contact Form"
+      },
+      "form": {
+        "title": "Get in Touch",
+        "description": "Fill out the form below and we'll help you plan your perfect Portland experience.",
+        "inputs": [
+          {
+            "type": "text",
+            "name": "name",
+            "label": "Name",
+            "placeholder": "Your name",
+            "autocomplete": "name"
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": "Email",
+            "placeholder": "Your email address",
+            "autocomplete": "email"
+          },
+          {
+            "type": "select",
+            "name": "inquiry",
+            "label": "Inquiry Type",
+            "placeholder": "Select your inquiry type",
+            "options": [
+              "General Information",
+              "Accommodations",
+              "Restaurants",
+              "Attractions",
+              "Events",
+              "Group Tours"
+            ]
+          },
+          {
+            "type": "textarea",
+            "name": "message",
+            "label": "Message",
+            "placeholder": "Tell us how we can help you plan your visit",
+            "rows": 4
+          }
+        ],
+        "btn": {
+          "title": "Send Request",
+          "type": "submit"
+        }
+      },
+      "hasBackground": true,
+      "prompt": "Create a contact2 component for [CITY/STATE]'s tourism website. Include a header with title, subtitle, and tagline. Design a contact form with fields for name, email, inquiry type (with options relevant to [CITY/STATE]), and message. Add a submit button and ensure the form is user-friendly and collects all necessary information for helping visitors plan their trip to [CITY/STATE]."
+    },
+    "footer2": {
+      "id": "footer2",
+      "type": "component",
+      "columns": [
+        {
+          "title": "About Portland",
+          "texts": [
+            "Portland, Maine's largest city, offers a unique blend of historic charm and modern amenities.",
+            "Known for its vibrant food scene, arts community, and scenic waterfront."
+          ]
+        },
+        {
+          "title": "Quick Links",
+          "texts": [
+            "Plan Your Visit",
+            "Explore Attractions",
+            "Find Accommodations",
+            "Dining Guide"
+          ]
+        },
+        {
+          "title": "Resources",
+          "texts": [
+            "Visitor Information",
+            "Maps & Directions",
+            "Transportation",
+            "Events Calendar"
+          ]
+        },
+        {
+          "title": "Contact",
+          "texts": [
+            "Visit Portland",
+            "245 Commercial Street",
+            "Portland, ME 04101",
+            "info@visitportland.com"
+          ]
+        }
+      ],
+      "socials": [
+        {
+          "label": "Twitter",
+          "icon": "twitter",
+          "href": "https://twitter.com/visitportland"
+        },
+        {
+          "label": "Facebook",
+          "icon": "facebook",
+          "href": "https://facebook.com/visitportland"
+        },
+        {
+          "label": "Instagram",
+          "icon": "instagram",
+          "href": "https://instagram.com/visitportland"
+        },
+        {
+          "label": "LinkedIn",
+          "icon": "linkedin",
+          "href": "https://linkedin.com/company/visitportland"
+        }
+      ],
+      "links": [
+        {
+          "label": "Privacy Policy",
+          "href": "/privacy"
+        },
+        {
+          "label": "Terms of Service",
+          "href": "/terms"
+        },
+        {
+          "label": "Cookie Policy",
+          "href": "/cookies"
+        }
+      ],
+      "footNote": "© 2024 Visit Portland. All rights reserved.",
+      "prompt": "Create a footer2 component for [CITY/STATE]'s tourism website. Include four columns: About [CITY/STATE] (with descriptive text), Quick Links (with navigation options), Resources (with visitor information), and Contact (with address and email). Add social media links and legal links at the bottom. Include a copyright notice. Ensure all content is specific to [CITY/STATE] and provides comprehensive information for visitors."
+    },
+    "faqs": {
+      "id": "faqs",
+      "type": "component",
+      "header": {
+        "title": "Frequently Asked Questions",
+        "subtitle": "Find answers to common questions about visiting Portland",
+        "tagline": "FAQ"
+      },
+      "items": [
+        {
+          "title": "What's the best time to visit Portland?",
+          "description": "Portland is beautiful year-round, but summer (June-August) offers the best weather for outdoor activities. Fall (September-October) features stunning foliage, while winter brings holiday festivities and spring offers pleasant temperatures."
+        },
+        {
+          "title": "How do I get around Portland?",
+          "description": "Portland is very walkable, especially in the Old Port and Arts District. The city also has a bus system, taxis, and rideshare services. Many attractions are within walking distance of downtown."
+        },
+        {
+          "title": "Where should I stay in Portland?",
+          "description": "The Old Port and Arts District are popular areas with many hotels and inns. The West End offers charming bed and breakfasts, while the waterfront area provides scenic views and easy access to attractions."
+        },
+        {
+          "title": "What are the must-visit attractions?",
+          "description": "Don't miss the Portland Head Light, Old Port district, Portland Museum of Art, and the Eastern Promenade. The city's food scene, particularly the seafood restaurants, is also a major attraction."
+        }
+      ],
+      "columns": 2,
+      "hasBackground": true,
+      "prompt": "Create a faqs component for [CITY/STATE]'s tourism website. Include a header with title, subtitle, and tagline. List 4 common questions about visiting [CITY/STATE], covering topics like timing, transportation, accommodations, and attractions. Each question should have a detailed answer that provides valuable information for visitors. Organize the questions in two columns for better readability."
+    },
+    "team": {
+      "id": "team",
+      "type": "component",
+      "header": {
+        "title": "Meet Our Team",
+        "subtitle": "The people behind Portland's visitor experience",
+        "tagline": "Our Team"
+      },
+      "teams": [
+        {
+          "name": "Sarah Johnson",
+          "occupation": "Visitor Services Manager",
+          "image": {
+            "src": "/images/team/sarah.jpg",
+            "alt": "Sarah Johnson"
+          },
+          "items": [
+            {
+              "title": "Email",
+              "icon": "mail",
+              "href": "mailto:sarah@visitportland.com"
+            },
+            {
+              "title": "LinkedIn",
+              "icon": "linkedin",
+              "href": "https://linkedin.com/in/sarahjohnson"
+            }
+          ]
+        },
+        {
+          "name": "Michael Chen",
+          "occupation": "Tour Coordinator",
+          "image": {
+            "src": "/images/team/michael.jpg",
+            "alt": "Michael Chen"
+          },
+          "items": [
+            {
+              "title": "Email",
+              "icon": "mail",
+              "href": "mailto:michael@visitportland.com"
+            },
+            {
+              "title": "LinkedIn",
+              "icon": "linkedin",
+              "href": "https://linkedin.com/in/michaelchen"
+            }
+          ]
+        },
+        {
+          "name": "Emily Rodriguez",
+          "occupation": "Events Manager",
+          "image": {
+            "src": "/images/team/emily.jpg",
+            "alt": "Emily Rodriguez"
+          },
+          "items": [
+            {
+              "title": "Email",
+              "icon": "mail",
+              "href": "mailto:emily@visitportland.com"
+            },
+            {
+              "title": "LinkedIn",
+              "icon": "linkedin",
+              "href": "https://linkedin.com/in/emilyrodriguez"
+            }
+          ]
+        },
+        {
+          "name": "David Wilson",
+          "occupation": "Marketing Director",
+          "image": {
+            "src": "/images/team/david.jpg",
+            "alt": "David Wilson"
+          },
+          "items": [
+            {
+              "title": "Email",
+              "icon": "mail",
+              "href": "mailto:david@visitportland.com"
+            },
+            {
+              "title": "LinkedIn",
+              "icon": "linkedin",
+              "href": "https://linkedin.com/in/davidwilson"
+            }
+          ]
+        }
+      ],
+      "hasBackground": true,
+      "prompt": "Create a team component for [CITY/STATE]'s tourism website. Include a header with title, subtitle, and tagline. List 4 key team members with their names, occupations, images, and contact information (email and LinkedIn). Focus on roles relevant to [CITY/STATE]'s tourism and visitor experience. Ensure all contact information is specific to [CITY/STATE]'s tourism organization."
+    },
+    "hero": {
+      "id": "hero",
+      "type": "component",
+      "title": "Welcome to Portland, Maine",
+      "subtitle": "Discover the perfect blend of historic charm and modern innovation in Maine's largest city",
+      "tagline": "Your Gateway to Maine",
+      "callToAction": {
+        "text": "Explore Portland",
+        "href": "/explore"
+      },
+      "callToAction2": {
+        "text": "Plan Your Visit",
+        "href": "/plan"
+      },
+      "image": {
+        "src": "/images/portland-hero.jpg",
+        "alt": "Portland Waterfront"
+      },
+      "prompt": "Create a hero component for [CITY/STATE]'s tourism website. Include a welcoming title, engaging subtitle, tagline, two call-to-action buttons, and a hero image. The content should capture the essence of [CITY/STATE] and encourage visitors to explore and plan their visit."
+    }
+  },
+
+  "accessibility": {
+    "id": "accessibility",
+    "type": "labels",
+    "navigation": {
+      "main": "Main navigation",
+      "toggleMenu": "Toggle Menu",
+      "toggleDarkMode": "Toggle Dark Mode",
+      "rssFeed": "RSS Feed"
+    },
+    "forms": {
+      "email": {
+        "label": "Email address",
+        "placeholder": "Enter your email"
+      },
+      "name": {
+        "label": "Full name",
+        "placeholder": "Enter your name"
+      },
+      "message": {
+        "label": "Message",
+        "placeholder": "Enter your message"
+      }
+    },
+    "prompt": "Create accessibility labels for [CITY/STATE]'s tourism website. Include navigation labels for main menu, dark mode toggle, and RSS feed. Add form labels and placeholders for email, name, and message fields. Ensure all labels are clear and descriptive for screen readers and assistive technologies."
+  },
+
+  "meta": {
+    "site": {
+      "id": "site",
+      "type": "meta",
+      "title": "Portland Guide | Your Ultimate Guide to Portland, Maine",
+      "description": "Discover the best of Portland, Maine - from world-class dining to historic attractions and outdoor adventures.",
+      "origin": "https://portlandguide.com",
+      "image": "/images/MaineRez1.png",
+      "twitter": {
+        "handle": "@portlandguide",
+        "site": "@portlandguide"
+      }
+    },
+    "prompt": "Create meta information for [CITY/STATE]'s tourism website. Include a title, description, origin URL, default image, and Twitter handles. Focus on creating SEO-friendly content that accurately represents [CITY/STATE]'s main attractions and experiences."
+  },
+
+  "attractions": {
+    "portland-head-light": {
+      "id": "portland-head-light",
+      "type": "attraction",
+      "title": "Portland Head Light",
+      "description": "Maine's oldest lighthouse, offering stunning ocean views and rich maritime history.",
+      "category": "landmark",
+      "subcategory": "lighthouse",
+      "features": ["historic", "scenic", "photography"],
+      "priceRange": "$",
+      "hours": "Daily 10:00 AM - 4:00 PM",
+      "address": "1000 Shore Rd, Cape Elizabeth, ME 04107",
+      "latitude": 43.6225,
+      "longitude": -70.2075,
+      "phone": "207-799-2661",
+      "email": "info@portlandheadlight.com",
+      "website": "https://www.portlandheadlight.com",
+      "status": "published",
+      "prompt": "Create an attraction entry for a significant landmark in [CITY/STATE]. Include details such as title, description, category, features, price range, hours, location (address, latitude, longitude), contact information (phone, email, website), and status. Focus on what makes this attraction unique and historically or culturally significant to [CITY/STATE]."
+    },
+    "portland-museum-of-art": {
+      "id": "portland-museum-of-art",
+      "type": "attraction",
+      "title": "Portland Museum of Art",
+      "description": "Maine's largest art museum featuring works by Winslow Homer and other renowned artists.",
+      "category": "museum",
+      "subcategory": "art",
+      "features": ["exhibits", "gallery", "education"],
+      "priceRange": "$$",
+      "hours": "Wed-Sun 10:00 AM - 6:00 PM",
+      "address": "7 Congress Square, Portland, ME 04101",
+      "latitude": 43.6535,
+      "longitude": -70.2625,
+      "phone": "207-775-6148",
+      "email": "info@portlandmuseum.org",
+      "website": "https://www.portlandmuseum.org",
+      "status": "published",
+      "prompt": "Create an attraction entry for a significant museum or cultural institution in [CITY/STATE]. Include details such as title, description, category, features, price range, hours, location (address, latitude, longitude), contact information (phone, email, website), and status. Focus on the institution's cultural significance and unique offerings."
+    }
+  },
+
+  "restaurants": {
+    "eventide": {
+      "id": "eventide",
+      "type": "restaurant",
+      "title": "Eventide Oyster Co.",
+      "description": "Award-winning seafood restaurant known for innovative takes on New England classics.",
+      "cuisine": ["seafood", "american", "raw bar"],
+      "priceRange": "$$$",
+      "features": ["oysters", "lobster", "cocktails"],
+      "hours": "Daily 11:00 AM - 10:00 PM",
+      "address": "86 Middle St, Portland, ME 04101",
+      "latitude": 43.6575,
+      "longitude": -70.2550,
+      "phone": "207-774-8538",
+      "email": "info@eventideoysterco.com",
+      "website": "https://www.eventideoysterco.com",
+      "status": "published",
+      "prompt": "Create a restaurant entry for Eventide Oyster Co., highlighting its award-winning seafood, innovative menu, and significance in Portland's dining scene. Include practical details like location, hours, and contact information."
+    },
+    "fore-street": {
+      "id": "fore-street",
+      "type": "restaurant",
+      "title": "Fore Street",
+      "description": "Iconic farm-to-table restaurant featuring wood-fired cooking and local ingredients.",
+      "cuisine": ["american", "farm-to-table"],
+      "priceRange": "$$$",
+      "features": ["wood-fired", "local", "seasonal"],
+      "hours": "Daily 5:00 PM - 10:00 PM",
+      "address": "288 Fore St, Portland, ME 04101",
+      "latitude": 43.6570,
+      "longitude": -70.2555,
+      "phone": "207-775-2717",
+      "email": "info@forestreet.biz",
+      "website": "https://www.forestreet.biz",
+      "status": "published",
+      "prompt": "Create a restaurant entry for Fore Street, emphasizing its pioneering role in Portland's farm-to-table movement and wood-fired cooking. Include details about its atmosphere, cuisine style, and practical information."
+    },
+    "central-provisions": {
+      "id": "central-provisions",
+      "type": "restaurant",
+      "title": "Central Provisions",
+      "description": "Sophisticated small plates served in a historic brick building with an open kitchen.",
+      "cuisine": ["contemporary", "american", "small plates"],
+      "priceRange": "$$$",
+      "features": ["craft cocktails", "open kitchen", "historic building"],
+      "hours": "Mon-Sun 11:00 AM - 10:00 PM",
+      "address": "414 Fore St, Portland, ME 04101",
+      "latitude": 43.6573,
+      "longitude": -70.2548,
+      "phone": "207-805-1085",
+      "email": "info@central-provisions.com",
+      "website": "https://www.central-provisions.com",
+      "status": "published",
+      "prompt": "Create a restaurant entry for Central Provisions, highlighting its innovative small plates menu, historic setting, and contribution to Portland's contemporary dining scene."
+    },
+    "scales": {
+      "id": "scales",
+      "type": "restaurant",
+      "title": "Scales",
+      "description": "Upscale waterfront restaurant offering fresh seafood and harbor views.",
+      "cuisine": ["seafood", "american"],
+      "priceRange": "$$$",
+      "features": ["waterfront", "fresh seafood", "views"],
+      "hours": "Tue-Sun 5:00 PM - 9:00 PM",
+      "address": "68 Commercial St, Portland, ME 04101",
+      "latitude": 43.6567,
+      "longitude": -70.2512,
+      "phone": "207-805-0444",
+      "email": "info@scalesrestaurant.com",
+      "website": "https://www.scalesrestaurant.com",
+      "status": "published",
+      "prompt": "Create a restaurant entry for Scales, emphasizing its waterfront location, fresh seafood offerings, and elegant dining atmosphere. Include details about the views and dining experience."
+    },
+    "duckfat": {
+      "id": "duckfat",
+      "type": "restaurant",
+      "title": "Duckfat",
+      "description": "Popular sandwich shop famous for Belgian-style fries cooked in duck fat.",
+      "cuisine": ["american", "sandwiches", "casual"],
+      "priceRange": "$$",
+      "features": ["duck fat fries", "sandwiches", "milkshakes"],
+      "hours": "Daily 11:00 AM - 9:00 PM",
+      "address": "43 Middle St, Portland, ME 04101",
+      "latitude": 43.6576,
+      "longitude": -70.2545,
+      "phone": "207-774-8080",
+      "email": "info@duckfat.com",
+      "website": "https://www.duckfat.com",
+      "status": "published",
+      "prompt": "Create a restaurant entry for Duckfat, highlighting its famous duck fat fries, creative sandwiches, and casual dining atmosphere. Include information about its popularity and signature items."
+    },
+    "street-and-co": {
+      "id": "street-and-co",
+      "type": "restaurant",
+      "title": "Street & Co.",
+      "description": "Classic Mediterranean seafood restaurant in a charming Old Port setting.",
+      "cuisine": ["mediterranean", "seafood"],
+      "priceRange": "$$$",
+      "features": ["romantic", "seafood", "wine list"],
+      "hours": "Daily 5:00 PM - 10:00 PM",
+      "address": "33 Wharf St, Portland, ME 04101",
+      "latitude": 43.6571,
+      "longitude": -70.2517,
+      "phone": "207-775-0887",
+      "email": "info@streetandcompany.net",
+      "website": "https://www.streetandcompany.net",
+      "status": "published",
+      "prompt": "Create a restaurant entry for Street & Co., emphasizing its Mediterranean seafood cuisine, romantic atmosphere, and historic Old Port location. Include details about its signature dishes and dining experience."
+    }
+  },
+
+  "arts": {
+    "portland-stage": {
+      "id": "portland-stage",
+      "type": "venue",
+      "title": "Portland Stage Company",
+      "description": "Professional theater company presenting contemporary and classic plays.",
+      "category": "theater",
+      "features": ["plays", "performances", "education"],
+      "priceRange": "$$",
+      "hours": "Box Office: Tue-Sun 12:00 PM - 6:00 PM",
+      "address": "25A Forest Ave, Portland, ME 04101",
+      "latitude": 43.6540,
+      "longitude": -70.2630,
+      "phone": "207-774-0465",
+      "email": "boxoffice@portlandstage.org",
+      "website": "https://www.portlandstage.org",
+      "status": "published",
+      "prompt": "Create an arts venue entry for a significant cultural institution in [CITY/STATE]. Include details such as title, description, category, features, price range, hours, location (address, latitude, longitude), contact information (phone, email, website), and status. Focus on the venue's role in [CITY/STATE]'s cultural landscape."
+    },
+    "space-gallery": {
+      "id": "space-gallery",
+      "type": "gallery",
+      "title": "SPACE Gallery",
+      "description": "Contemporary art gallery and performance space supporting local artists.",
+      "category": "gallery",
+      "features": ["exhibits", "performances", "workshops"],
+      "priceRange": "$",
+      "hours": "Wed-Sat 12:00 PM - 6:00 PM",
+      "address": "538 Congress St, Portland, ME 04101",
+      "latitude": 43.6535,
+      "longitude": -70.2640,
+      "phone": "207-828-5600",
+      "email": "info@space538.org",
+      "website": "https://www.space538.org",
+      "status": "published",
+      "prompt": "Create a gallery entry for a contemporary art space in [CITY/STATE]. Include details such as title, description, category, features, price range, hours, location (address, latitude, longitude), contact information (phone, email, website), and status. Focus on the gallery's role in supporting local artists and contributing to [CITY/STATE]'s arts community."
+    }
+  },
+
+  "outdoors": {
+    "eastern-promenade": {
+      "id": "eastern-promenade",
+      "type": "park",
+      "title": "Eastern Promenade",
+      "description": "Historic waterfront park offering stunning views of Casco Bay and walking trails.",
+      "category": "park",
+      "features": ["trails", "views", "picnic"],
+      "hours": "Dawn to Dusk",
+      "address": "Eastern Promenade, Portland, ME 04101",
+      "latitude": 43.6650,
+      "longitude": -70.2450,
+      "status": "published",
+      "prompt": "Create an outdoor attraction entry for a significant natural or recreational space in [CITY/STATE]. Include details such as title, description, category, features, hours, location (address, latitude, longitude), and status. Focus on what makes this outdoor space special and how it contributes to [CITY/STATE]'s outdoor recreation options."
+    },
+    "back-cove-trail": {
+      "id": "back-cove-trail",
+      "type": "trail",
+      "title": "Back Cove Trail",
+      "description": "3.6-mile loop trail perfect for walking, running, and biking.",
+      "category": "trail",
+      "features": ["walking", "running", "biking"],
+      "hours": "Dawn to Dusk",
+      "address": "Back Cove Trail, Portland, ME 04101",
+      "latitude": 43.6680,
+      "longitude": -70.2580,
+      "status": "published",
+      "prompt": "Create a trail entry for a recreational path in [CITY/STATE]. Include details such as title, description, category, features, hours, location (address, latitude, longitude), and status. Focus on the trail's accessibility, activities available, and its contribution to [CITY/STATE]'s outdoor recreation options."
+    }
+  },
+
+  "shops": {
+    "portland-trading-co": {
+      "id": "portland-trading-co",
+      "type": "shop",
+      "title": "Portland Trading Co.",
+      "description": "Curated collection of Maine-made goods and local artisan products.",
+      "category": "gifts",
+      "subcategory": "local goods",
+      "priceRange": "$$",
+      "features": ["local", "artisan", "gifts"],
+      "hours": "Mon-Sat 10:00 AM - 6:00 PM, Sun 11:00 AM - 5:00 PM",
+      "address": "123 Commercial St, Portland, ME 04101",
+      "latitude": 43.6580,
+      "longitude": -70.2555,
+      "phone": "207-555-1234",
+      "email": "info@portlandtradingco.com",
+      "website": "https://www.portlandtradingco.com",
+      "status": "published",
+      "prompt": "Create a shop entry for a notable retail establishment in [CITY/STATE]. Include details such as title, description, category, subcategory, price range, features, hours, location (address, latitude, longitude), contact information (phone, email, website), and status. Focus on what makes this shop unique and how it represents [CITY/STATE]'s retail scene."
+    },
+    "longfellow-books": {
+      "id": "longfellow-books",
+      "type": "shop",
+      "title": "Longfellow Books",
+      "description": "Independent bookstore offering a carefully curated selection of new and used books.",
+      "category": "books",
+      "subcategory": "bookstore",
+      "priceRange": "$$",
+      "features": ["books", "events", "gifts"],
+      "hours": "Mon-Sat 10:00 AM - 6:00 PM, Sun 11:00 AM - 5:00 PM",
+      "address": "1 Monument Way, Portland, ME 04101",
+      "latitude": 43.6575,
+      "longitude": -70.2580,
+      "phone": "207-772-4045",
+      "email": "info@longfellowbooks.com",
+      "website": "https://www.longfellowbooks.com",
+      "status": "published",
+      "prompt": "Create a shop entry for a notable bookstore or cultural retail establishment in [CITY/STATE]. Include details such as title, description, category, subcategory, price range, features, hours, location (address, latitude, longitude), contact information (phone, email, website), and status. Focus on the shop's unique offerings and its contribution to [CITY/STATE]'s cultural scene."
+    }
+  },
+
+  "events": {
+    "portland-food-festival": {
+      "id": "portland-food-festival",
+      "type": "event",
+      "title": "Portland Food Festival",
+      "description": "Annual celebration of Portland's vibrant food scene.",
+      "category": "food",
+      "startDate": "2024-09-15",
+      "endDate": "2024-09-17",
+      "time": "11:00 AM - 9:00 PM",
+      "location": "Portland Waterfront",
+      "address": "Commercial St, Portland, ME 04101",
+      "latitude": 43.6580,
+      "longitude": -70.2555,
+      "price": 25,
+      "website": "https://www.portlandfoodfestival.com",
+      "status": "published",
+      "prompt": "Create an event entry for a significant festival or celebration in [CITY/STATE]. Include details such as title, description, category, dates, time, location (venue, address, latitude, longitude), price, website, and status. Focus on how this event celebrates [CITY/STATE]'s culture, food, or traditions."
+    }
+  },
+
+  "team": {
+    "sarah-johnson": {
+      "id": "sarah-johnson",
+      "type": "team",
+      "name": "Sarah Johnson",
+      "role": "Food & Dining Expert",
+      "bio": "Local food critic and culinary expert with over 10 years of experience in Portland's dining scene.",
+      "email": "sarah@portlandguide.com",
+      "social": {
+        "twitter": "@sarahfoodie",
+        "instagram": "@sarahfoodie",
+        "linkedin": "linkedin.com/in/sarahjohnson"
+      },
+      "status": "published",
+      "prompt": "Create a team member entry for a key expert in [CITY/STATE]'s tourism or cultural scene. Include details such as name, role, bio, contact information (email), social media handles, and status. Focus on their expertise and contribution to [CITY/STATE]'s visitor experience."
+    }
+  },
+
+  "categories": {
+    "attractions": {
+      "id": "attractions",
+      "type": "category",
+      "title": "Attractions",
+      "description": "Explore Portland's top attractions",
+      "items": ["landmarks", "museums", "parks", "tours"],
+      "prompt": "Create a category structure for attractions in [CITY/STATE]. Include a title, description, and list of subcategories that best represent the types of attractions available in [CITY/STATE]."
+    },
+    "dining": {
+      "id": "dining",
+      "type": "category",
+      "title": "Dining",
+      "description": "Discover Portland's culinary scene",
+      "items": ["seafood", "american", "international", "cafes"],
+      "prompt": "Create a dining category structure for [CITY/STATE] that organizes the local culinary scene. Include a title, description, and list of cuisine types that best represent [CITY/STATE]'s diverse food offerings. Focus on the unique culinary traditions and specialties of the area."
+    },
+    "arts": {
+      "id": "arts",
+      "type": "category",
+      "title": "Arts & Culture",
+      "description": "Experience Portland's creative side",
+      "items": ["museums", "galleries", "theaters", "music"],
+      "prompt": "Create an arts and culture category structure for [CITY/STATE] that organizes the local creative scene. Include a title, description, and list of cultural venues that showcase [CITY/STATE]'s artistic offerings. Focus on the unique cultural institutions and creative spaces that make the area special."
+    },
+    "outdoors": {
+      "id": "outdoors",
+      "type": "category",
+      "title": "Outdoors",
+      "description": "Enjoy Portland's natural beauty",
+      "items": ["parks", "trails", "beaches", "waterfront"],
+      "prompt": "Create an outdoors category structure for [CITY/STATE] that organizes the local natural attractions. Include a title, description, and list of outdoor spaces that highlight [CITY/STATE]'s natural features. Focus on the unique outdoor recreation opportunities and natural landscapes that make the area special."
+    }
+  },
+
+  "locations": {
+    "old-port": {
+      "id": "old-port",
+      "type": "location",
+      "title": "Old Port",
+      "description": "Historic waterfront district with shops, restaurants, and nightlife",
+      "features": ["shopping", "dining", "nightlife", "historic"],
+      "coordinates": {
+        "latitude": 43.6575,
+        "longitude": -70.2550
+      },
+      "prompt": "Create a location entry for a significant district or neighborhood in [CITY/STATE]. Include details such as title, description, key features, and coordinates. Focus on what makes this area unique and what visitors can experience there."
+    },
+    "arts-district": {
+      "id": "arts-district",
+      "type": "location",
+      "title": "Arts District",
+      "description": "Cultural hub with museums, galleries, and theaters",
+      "features": ["arts", "culture", "museums", "galleries"],
+      "coordinates": {
+        "latitude": 43.6535,
+        "longitude": -70.2640
+      },
+      "prompt": "Create a location entry for a cultural district in [CITY/STATE]. Include details such as title, description, key features, and coordinates. Focus on the district's role in [CITY/STATE]'s cultural landscape and what makes it a must-visit area for tourists."
+    }
+  },
+
+  "settings": {
+    "site": {
+      "id": "site",
+      "type": "setting",
+      "key": "site",
+      "value": {
+        "name": "Portland Guide",
+        "description": "Your Ultimate Guide to Portland, Maine",
+        "contact": {
+          "email": "info@portlandguide.com",
+          "phone": "207-555-1234",
+          "address": "123 Main St, Portland, ME 04101"
+        },
+        "social": {
+          "twitter": "@portlandguide",
+          "instagram": "@portlandguide",
+          "facebook": "portlandguide"
+        }
+      },
+      "prompt": "Create site settings for [CITY/STATE]'s tourism website. Include the site name, description, contact information (email, phone, address), and social media handles. Ensure all information is accurate and represents [CITY/STATE]'s tourism brand."
+    },
+    "seo": {
+      "id": "seo",
+      "type": "setting",
+      "key": "seo",
+      "value": {
+        "defaultTitle": "Portland Guide | Your Ultimate Guide to Portland, Maine",
+        "defaultDescription": "Discover the best of Portland, Maine - from world-class dining to historic attractions and outdoor adventures.",
+        "defaultKeywords": ["portland", "maine", "travel", "guide", "attractions", "dining", "shopping", "arts", "outdoors"]
+      },
+      "prompt": "Create SEO settings for [CITY/STATE]'s tourism website. Include a default title, description, and keywords that accurately represent [CITY/STATE]'s main attractions and experiences."
+    }
+  },
+
+  "services": {
+    "hero": {
+      "title": "Our Services",
+      "subtitle": "Discover how MaineRez can help you experience the best of Portland",
+      "callToAction": {
+        "text": "Get Started",
+        "href": "/contact"
+      },
+      "image": {
+        "src": "/images/casco-bay.jpg",
+        "alt": "Portland Services"
+      }
+    },
+    "features2": {
+      "header": {
+        "title": "What We Offer"
+      },
+      "items": [
+        {
+          "title": "Local Expertise",
+          "description": "Our team of Portland natives provides authentic insights and recommendations."
+        },
+        {
+          "title": "Curated Content",
+          "description": "Carefully selected and regularly updated information about Portland's best spots."
+        },
+        {
+          "title": "Interactive Maps",
+          "description": "Easy-to-use maps to help you navigate Portland's neighborhoods and attractions."
+        },
+        {
+          "title": "Real-time Updates",
+          "description": "Stay informed about events, openings, and special offers in Portland."
+        },
+        {
+          "title": "Personalized Recommendations",
+          "description": "Get tailored suggestions based on your interests and preferences."
+        },
+        {
+          "title": "Local Partnerships",
+          "description": "Exclusive access to deals and experiences through our local business network."
+        }
+      ]
+    },
+    "content1": {
+      "content": "Experience Portland Like a Local",
+      "items": [
+        {
+          "title": "Hidden Gems",
+          "description": "Discover lesser-known spots that locals love."
+        },
+        {
+          "title": "Seasonal Guide",
+          "description": "Make the most of Portland's unique seasonal offerings."
+        },
+        {
+          "title": "Local Events",
+          "description": "Stay updated on Portland's vibrant calendar of events."
+        }
+      ],
+      "image": {
+        "src": "/images/old-port-shopping.jpg",
+        "alt": "Portland Local Experience"
+      }
+    },
+    "content2": {
+      "content": "Your Portland Adventure Awaits",
+      "items": [
+        {
+          "title": "Custom Itineraries",
+          "description": "Get personalized day-by-day plans for your visit."
+        },
+        {
+          "title": "Expert Tips",
+          "description": "Insider advice to make your Portland experience unforgettable."
+        },
+        {
+          "title": "Local Connections",
+          "description": "Connect with Portland's vibrant community and businesses."
+        }
+      ],
+      "image": {
+        "src": "/images/eastern-promenade.jpg",
+        "alt": "Portland Adventure"
+      }
+    },
+    "features4": {
+      "header": {
+        "title": "Why Choose MaineRez",
+        "subtitle": "Your trusted guide to Portland, Maine"
+      },
+      "image": {
+        "src": "/images/portland-market.jpg",
+        "alt": "Portland Market"
+      },
+      "items": [
+        {
+          "title": "Local Knowledge",
+          "description": "Expert insights from Portland natives and long-time residents."
+        },
+        {
+          "title": "Quality Content",
+          "description": "Carefully curated and regularly updated information."
+        },
+        {
+          "title": "User-Friendly",
+          "description": "Easy-to-use platform with intuitive navigation."
+        },
+        {
+          "title": "Comprehensive Coverage",
+          "description": "Everything you need to know about Portland in one place."
+        },
+        {
+          "title": "Community Focus",
+          "description": "Supporting local businesses and sustainable tourism."
+        },
+        {
+          "title": "Personalized Experience",
+          "description": "Tailored recommendations based on your interests."
+        }
+      ]
+    },
+    "testimonials": {
+      "header": {
+        "title": "What Our Users Say",
+        "subtitle": "Hear from people who have used MaineRez to explore Portland"
+      },
+      "testimonials": [
+        {
+          "name": "Sarah Johnson",
+          "job": "Travel Blogger",
+          "testimonial": "MaineRez helped me discover the authentic Portland experience. Their recommendations led me to amazing local spots I would have never found on my own.",
+          "image": {
+            "src": "/images/portland-market.jpg",
+            "alt": "Sarah Johnson"
+          }
+        },
+        {
+          "name": "Michael Chen",
+          "job": "Food Critic",
+          "testimonial": "The dining guides are spot-on! I found incredible restaurants and local food experiences that made my visit to Portland truly memorable.",
+          "image": {
+            "src": "/images/eventide-oyster.jpg",
+            "alt": "Michael Chen"
+          }
+        },
+        {
+          "name": "Emma Thompson",
+          "job": "Photography Enthusiast",
+          "testimonial": "Thanks to MaineRez, I captured the most beautiful spots in Portland. Their local insights helped me find the perfect locations for stunning photos.",
+          "image": {
+            "src": "/images/casco-bay.jpg",
+            "alt": "Emma Thompson"
+          }
+        }
+      ]
+    }
+  },
+  "pricing": {
+    "hero": {
+      "title": "Simple, Transparent Pricing",
+      "subtitle": "Choose the plan that's right for you",
+      "tagline": "Pricing"
+    },
+    "pricing": {
+      "header": {
+        "title": "Our Plans",
+        "subtitle": "Select the perfect plan for your needs"
+      },
+      "prices": [
+        {
+          "title": "Basic",
+          "subtitle": "For individuals",
+          "price": "Free",
+          "period": "forever",
+          "items": [
+            "Access to basic guides",
+            "Limited restaurant listings",
+            "Basic event calendar",
+            "Community forum access"
+          ],
+          "callToAction": {
+            "text": "Get Started",
+            "href": "/contact"
+          },
+          "hasRibbon": false
+        },
+        {
+          "title": "Pro",
+          "subtitle": "For serious explorers",
+          "price": "$9.99",
+          "period": "per month",
+          "items": [
+            "Full access to all guides",
+            "Complete restaurant listings",
+            "Detailed event calendar",
+            "Priority support",
+            "Exclusive deals"
+          ],
+          "callToAction": {
+            "text": "Subscribe",
+            "href": "/contact"
+          },
+          "hasRibbon": true
+        },
+        {
+          "title": "Business",
+          "subtitle": "For local businesses",
+          "price": "$29.99",
+          "period": "per month",
+          "items": [
+            "Business profile",
+            "Featured listings",
+            "Analytics dashboard",
+            "Priority support",
+            "Marketing tools",
+            "Event promotion"
+          ],
+          "callToAction": {
+            "text": "Contact Us",
+            "href": "/contact"
+          },
+          "hasRibbon": false
+        }
+      ]
+    },
+    "comparison": {
+      "header": {
+        "title": "Compare Plans",
+        "subtitle": "Find the perfect plan for your needs"
+      },
+      "columns": [
+        {
+          "title": "Features",
+          "items": [
+            "Access to guides",
+            "Restaurant listings",
+            "Event calendar",
+            "Community access",
+            "Priority support",
+            "Exclusive deals",
+            "Business profile",
+            "Analytics",
+            "Marketing tools"
+          ]
+        },
+        {
+          "title": "Basic",
+          "items": [
+            "Limited",
+            "Basic",
+            "Basic",
+            "Yes",
+            "No",
+            "No",
+            "No",
+            "No",
+            "No"
+          ]
+        },
+        {
+          "title": "Pro",
+          "items": [
+            "Full",
+            "Complete",
+            "Detailed",
+            "Yes",
+            "Yes",
+            "Yes",
+            "No",
+            "No",
+            "No"
+          ]
+        },
+        {
+          "title": "Business",
+          "items": [
+            "Full",
+            "Complete",
+            "Detailed",
+            "Yes",
+            "Yes",
+            "Yes",
+            "Yes",
+            "Yes",
+            "Yes"
+          ]
+        }
+      ]
+    }
+  },
+  "faqs": {
+    "hero": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "Find answers to common questions about MaineRez and Portland",
+      "tagline": "FAQs"
+    },
+    "faqs4": {
+      "header": {
+        "title": "Common Questions",
+        "subtitle": "Get answers to frequently asked questions about MaineRez and Portland"
+      },
+      "tabs": [
+        {
+          "link": "general",
+          "text": "General",
+          "items": [
+            {
+              "title": "What is MaineRez?",
+              "description": "MaineRez is your ultimate guide to Portland, Maine, providing comprehensive information about attractions, dining, events, and more."
+            },
+            {
+              "title": "How do I use MaineRez?",
+              "description": "Browse our guides, use our interactive maps, and follow our recommendations to plan your perfect Portland visit."
+            },
+            {
+              "title": "Is MaineRez free to use?",
+              "description": "Yes, our basic service is free. We also offer premium plans with additional features and benefits."
+            }
+          ]
+        },
+        {
+          "link": "account",
+          "text": "Account",
+          "items": [
+            {
+              "title": "How do I create an account?",
+              "description": "Click the 'Sign Up' button and follow the simple registration process to create your MaineRez account."
+            },
+            {
+              "title": "What are the benefits of having an account?",
+              "description": "Save favorite places, create custom itineraries, and get personalized recommendations."
+            },
+            {
+              "title": "How do I manage my account?",
+              "description": "Access your account settings through the profile menu to update preferences and manage your information."
+            }
+          ]
+        },
+        {
+          "link": "portland",
+          "text": "Portland",
+          "items": [
+            {
+              "title": "What are the best times to visit Portland?",
+              "description": "Portland is beautiful year-round, but summer and fall offer the best weather for outdoor activities."
+            },
+            {
+              "title": "What are the must-see attractions?",
+              "description": "Don't miss the Old Port, Portland Head Light, Eastern Promenade, and the Portland Museum of Art."
+            },
+            {
+              "title": "Where should I stay in Portland?",
+              "description": "The Old Port and Arts District are popular areas with great access to attractions and dining."
+            }
+          ]
+        }
+      ]
+    },
+    "callToAction": {
+      "title": "Still have questions?",
+      "subtitle": "Contact us for more information about MaineRez and Portland",
+      "callToAction": {
+        "text": "Contact Us",
+        "href": "/contact"
+      }
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Contact Us",
+      "subtitle": "Get in touch with our team",
+      "tagline": "Contact"
+    },
+    "contact": {
+      "header": {
+        "title": "Get in Touch",
+        "subtitle": "Have questions or suggestions? We'd love to hear from you!",
+        "tagline": "Contact"
+      },
+      "content": "Whether you're planning a visit to Portland, looking to feature your business, or have feedback to share, our team is here to help. Reach out to us and we'll get back to you as soon as possible.",
+      "items": [
+        {
+          "title": "Email Us",
+          "description": ["For general inquiries", "Portland@mainerez.com"],
+          "iconIndex": 0
+        },
+        {
+          "title": "Contact",
+          "description": ["For business features", "Portland@mainerez.com"],
+          "iconIndex": 1
+        },
+        {
+          "title": "Working hours",
+          "description": ["Monday - Friday: 09:00 - 17:00", "Saturday & Sunday: 10:00 - 15:00"],
+          "iconIndex": 2
+        }
+      ],
+      "form": {
+        "title": "Send Us a Message",
+        "inputs": [
+          {
+            "type": "text",
+            "name": "name",
+            "autocomplete": "off",
+            "placeholder": "Your name"
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "autocomplete": "on",
+            "placeholder": "Your email address"
+          }
+        ],
+        "textarea": {
+          "placeholder": "Tell us about your inquiry..."
+        },
+        "btn": {
+          "title": "Send Message"
+        }
+      }
+    },
+    "features2": {
+      "header": {
+        "title": "How We Can Help",
+        "subtitle": "Our team is here to assist you with any questions or needs"
+      },
+      "items": [
+        {
+          "title": "General Inquiries",
+          "description": "Get answers to your questions about Portland and MaineRez",
+          "iconIndex": 0
+        },
+        {
+          "title": "Business Features",
+          "description": "Learn how to feature your business on MaineRez",
+          "iconIndex": 1
+        },
+        {
+          "title": "Support",
+          "description": "Get help with your account or technical issues",
+          "iconIndex": 2
+        }
+      ]
+    }
+  },
+  "attractions": {
+    "content": "Discover Portland's Most Popular Attractions",
+    "items": [
+      {
+        "title": "Portland Head Light",
+        "description": "Maine's oldest lighthouse offering stunning ocean views and rich maritime history.",
+        "image": {
+          "src": "/images/attractions/portland-head-light.jpg",
+          "alt": "Portland Head Light"
+        }
+      },
+      {
+        "title": "Old Port District",
+        "description": "Historic waterfront area with cobblestone streets, unique shops, and restaurants.",
+        "image": {
+          "src": "/images/attractions/old-port.jpg",
+          "alt": "Old Port District"
+        }
+      },
+      {
+        "title": "Portland Museum of Art",
+        "description": "Maine's largest art museum featuring works by Winslow Homer and other renowned artists.",
+        "image": {
+          "src": "/images/attractions/portland-museum.jpg",
+          "alt": "Portland Museum of Art"
+        }
+      },
+      {
+        "title": "Eastern Promenade",
+        "description": "Scenic waterfront park with walking trails and panoramic views of Casco Bay.",
+        "image": {
+          "src": "/images/attractions/eastern-prom.jpg",
+          "alt": "Eastern Promenade"
+        }
+      },
+      {
+        "title": "Victoria Mansion",
+        "description": "Stunning example of Italianate architecture with original furnishings and artwork.",
+        "image": {
+          "src": "/images/attractions/victoria-mansion.jpg",
+          "alt": "Victoria Mansion"
+        }
+      },
+      {
+        "title": "Casco Bay Islands",
+        "description": "Take a ferry to explore the beautiful islands of Casco Bay.",
+        "image": {
+          "src": "/images/attractions/casco-bay.jpg",
+          "alt": "Casco Bay Islands"
+        }
+      }
+    ]
+  },
+  "announcement": {
+    "title": "Welcome to MaineRez",
+    "callToAction": {
+      "text": "Explore Portland",
+      "href": "/attractions"
+    },
+    "callToAction2": {
+      "text": "Contact Us",
+      "href": "/contact"
+    }
+  },
+  "navigation": {
+    "header": {
+      "settings": {
+        "isSticky": "true",
+        "showToggleTheme": "true",
+        "showRssFeed": "false",
+        "position": "right"
+      },
+      "logo": {
+        "src": "/images/MaineRez1.png",
+        "alt": "MaineRez Logo"
+      }
+    },
+    "footer2": {
+      "title": "MaineRez",
+      "links": [
+        {
+          "label": "Terms & Conditions",
+          "href": "/terms"
+        },
+        {
+          "label": "Privacy Policy",
+          "href": "/privacy"
+        }
+      ],
+      "columns": [
+        {
+          "title": "Explore Portland",
+          "links": [
+            {
+              "label": "Beaches & Parks",
+              "href": "/beaches"
+            },
+            {
+              "label": "Restaurants",
+              "href": "/restaurants"
+            },
+            {
+              "label": "Local Attractions",
+              "href": "/attractions"
+            },
+            {
+              "label": "Events Calendar",
+              "href": "/events"
+            },
+            {
+              "label": "Shopping",
+              "href": "/shopping"
+            },
+            {
+              "label": "Nightlife",
+              "href": "/nightlife"
+            }
+          ]
+        },
+        {
+          "title": "Dining Guide",
+          "links": [
+            {
+              "label": "Seafood",
+              "href": "/dining/seafood"
+            },
+            {
+              "label": "Breweries",
+              "href": "/dining/breweries"
+            },
+            {
+              "label": "Coffee Shops",
+              "href": "/dining/coffee"
+            },
+            {
+              "label": "Fine Dining",
+              "href": "/dining/fine-dining"
+            }
+          ]
+        },
+        {
+          "title": "Local Info",
+          "links": [
+            {
+              "label": "Weather",
+              "href": "/weather"
+            },
+            {
+              "label": "Transportation",
+              "href": "/transportation"
+            },
+            {
+              "label": "Parking",
+              "href": "/parking"
+            },
+            {
+              "label": "Maps",
+              "href": "/maps"
+            }
+          ]
+        },
+        {
+          "title": "About Us",
+          "links": [
+            {
+              "label": "Our Story",
+              "href": "/about"
+            },
+            {
+              "label": "Blog",
+              "href": "/blog"
+            },
+            {
+              "label": "Careers",
+              "href": "/careers"
+            },
+            {
+              "label": "Contact",
+              "href": "/contact"
+            }
+          ]
+        }
+      ],
+      "socials": [
+        { "label": "Twitter", "icon": "IconBrandTwitter", "href": "#" },
+        { "label": "Instagram", "icon": "IconBrandInstagram", "href": "#" },
+        { "label": "Facebook", "icon": "IconBrandFacebook", "href": "#" },
+        { "label": "RSS", "icon": "IconRss", "href": "#" }
+      ],
+      "footNote": "Want to be featured on this website? Please send us an email to Portland@mainerez.com"
+    }
+  }
+} 
