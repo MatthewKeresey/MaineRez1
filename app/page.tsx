@@ -19,13 +19,13 @@ import {
   contactHome,
   contentHomeOne,
   contentHomeTwo,
-  faqs2Home,
   heroHome,
   pricingHome,
   socialProofHome,
   testimonialsHome,
 } from '~/shared/data/pages/home.data';
 import { getFeaturesHome, getStepsHome, getTeamHome } from '~/shared/data/pages/home';
+import { getFaqsHome } from '~/shared/data/pages/home/faqs.data';
 
 export const metadata: Metadata = {
   title: SITE.title,
@@ -41,7 +41,7 @@ export default function Page() {
       <Content {...contentHomeTwo} />
       <Steps {...getStepsHome()} />
       <Testimonials {...testimonialsHome} />
-      <FAQs2 {...faqs2Home} />
+      <FAQs2 {...getFaqsHome()} />
       <Pricing {...pricingHome} />
       <Team {...getTeamHome()} />
       <Contact {...contactHome} />
