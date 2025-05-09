@@ -150,7 +150,7 @@ const iconMap: IconMapType = {
 const stepsSection = content.sections.steps;
 export const stepsHome: StepsProps = stepsSection ? {
   id: stepsSection.id || 'steps-on-home',
-  hasBackground: stepsSection.hasBackground ?? false,
+  hasBackground: false,
   isReversed: stepsSection.isReversed ?? false,
   isImageDisplayed: stepsSection.isImageDisplayed ?? true,
   image: stepsSection.image,
@@ -173,7 +173,7 @@ export const stepsHome: StepsProps = stepsSection ? {
 const testimonialsSection = content.sections.testimonials;
 export const testimonialsHome: TestimonialsProps = testimonialsSection ? {
   id: testimonialsSection.id || 'testimonials-on-home',
-  hasBackground: testimonialsSection.hasBackground ?? true,
+  hasBackground: true,
   header: testimonialsSection.header,
   testimonials: testimonialsSection.testimonials,
 } : {
@@ -204,7 +204,7 @@ export const faqs2Home: FAQsProps = faqsSection ? {
 const featuredBusinessesSection = content.sections.featuredBusinesses;
 export const featuredBusinessesHome: FeaturedBusinessesProps = featuredBusinessesSection ? {
   id: featuredBusinessesSection.id || 'featured-businesses-on-home',
-  hasBackground: featuredBusinessesSection.hasBackground ?? true,
+  hasBackground: true,
   header: featuredBusinessesSection.header,
   businesses: featuredBusinessesSection.businesses,
 } : {
@@ -218,7 +218,7 @@ export const featuredBusinessesHome: FeaturedBusinessesProps = featuredBusinesse
 const pricingSection = content.sections.pricing;
 export const pricingHome: PricingProps = pricingSection ? {
   id: pricingSection.id || 'pricing-on-home',
-  hasBackground: pricingSection.hasBackground ?? true,
+  hasBackground: true,
   header: pricingSection.header,
   prices: pricingSection.prices,
 } : {
@@ -232,7 +232,7 @@ export const pricingHome: PricingProps = pricingSection ? {
 const teamSection = content.sections.team;
 export const teamHome: TeamProps = teamSection ? {
   id: teamSection.id || 'team-on-home',
-  hasBackground: teamSection.hasBackground ?? false,
+  hasBackground: false,
   header: teamSection.header,
   teams: teamSection.teams.map(team => ({
     ...team,
@@ -251,7 +251,7 @@ export const teamHome: TeamProps = teamSection ? {
 // Contact data on Home page *******************
 const contactSection = content.sections.contact;
 export const contactHome: ContactProps = contactSection ? {
-  hasBackground: contactSection.hasBackground ?? true,
+  hasBackground: true,
   header: contactSection.header,
   content: contactSection.content,
   items: contactSection.items.map(item => ({
