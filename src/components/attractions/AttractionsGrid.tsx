@@ -1,68 +1,78 @@
-import React from 'react';
+/** @jsxImportSource react */
+import type { FC } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { getContentObject } from '~/shared/content/content-helper';
+import { useEffect, useState } from 'react';
 
 interface AttractionItem {
+  id: string;
   title: string;
   description: string;
-  imageSrc: string;
+  image?: {
+    src: string;
+    alt: string;
+  };
   href: string;
 }
 
-const attractions: AttractionItem[] = [
-  {
-    title: 'Portland Head Light',
-    description: 'Historic lighthouse with stunning ocean views',
-    imageSrc: '/images/casco-bay.jpg',
-    href: '/attractions/portland-head-light',
-  },
-  {
-    title: 'Old Port District',
-    description: "Cobblestone streets, unique shops, and vibrant nightlife in Portland's historic heart.",
-    imageSrc: '/images/old-port.jpg',
-    href: '/attractions/old-port',
-  },
-  {
-    title: 'Eastern Promenade',
-    description: 'A scenic park with walking trails, picnic spots, and panoramic bay views.',
-    imageSrc: '/images/eastern-promenade.jpg',
-    href: '/attractions/eastern-promenade',
-  },
-  {
-    title: 'Casco Bay Islands',
-    description: 'Take a ferry to explore charming islands, beaches, and local communities.',
-    imageSrc: '/images/casco-bay.jpg',
-    href: '/attractions/casco-bay-islands',
-  },
-  {
-    title: 'Portland Museum of Art',
-    description: 'Home to an impressive collection of American, European, and contemporary art.',
-    imageSrc: '/images/portland-museum.jpg',
-    href: '/attractions/portland-museum',
-  },
-  {
-    title: 'Victoria Mansion',
-    description: 'A beautifully preserved 19th-century home with ornate interiors and guided tours.',
-    imageSrc: '/images/victoria-mansion.jpg',
-    href: '/attractions/victoria-mansion',
-  },
-];
+const AttractionsGrid: FC = () => {
+  const [attractions, setAttractions] = useState<AttractionItem[]>([]);
+  const [loading, setLoading] = useState(true);
 
-export default function AttractionsGrid() {
+  useEffect(() => {
+    const loadAttractions = async () => {
+      try {
+        const attractionsData = await getContentObject('attractions');
+        const attractionsList = Object.entries(attractionsData).map(([id, attraction]: [string, any]) => ({
+          id,
+          title: attraction.title,
+          description: attraction.description,
+          image: {
+            src: `/images/attractions/${id}.jpg`,
+            alt: attraction.title
+          },
+          href: `/attractions/${id}`
+        }));
+        setAttractions(attractionsList);
+      } catch (error) {
+        console.error('Error loading attractions:', error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    loadAttractions();
+  }, []);
+
+  if (loading) {
+    return (
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {[...Array(6)].map((_, index) => (
+            <div key={index} className="animate-pulse">
+              <div className="h-64 bg-gray-200 rounded-lg"></div>
+            </div>
+          ))}
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {attractions.map((attraction, index) => (
-          <Link key={index} href={attraction.href} className="group">
+        {attractions.map((attraction) => (
+          <Link key={attraction.id} href={attraction.href} className="group">
             <div className="relative h-64 overflow-hidden rounded-lg shadow-lg transition-all duration-300 group-hover:shadow-xl">
               <Image
-                src={attraction.imageSrc}
-                alt={attraction.title}
+                src={attraction.image?.src || '/images/attractions/default.jpg'}
+                alt={attraction.image?.alt || attraction.title}
                 fill
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 className="object-cover transition-transform duration-300 group-hover:scale-105"
                 quality={75}
-                priority={index < 3}
+                priority={attractions.indexOf(attraction) < 3}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent">
                 <div className="absolute bottom-0 p-6">
@@ -80,4 +90,6 @@ export default function AttractionsGrid() {
       </div>
     </div>
   );
-} 
+};
+
+export default AttractionsGrid; 

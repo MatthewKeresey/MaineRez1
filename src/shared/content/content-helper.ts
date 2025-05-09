@@ -1,5 +1,3 @@
-import content from './content.json';
-
 type ContentPath = string[];
 
 interface Section {
@@ -34,10 +32,34 @@ interface Content {
     [K in SectionKey]: Section;
   };
   navigation: Record<string, any>;
+  attractions: Record<string, any>;
+  restaurants: Record<string, any>;
+  arts: Record<string, any>;
+  outdoors: Record<string, any>;
 }
 
-// Type assertion for the content object
-const typedContent = content as Content;
+let contentCache: Content | null = null;
+
+/**
+ * Load content from content.json
+ */
+export const loadContent = async (): Promise<Content> => {
+  if (contentCache) {
+    return contentCache;
+  }
+
+  try {
+    const response = await fetch('/content.json');
+    if (!response.ok) {
+      throw new Error('Failed to load content');
+    }
+    contentCache = await response.json();
+    return contentCache;
+  } catch (error) {
+    console.error('Error loading content:', error);
+    return {} as Content;
+  }
+};
 
 /**
  * Safely access nested content properties using dot notation
@@ -45,16 +67,17 @@ const typedContent = content as Content;
  * @param defaultValue - Value to return if path doesn't exist
  * @returns The content value or default value
  */
-export const getContent = (path: string, defaultValue: string = ''): string => {
+export const getContent = async (path: string, defaultValue: string = ''): Promise<string> => {
+  const content = await loadContent();
   const keys = path.split('.');
-  let current: any = typedContent;
+  let current: any = content;
 
   // Handle the nested structure
   if (keys[0] === 'home') {
     // For home page content, look in sections
     const sectionKey = keys[1] as SectionKey;
-    if (sectionKey && sectionKey in typedContent.sections) {
-      current = typedContent.sections[sectionKey];
+    if (sectionKey && sectionKey in content.sections) {
+      current = content.sections[sectionKey];
       // Remove the first two keys (home and section name)
       keys.splice(0, 2);
     }
@@ -75,16 +98,17 @@ export const getContent = (path: string, defaultValue: string = ''): string => {
  * @param path - Path to the content array
  * @returns Array of content items or empty array
  */
-export const getContentArray = (path: string): any[] => {
+export const getContentArray = async (path: string): Promise<any[]> => {
+  const content = await loadContent();
   const keys = path.split('.');
-  let current: any = typedContent;
+  let current: any = content;
 
   // Handle the nested structure
   if (keys[0] === 'home') {
     // For home page content, look in sections
     const sectionKey = keys[1] as SectionKey;
-    if (sectionKey && sectionKey in typedContent.sections) {
-      current = typedContent.sections[sectionKey];
+    if (sectionKey && sectionKey in content.sections) {
+      current = content.sections[sectionKey];
       // Remove the first two keys (home and section name)
       keys.splice(0, 2);
     }
@@ -105,16 +129,17 @@ export const getContentArray = (path: string): any[] => {
  * @param path - Path to the content object
  * @returns Object of content items or empty object
  */
-export const getContentObject = (path: string): Record<string, any> => {
+export const getContentObject = async (path: string): Promise<Record<string, any>> => {
+  const content = await loadContent();
   const keys = path.split('.');
-  let current: any = typedContent;
+  let current: any = content;
 
   // Handle the nested structure
   if (keys[0] === 'home') {
     // For home page content, look in sections
     const sectionKey = keys[1] as SectionKey;
-    if (sectionKey && sectionKey in typedContent.sections) {
-      current = typedContent.sections[sectionKey];
+    if (sectionKey && sectionKey in content.sections) {
+      current = content.sections[sectionKey];
       // Remove the first two keys (home and section name)
       keys.splice(0, 2);
     }
