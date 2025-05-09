@@ -15,6 +15,7 @@ import {
   IconMapPin,
   IconPhoneCall,
   IconRocket,
+  IconArrowUp,
 } from '@tabler/icons-react';
 import {
   CallToActionProps,
@@ -152,6 +153,19 @@ export const contentHomeTwo: ContentProps = {
 };
 
 // Steps data on Home page *******************
+const iconMap = {
+  arrowDown: IconArrowDown,
+  arrowUp: IconArrowUp,
+  check: IconCheck,
+  rocket: IconRocket,
+  bulb: IconBulb,
+  arrowsRightLeft: IconArrowsRightLeft,
+  brandTailwind: IconBrandTailwind,
+  components: IconComponents,
+  listCheck: IconListCheck,
+  "": undefined
+};
+
 const stepsSection = content.sections.steps;
 export const stepsHome: StepsProps = stepsSection ? {
   id: stepsSection.id || 'steps-on-home',
@@ -160,7 +174,10 @@ export const stepsHome: StepsProps = stepsSection ? {
   isImageDisplayed: stepsSection.isImageDisplayed ?? true,
   image: stepsSection.image,
   header: stepsSection.header,
-  items: stepsSection.items,
+  items: stepsSection.items.map((item: any) => ({
+    ...item,
+    icon: iconMap[item.icon] || undefined
+  })),
 } : stepsHome;
 
 // Testimonials data on Home page *******************
