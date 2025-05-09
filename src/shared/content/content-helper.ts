@@ -8,19 +8,32 @@ interface Section {
   title: string;
   subtitle: string;
   tagline: string;
+  image?: {
+    src: string;
+    alt: string;
+  };
+  callToAction?: {
+    text: string;
+    href: string;
+    icon: string;
+  };
+  callToAction2?: {
+    text: string;
+    href: string;
+    icon: string;
+  };
+  prompt?: string;
   [key: string]: any;
-}
-
-interface Sections {
-  hero: Section;
-  features: Section;
-  contentOne: Section;
-  [key: string]: Section;
 }
 
 interface Content {
   pages: Record<string, any>;
-  sections: Sections;
+  sections: {
+    hero: Section;
+    features: Section;
+    contentOne: Section;
+    [key: string]: Section;
+  };
   navigation: Record<string, any>;
 }
 
@@ -37,8 +50,9 @@ export const getContent = (path: string, defaultValue: string = ''): string => {
   // Handle the nested structure
   if (keys[0] === 'home') {
     // For home page content, look in sections
-    if (keys[1] && content.sections[keys[1] as keyof Sections]) {
-      current = content.sections[keys[1] as keyof Sections];
+    const sectionKey = keys[1];
+    if (sectionKey && sectionKey in content.sections) {
+      current = content.sections[sectionKey];
       // Remove the first two keys (home and section name)
       keys.splice(0, 2);
     }
@@ -66,8 +80,9 @@ export const getContentArray = (path: string): any[] => {
   // Handle the nested structure
   if (keys[0] === 'home') {
     // For home page content, look in sections
-    if (keys[1] && content.sections[keys[1] as keyof Sections]) {
-      current = content.sections[keys[1] as keyof Sections];
+    const sectionKey = keys[1];
+    if (sectionKey && sectionKey in content.sections) {
+      current = content.sections[sectionKey];
       // Remove the first two keys (home and section name)
       keys.splice(0, 2);
     }
@@ -95,8 +110,9 @@ export const getContentObject = (path: string): Record<string, any> => {
   // Handle the nested structure
   if (keys[0] === 'home') {
     // For home page content, look in sections
-    if (keys[1] && content.sections[keys[1] as keyof Sections]) {
-      current = content.sections[keys[1] as keyof Sections];
+    const sectionKey = keys[1];
+    if (sectionKey && sectionKey in content.sections) {
+      current = content.sections[sectionKey];
       // Remove the first two keys (home and section name)
       keys.splice(0, 2);
     }
