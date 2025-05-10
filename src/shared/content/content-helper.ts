@@ -41,11 +41,11 @@ const typedContent = content as Content;
 
 /**
  * Safely access nested content properties using dot notation
- * @param path - Path to the content (e.g., 'home.hero.title')
+ * @param path - Path to the content (e.g., 'home.hero.title' or 'sections.hero')
  * @param defaultValue - Value to return if path doesn't exist
  * @returns The content value or default value
  */
-export const getContent = (path: string, defaultValue: string = ''): string => {
+export const getContent = (path: string, defaultValue: any = ''): any => {
   const keys = path.split('.');
   let current: any = typedContent;
 
@@ -56,6 +56,14 @@ export const getContent = (path: string, defaultValue: string = ''): string => {
     if (sectionKey && sectionKey in typedContent.sections) {
       current = typedContent.sections[sectionKey];
       // Remove the first two keys (home and section name)
+      keys.splice(0, 2);
+    }
+  } else if (keys[0] === 'sections') {
+    // For section content, look directly in sections
+    const sectionKey = keys[1] as SectionKey;
+    if (sectionKey && sectionKey in typedContent.sections) {
+      current = typedContent.sections[sectionKey];
+      // Remove the first two keys (sections and section name)
       keys.splice(0, 2);
     }
   }

@@ -1,3 +1,4 @@
+import React from 'react';
 import type { Metadata } from 'next';
 import Contact from '~/components/widgets/Contact';
 import FAQs from '~/components/widgets/FAQs';
