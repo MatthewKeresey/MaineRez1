@@ -181,6 +181,9 @@
     "contentTwo": {
       "id": "contentTwo",
       "type": "content",
+      "title": "Explore Portland's Treasures",
+      "subtitle": "Beyond its culinary scene, Portland offers endless opportunities for exploration and adventure.",
+      "tagline": "Attractions",
       "content": "Beyond its culinary scene, Portland offers endless opportunities for exploration and adventure. From historic landmarks to outdoor activities, there's something for everyone.",
       "items": [
         {
@@ -210,6 +213,9 @@
     "steps": {
       "id": "steps",
       "type": "steps",
+      "title": "Plan Your Perfect Portland Visit",
+      "subtitle": "Follow these steps to make the most of your Portland experience",
+      "tagline": "Getting Started",
       "header": {
         "title": "Plan Your Perfect Portland Visit"
       },
@@ -239,6 +245,9 @@
     "socialProof": {
       "id": "socialProof",
       "type": "socialProof",
+      "title": "Portland Experiences",
+      "subtitle": "See what others are saying about their Portland adventures",
+      "tagline": "Visitor Stories",
       "images": [
         {
           "link": "/attractions",
