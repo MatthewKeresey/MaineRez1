@@ -1884,8 +1884,8 @@
     "fore-street": {
       "id": "fore-street",
       "type": "restaurant",
-      "title": "Fore Street",
-      "description": "Iconic farm-to-table restaurant featuring wood-fired cooking and local ingredients.",
+      "title": "test Fore Street",
+      "description": "testIconic farm-to-table restaurant featuring wood-fired cooking and local ingredients.",
       "cuisine": ["american", "farm-to-table"],
       "priceRange": "$$$",
       "features": ["wood-fired", "local", "seasonal"],
