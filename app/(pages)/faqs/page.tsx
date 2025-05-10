@@ -1,20 +1,24 @@
 import type { Metadata } from 'next';
-
 import CallToAction from '~/components/widgets/CallToAction';
 import FAQs4 from '~/components/widgets/FAQs4';
-import { heroFaqs, callToActionFaqs, faqs4Faqs } from '~/shared/data/pages/faqs.data';
 import Hero from '~/components/widgets/Hero';
+import { getContent } from '~/shared/content/content-helper';
 
 export const metadata: Metadata = {
   title: 'FAQs',
 };
 
 const Page = () => {
+  const pageContent = getContent('pages.faqs');
+  const heroContent = getContent('sections.hero');
+  const faqsContent = getContent('sections.faqs4');
+  const callToActionContent = getContent('sections.callToAction');
+
   return (
     <>
-      <Hero {...heroFaqs} />
-      <FAQs4 {...faqs4Faqs} />
-      <CallToAction {...callToActionFaqs} />
+      <Hero {...heroContent} />
+      <FAQs4 {...faqsContent} />
+      <CallToAction {...callToActionContent} />
     </>
   );
 };

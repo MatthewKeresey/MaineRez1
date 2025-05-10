@@ -1,22 +1,23 @@
-import { Metadata } from 'next';
-
-import Contact from '~/components/widgets/Contact';
-import Features2 from '~/components/widgets/Features2';
+import type { Metadata } from 'next';
+import ContactForm from '~/components/widgets/ContactForm';
 import Hero from '~/components/widgets/Hero';
-import { heroContact, contactPage, features2Contact } from '~/shared/data/pages/contact.data';
+import { getContent } from '~/shared/content/content-helper';
 
 export const metadata: Metadata = {
-  title: 'Contact us',
+  title: 'Contact',
 };
 
-const ContactPage = () => {
+const Page = () => {
+  const pageContent = getContent('pages.contact');
+  const heroContent = getContent('sections.hero');
+  const contactFormContent = getContent('sections.contactForm');
+
   return (
     <>
-      <Hero {...heroContact} />
-      <Contact {...contactPage} />
-      <Features2 {...features2Contact} />
+      <Hero {...heroContent} />
+      <ContactForm {...contactFormContent} />
     </>
   );
 };
 
-export default ContactPage;
+export default Page;

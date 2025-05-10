@@ -1,46 +1,28 @@
 import Image from 'next/image';
 import dynamic from 'next/dynamic';
+import { getContent } from '~/shared/content/content-helper';
 
 const AdSense = dynamic(() => import('../../../components/AdSense'), { ssr: false });
 
-const restaurantsFeatures = [
-  {
-    title: 'Eventide Oyster Co.',
-    description: "Famous for its fresh oysters and creative seafood dishes in a lively setting.",
-    img: '/images/eventide.jpg',
-  },
-  {
-    title: 'Fore Street',
-    description: "Award-winning wood-fired cuisine with a focus on local ingredients.",
-    img: '/images/fore-street.jpg',
-  },
-  {
-    title: 'Central Provisions',
-    description: "A small plates restaurant known for inventive flavors and a vibrant atmosphere.",
-    img: '/images/eventide-oyster.jpg',
-  },
-  {
-    title: 'Duckfat',
-    description: "Beloved for its hand-cut fries, paninis, and house sodas.",
-    img: '/images/restaurants-hero.jpg',
-  },
-  {
-    title: 'The Honey Paw',
-    description: "A creative noodle bar offering Asian-inspired dishes with a Maine twist.",
-    img: '/images/portland-market.jpg',
-  },
-  {
-    title: 'Boda',
-    description: "Thai street food and tapas in a cozy, welcoming space.",
-    img: '/images/old-port-shopping.jpg',
-  },
-];
+// Get all restaurants from content.json
+const getRestaurants = () => {
+  const restaurantsData = getContent('restaurants');
+  return Object.entries(restaurantsData).map(([id, restaurant]: [string, any]) => ({
+    title: restaurant.title,
+    description: restaurant.description,
+    img: `/images/restaurants/${id}.jpg`,
+  }));
+};
 
 export default function RestaurantsPage() {
+  const restaurantsFeatures = getRestaurants();
+  const pageContent = getContent('pages.restaurants');
+
   return (
     <>
       <section className="mx-auto max-w-5xl px-4 py-12">
-        <h1 className="mb-8 text-center text-4xl font-bold">Portland Restaurants</h1>
+        <h1 className="mb-8 text-center text-4xl font-bold">{pageContent.title}</h1>
+        <p className="mb-8 text-center text-lg text-gray-600">{pageContent.subtitle}</p>
         <AdSense 
           adSlot="restaurants-top-ad"
           className="mb-8"

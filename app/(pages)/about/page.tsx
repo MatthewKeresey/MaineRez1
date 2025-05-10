@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import Contact from '~/components/widgets/Contact';
-
 import FAQs from '~/components/widgets/FAQs';
 import Features from '~/components/widgets/Features';
 import Features3 from '~/components/widgets/Features3';
@@ -10,38 +9,39 @@ import Stats from '~/components/widgets/Stats';
 import Steps from '~/components/widgets/Steps';
 import Team2 from '~/components/widgets/Team2';
 import Testimonials2 from '~/components/widgets/Testimonials2';
-import {
-  contactAbout,
-  faqsAbout,
-  featuresFourAbout,
-  featuresFourAboutTwo,
-  features3About,
-  hero2About,
-  statsAbout,
-  stepsAbout,
-  testimonials2About,
-  featuresAbout,
-  teamAbout,
-} from '~/shared/data/pages/about.data';
+import { getContent } from '~/shared/content/content-helper';
 
 export const metadata: Metadata = {
-  title: `About us`,
+  title: 'About us',
 };
 
 const Page = () => {
+  const pageContent = getContent('pages.about');
+  const heroContent = getContent('sections.hero2');
+  const statsContent = getContent('sections.stats');
+  const featuresContent = getContent('sections.features4');
+  const featuresContent2 = getContent('sections.features4Two');
+  const stepsContent = getContent('sections.steps');
+  const features3Content = getContent('sections.features3');
+  const featuresContent3 = getContent('sections.features');
+  const teamContent = getContent('sections.team2');
+  const testimonialsContent = getContent('sections.testimonials2');
+  const faqsContent = getContent('sections.faqs');
+  const contactContent = getContent('sections.contact');
+
   return (
     <>
-      <Hero2 {...hero2About} />
-      <Stats {...statsAbout} />
-      <Features4 {...featuresFourAbout} />
-      <Features4 {...featuresFourAboutTwo} />
-      <Steps {...stepsAbout} />
-      <Features3 {...features3About} />
-      <Features {...featuresAbout} />
-      <Team2 {...teamAbout} />
-      <Testimonials2 {...testimonials2About} />
-      <FAQs {...faqsAbout} />
-      <Contact {...contactAbout} />
+      <Hero2 {...heroContent} />
+      <Stats {...statsContent} />
+      <Features4 {...featuresContent} />
+      <Features4 {...featuresContent2} />
+      <Steps {...stepsContent} />
+      <Features3 {...features3Content} />
+      <Features {...featuresContent3} />
+      <Team2 {...teamContent} />
+      <Testimonials2 {...testimonialsContent} />
+      <FAQs {...faqsContent} />
+      <Contact {...contactContent} />
     </>
   );
 };

@@ -1,52 +1,46 @@
 import type { Metadata } from 'next';
-
-import { SITE } from '~/config.js';
-
-import Hero from '~/components/widgets/Hero';
-import SocialProof from '../src/components/widgets/SocialProof';
-import Features from '~/components/widgets/Features';
+import Announcement from '~/components/widgets/Announcement';
+import CallToAction from '~/components/widgets/CallToAction';
 import Content from '~/components/widgets/Content';
-import Steps from '~/components/widgets/Steps';
-import Testimonials from '~/components/widgets/Testimonials';
-import FAQs2 from '~/components/widgets/FAQs2';
+import FAQs from '~/components/widgets/FAQs';
+import Features from '~/components/widgets/Features';
+import Features2 from '~/components/widgets/Features2';
+import Hero from '~/components/widgets/Hero';
 import Pricing from '~/components/widgets/Pricing';
-import Team from '~/components/widgets/Team';
-import CallToAction2 from '~/components/widgets/CallToAction2';
-import Contact from '~/components/widgets/Contact';
-import {
-  callToAction2Home,
-  contactHome,
-  contentHomeOne,
-  contentHomeTwo,
-  faqs2Home,
-  featuresHome,
-  heroHome,
-  pricingHome,
-  socialProofHome,
-  stepsHome,
-  teamHome,
-  testimonialsHome,
-} from '~/shared/data/pages/home.data';
+import Testimonials from '~/components/widgets/Testimonials';
+import { getContent } from '~/shared/content/content-helper';
 
 export const metadata: Metadata = {
-  title: SITE.title,
+  title: 'Home',
 };
 
-export default function Page() {
+const Page = () => {
+  const pageContent = getContent('pages.home');
+  const announcementContent = getContent('sections.announcement');
+  const heroContent = getContent('sections.hero');
+  const featuresContent = getContent('sections.features');
+  const features2Content = getContent('sections.features2');
+  const contentOne = getContent('sections.contentOne');
+  const contentTwo = getContent('sections.contentTwo');
+  const testimonialsContent = getContent('sections.testimonials');
+  const faqsContent = getContent('sections.faqs');
+  const pricingContent = getContent('sections.pricing');
+  const callToActionContent = getContent('sections.callToAction');
+
   return (
     <>
-      <Hero {...heroHome} />
-      <SocialProof {...socialProofHome} />
-      <Features {...featuresHome} />
-      <Content {...contentHomeOne} />
-      <Content {...contentHomeTwo} />
-      <Steps {...stepsHome} />
-      <Testimonials {...testimonialsHome} />
-      <FAQs2 {...faqs2Home} />
-      <Pricing {...pricingHome} />
-      <Team {...teamHome} />
-      <Contact {...contactHome} />
-      <CallToAction2 {...callToAction2Home} />
+      <Announcement {...announcementContent} />
+      <Hero {...heroContent} />
+      <Features {...featuresContent} />
+      <Features2 {...features2Content} />
+      <Content {...contentOne} />
+      <Content {...contentTwo} />
+      <Testimonials {...testimonialsContent} />
+      <FAQs {...faqsContent} />
+      <Pricing {...pricingContent} />
+      <CallToAction {...callToActionContent} />
     </>
   );
-}
+};
+
+export default Page;
