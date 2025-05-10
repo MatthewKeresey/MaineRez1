@@ -2731,7 +2731,41 @@
       "logo": {
         "src": "/images/MaineRez1.png",
         "alt": "MaineRez Logo"
-      }
+      },
+      "links": [
+        {
+          "label": "Home",
+          "href": "/"
+        },
+        {
+          "label": "Attractions",
+          "href": "/attractions"
+        },
+        {
+          "label": "Dining",
+          "href": "/restaurants"
+        },
+        {
+          "label": "Arts",
+          "href": "/arts"
+        },
+        {
+          "label": "Outdoors",
+          "href": "/outdoors"
+        },
+        {
+          "label": "Shopping",
+          "href": "/shopping"
+        }
+      ],
+      "actions": [
+        {
+          "text": "Contact Us",
+          "href": "/contact",
+          "type": "button",
+          "variant": "primary"
+        }
+      ]
     },
     "footer2": {
       "title": "MaineRez",
