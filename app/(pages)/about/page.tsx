@@ -18,13 +18,8 @@ export const metadata: Metadata = {
 
 const Page = () => {
   const pageContent = getContent('pages.about');
-  const heroContent = getContent('sections.hero2');
-  const statsContent = getContent('sections.stats');
+  const heroContent = getContent('sections.hero');
   const featuresContent = getContent('sections.features4');
-  const featuresContent2 = getContent('sections.features4Two');
-  const stepsContent = getContent('sections.steps');
-  const features3Content = getContent('sections.features3');
-  const featuresContent3 = getContent('sections.features');
   const teamContent = getContent('sections.team2');
   const testimonialsContent = getContent('sections.testimonials2');
   const faqsContent = getContent('sections.faqs');
@@ -32,17 +27,12 @@ const Page = () => {
 
   return (
     <>
-      <Hero2 {...heroContent} />
-      <Stats {...statsContent} />
-      <Features4 {...featuresContent} />
-      <Features4 {...featuresContent2} />
-      <Steps {...stepsContent} />
-      <Features3 {...features3Content} />
-      <Features {...featuresContent3} />
-      <Team2 {...teamContent} />
-      <Testimonials2 {...testimonialsContent} />
-      <FAQs {...faqsContent} />
-      <Contact {...contactContent} />
+      {heroContent && <Hero2 {...heroContent} />}
+      {featuresContent && <Features4 {...featuresContent} />}
+      {teamContent && <Team2 {...teamContent} />}
+      {testimonialsContent && <Testimonials2 {...testimonialsContent} />}
+      {faqsContent && <FAQs {...faqsContent} />}
+      {contactContent && <Contact {...contactContent} />}
     </>
   );
 };
