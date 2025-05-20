@@ -31,6 +31,13 @@ const FAQs4 = ({ header, tabs = [], id = '', hasBackground = false }: FAQsProps)
         items: tab.items || []
       };
     }
+    // Handle case where link is undefined
+    if (!tab.link) {
+      return {
+        link: { label: 'Untitled' },
+        items: tab.items || []
+      };
+    }
     return tab;
   });
 
