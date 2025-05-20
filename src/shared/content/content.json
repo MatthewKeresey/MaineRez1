@@ -284,6 +284,9 @@
     "faqs4": {
       "id": "faqs4",
       "type": "faqs",
+      "title": "Frequently Asked Questions",
+      "subtitle": "Find answers to common questions about visiting Portland, Maine",
+      "tagline": "Common Questions",
       "header": {
         "title": "Frequently Asked Questions",
         "subtitle": "Find answers to common questions about visiting Portland, Maine",
@@ -355,6 +358,7 @@
       "type": "callToAction",
       "title": "Still Have Questions?",
       "subtitle": "Contact us for more information about visiting Portland, Maine",
+      "tagline": "Get in Touch",
       "callToAction": {
         "text": "Contact Us",
         "href": "/contact",
@@ -776,7 +780,7 @@
         },
         {
           "title": "What are the must-visit attractions?",
-          "description": "Don't miss the Portland Museum of Art, Portland Head Light, Old Port shopping, and the working waterfront. Take a ferry to the islands or enjoy the local food scene."
+          "description": "Don't miss the Portland Head Light, Old Port district, Portland Museum of Art, and the Eastern Promenade. The city's food scene, particularly the seafood restaurants, is also a major attraction."
         }
       ],
       "columns": 2,
