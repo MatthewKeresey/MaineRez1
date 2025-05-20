@@ -3,7 +3,7 @@
 import Headline from '../common/Headline';
 import Collapse from '../common/Collapse';
 import { IconMinus, IconPlus } from '@tabler/icons-react';
-import { FAQsProps, Item, Tab } from '~/shared/types';
+import { FAQsProps, Item, Tab, Link } from '~/shared/types';
 import { useState } from 'react';
 import useWindowSize from '~/hooks/useWindowSize';
 import Dropdown from '../common/Dropdown';
@@ -44,14 +44,13 @@ const FAQs4 = ({ header, tabs = [], id = '', hasBackground = false }: FAQsProps)
       link: tab.link,
       items: Array.isArray(tab.items) ? tab.items : []
     };
-  }).filter((tab): tab is Tab => tab !== null);
+  }).filter((tab): tab is { link: Link; items: Item[] } => tab !== null);
 
   // Validate each tab has the required structure
-  const validTabs = normalizedTabs.filter((tab): tab is Tab => {
+  const validTabs = normalizedTabs.filter((tab): tab is { link: Link; items: Item[] } => {
     return (
       tab &&
       typeof tab === 'object' &&
-      'link' in tab &&
       'items' in tab &&
       Array.isArray(tab.items)
     );
@@ -70,7 +69,7 @@ const FAQs4 = ({ header, tabs = [], id = '', hasBackground = false }: FAQsProps)
             <div className="block h-full sm:flex sm:items-center sm:justify-between md:mx-4 md:mt-10 md:block md:px-4">
               <div className="flex h-fit w-full justify-center sm:w-auto sm:justify-start">
                 <ul>
-                  {validTabs.map((tab: Tab, index: number) => {
+                  {validTabs.map((tab, index) => {
                     const onSelectTab = () => {
                       setActiveTab(index);
                     };
@@ -84,7 +83,7 @@ const FAQs4 = ({ header, tabs = [], id = '', hasBackground = false }: FAQsProps)
                         tabIndex={0}
                         onClick={onSelectTab}
                       >
-                        <span className="w-full text-xl hover:underline">{tab.link?.label}</span>
+                        <span className="w-full text-xl hover:underline">{tab.link.label || 'Untitled'}</span>
                       </li>
                     );
                   })}
@@ -95,7 +94,7 @@ const FAQs4 = ({ header, tabs = [], id = '', hasBackground = false }: FAQsProps)
             <Dropdown options={validTabs} activeTab={activeTab} onActiveTabSelected={activeTabSelectedHandler} />
           )}
           <div className="mt-4 h-fit md:col-span-2 md:mx-4 md:mt-0 md:px-4">
-            {validTabs.map((tab: Tab, index: number) => (
+            {validTabs.map((tab, index) => (
               <div key={`tab-${index}`} className="">
                 {activeTab === index && tab.items && tab.items.length > 0 && (
                   <Collapse
