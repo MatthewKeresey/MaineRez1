@@ -1,8 +1,14 @@
+import React from 'react';
 import { twMerge } from 'tailwind-merge';
-import { WrapperTagProps } from '~/shared/types';
+import { Widget } from '~/shared/types';
 import Background from './Background';
 
-const WidgetWrapper = ({ children, id = '', hasBackground = false, containerClass }: WrapperTagProps) => (
+interface WidgetWrapperProps extends Widget {
+  children: React.ReactNode;
+  containerClass?: string;
+}
+
+const WidgetWrapper = ({ children, id = '', hasBackground = false, containerClass }: WidgetWrapperProps) => (
   <section className="relative not-prose scroll-mt-[72px]" id={id}>
     <Background hasBackground={hasBackground} />
     <div
