@@ -30,7 +30,7 @@ const FAQs4 = ({ header, tabs = [], id = '', hasBackground = false }: FAQsProps)
             <div className="block h-full sm:flex sm:items-center sm:justify-between md:mx-4 md:mt-10 md:block md:px-4">
               <div className="flex h-fit w-full justify-center sm:w-auto sm:justify-start">
                 <ul>
-                  {tabs.map((tab, index) => {
+                  {tabs.map((tab: Tab, index: number) => {
                     const onSelectTab = () => {
                       setActiveTab(index);
                     };
@@ -55,9 +55,9 @@ const FAQs4 = ({ header, tabs = [], id = '', hasBackground = false }: FAQsProps)
             <Dropdown options={tabs} activeTab={activeTab} onActiveTabSelected={activeTabSelectedHandler} />
           )}
           <div className="mt-4 h-fit md:col-span-2 md:mx-4 md:mt-0 md:px-4">
-            {tabs.map((tab, index) => (
+            {tabs.map((tab: Tab, index: number) => (
               <div key={`tab-${index}`} className="">
-                {activeTab === index && tab.items && (
+                {activeTab === index && tab.items && tab.items.length > 0 && (
                   <Collapse
                     items={tab.items}
                     classCollapseItem="border-b border-solid border-slate-300 dark:border-slate-500 py-5"
