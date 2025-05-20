@@ -95,6 +95,18 @@ export const getContentArray = (path: string): any[] => {
       current = typedContent.sections[sectionKey];
       // Remove the first two keys (home and section name)
       keys.splice(0, 2);
+    } else {
+      return [];
+    }
+  } else if (keys[0] === 'sections') {
+    // For section content, look directly in sections
+    const sectionKey = keys[1] as SectionKey;
+    if (sectionKey && sectionKey in typedContent.sections) {
+      current = typedContent.sections[sectionKey];
+      // Remove the first two keys (sections and section name)
+      keys.splice(0, 2);
+    } else {
+      return [];
     }
   }
 
@@ -125,6 +137,18 @@ export const getContentObject = (path: string): Record<string, any> => {
       current = typedContent.sections[sectionKey];
       // Remove the first two keys (home and section name)
       keys.splice(0, 2);
+    } else {
+      return {};
+    }
+  } else if (keys[0] === 'sections') {
+    // For section content, look directly in sections
+    const sectionKey = keys[1] as SectionKey;
+    if (sectionKey && sectionKey in typedContent.sections) {
+      current = typedContent.sections[sectionKey];
+      // Remove the first two keys (sections and section name)
+      keys.splice(0, 2);
+    } else {
+      return {};
     }
   }
 
