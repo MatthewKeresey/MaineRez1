@@ -27,7 +27,7 @@ const FAQs4 = ({ header, tabs = [], id = '', hasBackground = false }: FAQsProps)
     // Handle both content structures
     if (typeof tab.link === 'string') {
       return {
-        link: { label: tab.text || tab.link },
+        link: { label: tab.link },
         items: tab.items || []
       };
     }
