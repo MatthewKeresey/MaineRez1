@@ -9,7 +9,7 @@ import useWindowSize from '~/hooks/useWindowSize';
 import Dropdown from '../common/Dropdown';
 import WidgetWrapper from '../common/WidgetWrapper';
 
-const FAQs4 = ({ header, tabs, id, hasBackground = false }: FAQsProps) => {
+const FAQs4 = ({ header, tabs = [], id = '', hasBackground = false }: FAQsProps) => {
   const { width } = useWindowSize();
   const [activeTab, setActiveTab] = useState(0);
 
@@ -17,8 +17,12 @@ const FAQs4 = ({ header, tabs, id, hasBackground = false }: FAQsProps) => {
     setActiveTab(index);
   };
 
+  if (!tabs || tabs.length === 0) {
+    return null;
+  }
+
   return (
-    <WidgetWrapper id={id ? id : ''} hasBackground={hasBackground} containerClass="">
+    <WidgetWrapper id={id} hasBackground={hasBackground} containerClass="">
       {header && <Headline header={header} titleClass="text-3xl sm:text-4xl" />}
       <div className="flex items-stretch justify-center">
         <div className="grid w-full md:grid-cols-3 md:items-center md:gap-4">
@@ -26,7 +30,7 @@ const FAQs4 = ({ header, tabs, id, hasBackground = false }: FAQsProps) => {
             <div className="block h-full sm:flex sm:items-center sm:justify-between md:mx-4 md:mt-10 md:block md:px-4">
               <div className="flex h-fit w-full justify-center sm:w-auto sm:justify-start">
                 <ul>
-                  {(tabs as Tab[]).map((tab, index) => {
+                  {tabs.map((tab, index) => {
                     const onSelectTab = () => {
                       setActiveTab(index);
                     };
@@ -48,14 +52,14 @@ const FAQs4 = ({ header, tabs, id, hasBackground = false }: FAQsProps) => {
               </div>
             </div>
           ) : (
-            <Dropdown options={tabs as Tab[]} activeTab={activeTab} onActiveTabSelected={activeTabSelectedHandler} />
+            <Dropdown options={tabs} activeTab={activeTab} onActiveTabSelected={activeTabSelectedHandler} />
           )}
           <div className="mt-4 h-fit md:col-span-2 md:mx-4 md:mt-0 md:px-4">
-            {(tabs as Tab[]).map((tab, index) => (
+            {tabs.map((tab, index) => (
               <div key={`tab-${index}`} className="">
-                {activeTab === index && (
+                {activeTab === index && tab.items && (
                   <Collapse
-                    items={tab.items as Item[]}
+                    items={tab.items}
                     classCollapseItem="border-b border-solid border-slate-300 dark:border-slate-500 py-5"
                     iconUp={<IconMinus className="h-6 w-6 text-primary-600 dark:text-slate-200" />}
                     iconDown={<IconPlus className="h-6 w-6 text-primary-600 dark:text-slate-200" />}

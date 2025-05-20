@@ -4,12 +4,16 @@ import { IconChevronDown, IconChevronUp } from '@tabler/icons-react';
 import useCollapse from '~/hooks/useCollapse';
 import { CollapseProps } from '~/shared/types';
 
-const Collapse = ({ items, classCollapseItem, iconUp, iconDown }: CollapseProps) => {
+const Collapse = ({ items = [], classCollapseItem = '', iconUp, iconDown }: CollapseProps) => {
   const { activeIndex, handleSetIndex } = useCollapse();
+
+  if (!items || items.length === 0) {
+    return null;
+  }
 
   return (
     <>
-      {items.map(({ title, description }, index) => (
+      {items.map(({ title = '', description = '' }, index) => (
         <div
           key={`accordion-${index}`}
           onClick={() => handleSetIndex(index)}

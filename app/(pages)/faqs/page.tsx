@@ -16,9 +16,9 @@ const Page = () => {
 
   return (
     <>
-      <Hero {...heroContent} />
-      <FAQs4 {...faqsContent} />
-      <CallToAction {...callToActionContent} />
+      {heroContent && <Hero {...heroContent} />}
+      {faqsContent && <FAQs4 {...faqsContent} />}
+      {callToActionContent && <CallToAction {...callToActionContent} />}
     </>
   );
 };
