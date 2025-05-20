@@ -17,7 +17,23 @@ const FAQs4 = ({ header, tabs = [], id = '', hasBackground = false }: FAQsProps)
     setActiveTab(index);
   };
 
-  if (!tabs || tabs.length === 0) {
+  // Early return if no tabs or invalid tabs
+  if (!Array.isArray(tabs) || tabs.length === 0) {
+    return null;
+  }
+
+  // Validate each tab has the required structure
+  const validTabs = tabs.filter((tab): tab is Tab => {
+    return (
+      tab &&
+      typeof tab === 'object' &&
+      'link' in tab &&
+      'items' in tab &&
+      Array.isArray(tab.items)
+    );
+  });
+
+  if (validTabs.length === 0) {
     return null;
   }
 
@@ -30,7 +46,7 @@ const FAQs4 = ({ header, tabs = [], id = '', hasBackground = false }: FAQsProps)
             <div className="block h-full sm:flex sm:items-center sm:justify-between md:mx-4 md:mt-10 md:block md:px-4">
               <div className="flex h-fit w-full justify-center sm:w-auto sm:justify-start">
                 <ul>
-                  {tabs.map((tab: Tab, index: number) => {
+                  {validTabs.map((tab: Tab, index: number) => {
                     const onSelectTab = () => {
                       setActiveTab(index);
                     };
@@ -52,10 +68,10 @@ const FAQs4 = ({ header, tabs = [], id = '', hasBackground = false }: FAQsProps)
               </div>
             </div>
           ) : (
-            <Dropdown options={tabs} activeTab={activeTab} onActiveTabSelected={activeTabSelectedHandler} />
+            <Dropdown options={validTabs} activeTab={activeTab} onActiveTabSelected={activeTabSelectedHandler} />
           )}
           <div className="mt-4 h-fit md:col-span-2 md:mx-4 md:mt-0 md:px-4">
-            {tabs.map((tab: Tab, index: number) => (
+            {validTabs.map((tab: Tab, index: number) => (
               <div key={`tab-${index}`} className="">
                 {activeTab === index && tab.items && tab.items.length > 0 && (
                   <Collapse
