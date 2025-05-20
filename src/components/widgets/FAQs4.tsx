@@ -18,28 +18,33 @@ const FAQs4 = ({ header, tabs = [], id = '', hasBackground = false }: FAQsProps)
   };
 
   // Early return if no tabs or invalid tabs
-  if (!Array.isArray(tabs) || tabs.length === 0) {
+  if (!tabs || !Array.isArray(tabs) || tabs.length === 0) {
     return null;
   }
 
   // Normalize tab structure
   const normalizedTabs = tabs.map(tab => {
+    if (!tab) return null;
+
     // Handle both content structures
     if (typeof tab.link === 'string') {
       return {
         link: { label: tab.link },
-        items: tab.items || []
+        items: Array.isArray(tab.items) ? tab.items : []
       };
     }
     // Handle case where link is undefined
     if (!tab.link) {
       return {
         link: { label: 'Untitled' },
-        items: tab.items || []
+        items: Array.isArray(tab.items) ? tab.items : []
       };
     }
-    return tab;
-  });
+    return {
+      link: tab.link,
+      items: Array.isArray(tab.items) ? tab.items : []
+    };
+  }).filter((tab): tab is Tab => tab !== null);
 
   // Validate each tab has the required structure
   const validTabs = normalizedTabs.filter((tab): tab is Tab => {
