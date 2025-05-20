@@ -22,8 +22,20 @@ const FAQs4 = ({ header, tabs = [], id = '', hasBackground = false }: FAQsProps)
     return null;
   }
 
+  // Normalize tab structure
+  const normalizedTabs = tabs.map(tab => {
+    // Handle both content structures
+    if (typeof tab.link === 'string') {
+      return {
+        link: { label: tab.text || tab.link },
+        items: tab.items || []
+      };
+    }
+    return tab;
+  });
+
   // Validate each tab has the required structure
-  const validTabs = tabs.filter((tab): tab is Tab => {
+  const validTabs = normalizedTabs.filter((tab): tab is Tab => {
     return (
       tab &&
       typeof tab === 'object' &&
